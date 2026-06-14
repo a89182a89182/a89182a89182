@@ -1,13 +1,14 @@
-# ORE Sunday Preview
+# ORE Sunday Preview Archive
 
-Static public GitHub Pages source for a concise ORE Sunday Preview report.
+Static public GitHub Pages source for ORE Sunday Preview reports.
 
-Published content:
+Structure:
 
-- `index.html`: ORE 775 standings plus pitcher-first K and ERA fantasy variants.
+- `index.html`: year selector landing page.
+- `2026/index.html`: ORE 775 standings plus pitcher-first K and ERA fantasy variants.
 
 Privacy note:
 
-- The detailed local report remains local/email-only.
-- Local filesystem paths and internal workflow details were removed before publishing.
+- Detailed local reports remain local/email-only unless explicitly published.
+- Local filesystem paths and internal workflow details are removed before publishing.
 - GitHub Pages is public on the internet.
