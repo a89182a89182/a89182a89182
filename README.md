@@ -9,5 +9,5 @@ Published content:
 Privacy note:
 
 - The detailed local report remains local/email-only.
-- Local filesystem paths and private workflow details were removed before publishing.
+- Local filesystem paths and internal workflow details were removed before publishing.
 - GitHub Pages is public on the internet.
