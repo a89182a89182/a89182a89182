@@ -10,7 +10,6 @@
       --ink: #17202a;
       --muted: #5b6573;
       --line: #d9e1ea;
-      --soft: #f6f8fb;
       --accent: #0f7b5c;
       --accent-dark: #0b5f48;
     }
@@ -22,45 +21,19 @@
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
       line-height: 1.55;
     }
-    .wrap {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 28px 16px 48px;
-    }
-    .hero, .panel, .year-card {
+    .wrap { max-width: 980px; margin: 0 auto; padding: 28px 16px 48px; }
+    .hero, .panel, .season-card {
       background: #fff;
       border: 1px solid var(--line);
       border-radius: 10px;
       box-shadow: 0 1px 2px rgba(20, 30, 45, .05);
     }
-    .hero {
-      padding: 22px;
-      margin-bottom: 14px;
-    }
-    h1 {
-      font-size: 28px;
-      margin: 0 0 8px;
-      letter-spacing: 0;
-    }
-    h2 {
-      font-size: 19px;
-      margin: 0 0 10px;
-      letter-spacing: 0;
-    }
-    p {
-      margin: 6px 0;
-      color: var(--muted);
-    }
-    .panel {
-      padding: 16px;
-      margin-bottom: 14px;
-    }
-    .jump {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
+    .hero { padding: 22px; margin-bottom: 14px; }
+    h1 { font-size: 28px; margin: 0 0 8px; letter-spacing: 0; }
+    h2 { font-size: 19px; margin: 0 0 10px; letter-spacing: 0; }
+    p { margin: 6px 0; color: var(--muted); }
+    .panel { padding: 16px; margin-bottom: 14px; }
+    .jump { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
     select, button {
       min-height: 40px;
       border: 1px solid var(--line);
@@ -77,33 +50,21 @@
       cursor: pointer;
       font-weight: 700;
     }
-    button:hover {
-      background: var(--accent-dark);
-      border-color: var(--accent-dark);
-    }
-    .years {
+    button:hover { background: var(--accent-dark); border-color: var(--accent-dark); }
+    .seasons {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 12px;
     }
-    .year-card {
+    .season-card {
       display: block;
       padding: 16px;
       color: inherit;
       text-decoration: none;
     }
-    .year-card:hover {
-      border-color: var(--accent);
-    }
-    .year {
-      font-size: 30px;
-      font-weight: 800;
-      margin-bottom: 5px;
-    }
-    .meta {
-      color: var(--muted);
-      font-size: 14px;
-    }
+    .season-card:hover { border-color: var(--accent); }
+    .season { font-size: 30px; font-weight: 800; margin-bottom: 5px; }
+    .meta { color: var(--muted); font-size: 14px; }
     .tag {
       display: inline-block;
       margin-top: 10px;
@@ -115,14 +76,10 @@
       font-size: 13px;
       font-weight: 700;
     }
-    .note {
-      font-size: 13px;
-      color: var(--muted);
-      margin-top: 14px;
-    }
+    .note { font-size: 13px; color: var(--muted); margin-top: 14px; }
     @media (max-width: 640px) {
       .wrap { padding: 14px 10px 32px; }
-      .hero, .panel, .year-card { border-radius: 8px; }
+      .hero, .panel, .season-card { border-radius: 8px; }
       h1 { font-size: 24px; }
       .jump { display: grid; grid-template-columns: 1fr; }
       button, select { width: 100%; }
@@ -133,34 +90,34 @@
   <main class="wrap">
     <section class="hero">
       <h1>ORE Sunday Preview Archive</h1>
-      <p>選擇年份後進入對應的 ORE Sunday Preview HTML 報告。</p>
+      <p>選擇賽季後進入對應的 ORE Sunday Preview HTML 報告。</p>
     </section>
 
     <section class="panel">
       <h2>快速選擇</h2>
       <div class="jump">
-        <label for="yearSelect">年份</label>
-        <select id="yearSelect" aria-label="選擇年份">
-          <option value="2026/">2026</option>
+        <label for="seasonSelect">賽季</label>
+        <select id="seasonSelect" aria-label="選擇賽季">
+          <option value="season-775/">第 775 賽季</option>
         </select>
-        <button type="button" id="openYear">開啟年份報告</button>
+        <button type="button" id="openSeason">開啟賽季報告</button>
       </div>
     </section>
 
-    <section class="years" aria-label="年度報告">
-      <a class="year-card" href="2026/">
-        <div class="year">2026</div>
-        <div class="meta">ORE 775 Sunday Preview</div>
+    <section class="seasons" aria-label="賽季報告">
+      <a class="season-card" href="season-775/">
+        <div class="season">第 775 賽季</div>
+        <div class="meta">ORE Sunday Preview，targetSeason 775</div>
         <div class="meta">K + ERA 單項各 5 版，v6 RP workload model</div>
-        <span class="tag">開啟 2026 HTML</span>
+        <span class="tag">開啟第 775 賽季 HTML</span>
       </a>
     </section>
 
     <p class="note">GitHub Pages 是公開網站；公開版會避免放本機路徑、email、憑證、瀏覽器 session 或內部 workflow 細節。</p>
   </main>
   <script>
-    document.getElementById("openYear").addEventListener("click", function () {
-      var path = document.getElementById("yearSelect").value;
+    document.getElementById("openSeason").addEventListener("click", function () {
+      var path = document.getElementById("seasonSelect").value;
       if (path) window.location.href = path;
     });
   </script>
