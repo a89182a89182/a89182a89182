@@ -4,8 +4,9 @@ Static public GitHub Pages source for ORE Sunday Preview reports.
 
 Structure:
 
-- `index.html`: year selector landing page.
-- `2026/index.html`: ORE 775 standings plus pitcher-first K and ERA fantasy variants.
+- `index.html`: season selector landing page.
+- `season-775/index.html`: ORE 775 standings plus pitcher-first K and ERA fantasy variants.
+- `2026/index.html`: compatibility redirect to `season-775/`.
 
 Privacy note:
 
