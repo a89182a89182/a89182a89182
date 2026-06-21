@@ -11,6 +11,7 @@
     .hero{padding:22px;margin-bottom:14px}.section{padding:18px;margin-top:14px}.variant{padding:14px;margin-top:12px}h1{margin:0 0 8px;font-size:30px;letter-spacing:0}h2{margin:0 0 10px;font-size:22px}h3{margin:0;font-size:17px}
     p{margin:7px 0;color:var(--muted)}.note{color:var(--warn)}.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-top:14px}.card{border:1px solid var(--line);border-radius:8px;padding:12px;background:#fbfcfd}.label{font-size:12px;color:var(--muted);text-transform:uppercase}.value{font-size:20px;font-weight:800;margin-top:2px}
     table{width:100%;border-collapse:collapse;margin-top:10px;font-size:13px}th,td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}th{background:#eef3f6;font-weight:700}.player{font-weight:700}.variant-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap}.variant-meta{display:flex;gap:7px;flex-wrap:wrap}.variant-meta span{border:1px solid var(--line);border-radius:999px;padding:3px 8px;background:#f7fafb;color:#2d3845;font-size:12px}
+    .claim{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:10px;padding:10px;border:1px solid var(--line);border-radius:8px;background:#f7fafb}.claim label{font-weight:800;font-size:13px}.claim input{min-width:220px;max-width:320px;flex:1 1 220px;border:1px solid #b9c7d5;border-radius:6px;padding:7px 9px;font:inherit}.claim button{border:0;border-radius:6px;background:var(--accent);color:white;font-weight:800;padding:8px 12px;cursor:pointer}.claim-status{color:var(--accent);font-weight:800;font-size:13px}
     details.copy{margin-top:10px}summary{cursor:pointer;color:var(--accent);font-weight:700}pre{white-space:pre-wrap;background:#101820;color:#f5f7fa;border-radius:8px;padding:12px;overflow:auto;font-size:12px}.grid-two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
   </style>
 </head>
@@ -29,8 +30,8 @@
     </section>
     <section class="section"><h2>本週項目安排</h2><table><thead><tr><th>優先順序</th><th>項目</th><th>主要指標</th><th>最高預測值</th><th>版本數</th><th>驗證</th></tr></thead><tbody><tr><td>第一推薦</td><td>K</td><td>預測三振</td><td>1007</td><td>5</td><td>通過</td></tr>
 <tr><td>第二推薦</td><td>SV</td><td>預測救援</td><td>18</td><td>5</td><td>通過</td></tr>
-<tr><td>第三推薦</td><td>RBI</td><td>預測打點</td><td>679</td><td>5</td><td>通過</td></tr></tbody></table><p class="note">SB 週日預設刻意排除，因為其他 GM 可以用球隊盜壘策略操控；SB 留到週五全項目檢討。</p></section>
-    <section class="section"><h2>球隊排行與冠軍預測</h2><p>冠軍預測：<strong>興農牛隊</strong>。球隊排行使用本次投影的調整後總分；來源季排名訊號只作為漂移監控，不代表第 776 季已開打後的即時排名，也不覆蓋模型排序。</p><div class="summary"><div class="card"><div class="label">冠軍預測</div><div class="value">興農牛隊</div></div><div class="card"><div class="label">來源季訊號</div><div class="value">來源季冠軍訊號對齊</div></div><div class="card"><div class="label">來源季對齊</div><div class="value">6/12</div></div><div class="card"><div class="label">冠軍信心</div><div class="value">信心偏薄</div></div><div class="card"><div class="label">交換觀察</div><div class="value">3</div></div></div><div class="grid-two"><div><h3>中華聯盟</h3><table><thead><tr><th>排名</th><th>球隊</th><th>總分</th><th>打擊</th><th>投手</th><th>同聯盟調整</th></tr></thead><tbody><tr><td>1</td><td class="player">興農牛隊</td><td>1919.40</td><td>1779.58</td><td>48.53</td><td>91.29</td></tr>
+<tr><td>第三推薦</td><td>RBI</td><td>預測打點</td><td>679</td><td>5</td><td>通過</td></tr></tbody></table><p class="note">SB 週日預設刻意排除，因為其他 GM 可以用球隊盜壘策略操控；SB 留到週五全項目檢討。</p><p class="note">版本名字欄位目前儲存在同一台裝置的瀏覽器；靜態 GitHub Pages 沒有後端時，不能跨使用者同步。</p></section>
+    <section class="section"><h2>球隊排行與冠軍預測</h2><p>冠軍預測：<strong>興農牛隊</strong>。下方只顯示第 776 季賽前預測排序；不放來源季排名對照，避免誤認成尚未開季的即時排名。</p><div class="summary"><div class="card"><div class="label">冠軍預測</div><div class="value">興農牛隊</div></div><div class="card"><div class="label">預測季數</div><div class="value">776</div></div><div class="card"><div class="label">資料來源</div><div class="value">第 775 季 day 7</div></div><div class="card"><div class="label">球隊數</div><div class="value">12</div></div></div><div class="grid-two"><div><h3>中華聯盟</h3><table><thead><tr><th>排名</th><th>球隊</th><th>總分</th><th>打擊</th><th>投手</th><th>同聯盟調整</th></tr></thead><tbody><tr><td>1</td><td class="player">興農牛隊</td><td>1919.40</td><td>1779.58</td><td>48.53</td><td>91.29</td></tr>
 <tr><td>2</td><td class="player">年代勇士</td><td>1811.36</td><td>1730.08</td><td>9.18</td><td>72.10</td></tr>
 <tr><td>3</td><td class="player">誠泰Cobras</td><td>1648.86</td><td>1688.28</td><td>-82.66</td><td>43.24</td></tr>
 <tr><td>4</td><td class="player">三商虎隊</td><td>1479.52</td><td>1662.68</td><td>-196.32</td><td>13.16</td></tr>
@@ -41,19 +42,8 @@
 <tr><td>3</td><td class="player">生活雷公</td><td>1269.56</td><td>1588.42</td><td>-303.82</td><td>-15.04</td></tr>
 <tr><td>4</td><td class="player">味全龍隊</td><td>1210.87</td><td>1623.20</td><td>-386.86</td><td>-25.47</td></tr>
 <tr><td>5</td><td class="player">中信鯨隊</td><td>1136.17</td><td>1434.48</td><td>-259.57</td><td>-38.74</td></tr>
-<tr><td>6</td><td class="player">統一獅隊</td><td>1120.83</td><td>1596.62</td><td>-434.33</td><td>-41.46</td></tr></tbody></table></div></div><h3>來源季排名訊號</h3><p class="note">下表是 第 775 季 day 7 的排名訊號，用來觀察模型排序是否與來源季狀態偏離；不是第 776 季開季後排名。</p><table><thead><tr><th>聯盟</th><th>預測排名</th><th>球隊</th><th>來源季排名</th><th>差異</th><th>預測分</th></tr></thead><tbody><tr><td>中華聯盟</td><td>1</td><td class="player">興農牛隊</td><td>1</td><td>0</td><td>1919.40</td></tr>
-<tr><td>中華聯盟</td><td>2</td><td class="player">年代勇士</td><td>2</td><td>0</td><td>1811.36</td></tr>
-<tr><td>中華聯盟</td><td>3</td><td class="player">誠泰Cobras</td><td>3</td><td>0</td><td>1648.86</td></tr>
-<tr><td>中華聯盟</td><td>4</td><td class="player">三商虎隊</td><td>4</td><td>0</td><td>1479.52</td></tr>
-<tr><td>中華聯盟</td><td>5</td><td class="player">時報鷹隊</td><td>5</td><td>0</td><td>997.08</td></tr>
-<tr><td>中華聯盟</td><td>6</td><td class="player">兄弟象隊</td><td>6</td><td>0</td><td>576.50</td></tr>
-<tr><td>台灣聯盟</td><td>1</td><td class="player">Lamigo桃猿</td><td>2</td><td>+1</td><td>1851.70</td></tr>
-<tr><td>台灣聯盟</td><td>2</td><td class="player">俊國熊隊</td><td>1</td><td>-1</td><td>1536.39</td></tr>
-<tr><td>台灣聯盟</td><td>3</td><td class="player">生活雷公</td><td>4</td><td>+1</td><td>1269.56</td></tr>
-<tr><td>台灣聯盟</td><td>4</td><td class="player">味全龍隊</td><td>5</td><td>+1</td><td>1210.87</td></tr>
-<tr><td>台灣聯盟</td><td>5</td><td class="player">中信鯨隊</td><td>6</td><td>+1</td><td>1136.17</td></tr>
-<tr><td>台灣聯盟</td><td>6</td><td class="player">統一獅隊</td><td>3</td><td>-3</td><td>1120.83</td></tr></tbody></table></section>
-    <section class="section"><h2>K 5 組版本</h2><p>第一推薦。核心選擇：投手；非核心位置只作為合法補位。</p><section class="variant"><div class="variant-head"><h3>K V1</h3><div class="variant-meta"><span>預測三振 1007</span><span>K 1007</span><span>SV 17</span><span>RBI 536</span><span>ERA 2.81</span><span>合法</span></div></div><details class="copy"><summary>K V1 複製用名單</summary><pre>C	三商虎隊	康磊	兩隻久久
+<tr><td>6</td><td class="player">統一獅隊</td><td>1120.83</td><td>1596.62</td><td>-434.33</td><td>-41.46</td></tr></tbody></table></div></div></section>
+    <section class="section"><h2>K 5 組版本</h2><p>第一推薦。核心選擇：投手；非核心位置只作為合法補位。</p><section class="variant"><div class="variant-head"><h3>K V1</h3><div class="variant-meta"><span>預測三振 1007</span><span>K 1007</span><span>SV 17</span><span>RBI 536</span><span>ERA 2.81</span><span>合法</span></div></div><div class="claim" data-claim-key="K V1"><label for="claim-K-1">K V1 猜的人</label><input id="claim-K-1" type="text" autocomplete="name" placeholder="輸入名字"><button type="button">儲存</button><span class="claim-status" aria-live="polite"></span></div><details class="copy"><summary>K V1 複製用名單</summary><pre>C	三商虎隊	康磊	兩隻久久
 1B	時報鷹隊	哈巴零一	habbakuk
 2B	兄弟象隊	薩摩耶	dodog
 3B	Lamigo桃猿	宮崎和香	wings
@@ -88,7 +78,7 @@ CP	生活雷公	朵拉伍	朵拉</pre></details><table><thead><tr><th>位置</th
 <tr><td>RP</td><td>年代勇士</td><td class="player">白日夢三三</td><td>bas5157</td><td>K 75 / SV 3 / W 8 / ERA 3.45</td><td>控 234 / 體 249 / 速 156</td><td>威壓感 / 安定感</td></tr>
 <tr><td>RP</td><td>中信鯨隊</td><td class="player">基督是主四</td><td>泡泡</td><td>K 88 / SV 2 / W 8 / ERA 3.97</td><td>控 252 / 體 255 / 速 156</td><td>負運 / 威壓感 / 投球反應○ / 指叉球(7)</td></tr>
 <tr><td>CP</td><td>生活雷公</td><td class="player">朵拉伍</td><td>朵拉</td><td>K 88 / SV 9 / W 10 / ERA 3.41</td><td>控 196 / 體 211 / 速 145</td><td>直球○ / 對左打○ / 重球 / 中繼能力○ / 威壓感 / 人氣者 / 氣魄</td></tr></tbody></table></section>
-<section class="variant"><div class="variant-head"><h3>K V2</h3><div class="variant-meta"><span>預測三振 991</span><span>K 991</span><span>SV 17</span><span>RBI 515</span><span>ERA 2.82</span><span>合法</span></div></div><details class="copy"><summary>K V2 複製用名單</summary><pre>C	三商虎隊	康磊	兩隻久久
+<section class="variant"><div class="variant-head"><h3>K V2</h3><div class="variant-meta"><span>預測三振 991</span><span>K 991</span><span>SV 17</span><span>RBI 515</span><span>ERA 2.82</span><span>合法</span></div></div><div class="claim" data-claim-key="K V2"><label for="claim-K-2">K V2 猜的人</label><input id="claim-K-2" type="text" autocomplete="name" placeholder="輸入名字"><button type="button">儲存</button><span class="claim-status" aria-live="polite"></span></div><details class="copy"><summary>K V2 複製用名單</summary><pre>C	三商虎隊	康磊	兩隻久久
 1B	時報鷹隊	哈巴零一	habbakuk
 2B	兄弟象隊	薩摩耶	dodog
 3B	Lamigo桃猿	宮崎和香	wings
@@ -123,7 +113,7 @@ CP	生活雷公	朵拉伍	朵拉</pre></details><table><thead><tr><th>位置</th
 <tr><td>RP</td><td>年代勇士</td><td class="player">白日夢三三</td><td>bas5157</td><td>K 75 / SV 3 / W 8 / ERA 3.45</td><td>控 234 / 體 249 / 速 156</td><td>威壓感 / 安定感</td></tr>
 <tr><td>RP</td><td>中信鯨隊</td><td class="player">基督是主四</td><td>泡泡</td><td>K 88 / SV 2 / W 8 / ERA 3.97</td><td>控 252 / 體 255 / 速 156</td><td>負運 / 威壓感 / 投球反應○ / 指叉球(7)</td></tr>
 <tr><td>CP</td><td>生活雷公</td><td class="player">朵拉伍</td><td>朵拉</td><td>K 88 / SV 9 / W 10 / ERA 3.41</td><td>控 196 / 體 211 / 速 145</td><td>直球○ / 對左打○ / 重球 / 中繼能力○ / 威壓感 / 人氣者 / 氣魄</td></tr></tbody></table></section>
-<section class="variant"><div class="variant-head"><h3>K V3</h3><div class="variant-meta"><span>預測三振 998</span><span>K 998</span><span>SV 17</span><span>RBI 507</span><span>ERA 2.65</span><span>合法</span></div></div><details class="copy"><summary>K V3 複製用名單</summary><pre>C	三商虎隊	康磊	兩隻久久
+<section class="variant"><div class="variant-head"><h3>K V3</h3><div class="variant-meta"><span>預測三振 998</span><span>K 998</span><span>SV 17</span><span>RBI 507</span><span>ERA 2.65</span><span>合法</span></div></div><div class="claim" data-claim-key="K V3"><label for="claim-K-3">K V3 猜的人</label><input id="claim-K-3" type="text" autocomplete="name" placeholder="輸入名字"><button type="button">儲存</button><span class="claim-status" aria-live="polite"></span></div><details class="copy"><summary>K V3 複製用名單</summary><pre>C	三商虎隊	康磊	兩隻久久
 1B	時報鷹隊	哈巴零一	habbakuk
 2B	兄弟象隊	薩摩耶	dodog
 3B	Lamigo桃猿	宮崎和香	wings
@@ -158,7 +148,7 @@ CP	生活雷公	朵拉伍	朵拉</pre></details><table><thead><tr><th>位置</th
 <tr><td>RP</td><td>年代勇士</td><td class="player">白日夢三三</td><td>bas5157</td><td>K 75 / SV 3 / W 8 / ERA 3.45</td><td>控 234 / 體 249 / 速 156</td><td>威壓感 / 安定感</td></tr>
 <tr><td>RP</td><td>中信鯨隊</td><td class="player">基督是主四</td><td>泡泡</td><td>K 88 / SV 2 / W 8 / ERA 3.97</td><td>控 252 / 體 255 / 速 156</td><td>負運 / 威壓感 / 投球反應○ / 指叉球(7)</td></tr>
 <tr><td>CP</td><td>生活雷公</td><td class="player">朵拉伍</td><td>朵拉</td><td>K 88 / SV 9 / W 10 / ERA 3.41</td><td>控 196 / 體 211 / 速 145</td><td>直球○ / 對左打○ / 重球 / 中繼能力○ / 威壓感 / 人氣者 / 氣魄</td></tr></tbody></table></section>
-<section class="variant"><div class="variant-head"><h3>K V4</h3><div class="variant-meta"><span>預測三振 1005</span><span>K 1005</span><span>SV 16</span><span>RBI 515</span><span>ERA 2.77</span><span>合法</span></div></div><details class="copy"><summary>K V4 複製用名單</summary><pre>C	誠泰Cobras	金色光芒	skill
+<section class="variant"><div class="variant-head"><h3>K V4</h3><div class="variant-meta"><span>預測三振 1005</span><span>K 1005</span><span>SV 16</span><span>RBI 515</span><span>ERA 2.77</span><span>合法</span></div></div><div class="claim" data-claim-key="K V4"><label for="claim-K-4">K V4 猜的人</label><input id="claim-K-4" type="text" autocomplete="name" placeholder="輸入名字"><button type="button">儲存</button><span class="claim-status" aria-live="polite"></span></div><details class="copy"><summary>K V4 複製用名單</summary><pre>C	誠泰Cobras	金色光芒	skill
 1B	時報鷹隊	哈巴零一	habbakuk
 2B	兄弟象隊	薩摩耶	dodog
 3B	Lamigo桃猿	宮崎和香	wings
@@ -193,7 +183,7 @@ CP	生活雷公	朵拉伍	朵拉</pre></details><table><thead><tr><th>位置</th
 <tr><td>RP</td><td>中信鯨隊</td><td class="player">基督是主四</td><td>泡泡</td><td>K 88 / SV 2 / W 8 / ERA 3.97</td><td>控 252 / 體 255 / 速 156</td><td>負運 / 威壓感 / 投球反應○ / 指叉球(7)</td></tr>
 <tr><td>RP</td><td>生活雷公</td><td class="player">王涵</td><td>a10801</td><td>K 100 / SV 2 / W 9 / ERA 4.39</td><td>控 239 / 體 242 / 速 156</td><td>對左打Ｘ / 威壓感 / 人氣者</td></tr>
 <tr><td>CP</td><td>生活雷公</td><td class="player">朵拉伍</td><td>朵拉</td><td>K 88 / SV 9 / W 10 / ERA 3.41</td><td>控 196 / 體 211 / 速 145</td><td>直球○ / 對左打○ / 重球 / 中繼能力○ / 威壓感 / 人氣者 / 氣魄</td></tr></tbody></table></section>
-<section class="variant"><div class="variant-head"><h3>K V5</h3><div class="variant-meta"><span>預測三振 989</span><span>K 989</span><span>SV 16</span><span>RBI 507</span><span>ERA 2.77</span><span>合法</span></div></div><details class="copy"><summary>K V5 複製用名單</summary><pre>C	誠泰Cobras	金色光芒	skill
+<section class="variant"><div class="variant-head"><h3>K V5</h3><div class="variant-meta"><span>預測三振 989</span><span>K 989</span><span>SV 16</span><span>RBI 507</span><span>ERA 2.77</span><span>合法</span></div></div><div class="claim" data-claim-key="K V5"><label for="claim-K-5">K V5 猜的人</label><input id="claim-K-5" type="text" autocomplete="name" placeholder="輸入名字"><button type="button">儲存</button><span class="claim-status" aria-live="polite"></span></div><details class="copy"><summary>K V5 複製用名單</summary><pre>C	誠泰Cobras	金色光芒	skill
 1B	時報鷹隊	哈巴零一	habbakuk
 2B	兄弟象隊	薩摩耶	dodog
 3B	Lamigo桃猿	宮崎和香	wings
@@ -228,7 +218,7 @@ CP	生活雷公	朵拉伍	朵拉</pre></details><table><thead><tr><th>位置</th
 <tr><td>RP</td><td>中信鯨隊</td><td class="player">基督是主四</td><td>泡泡</td><td>K 88 / SV 2 / W 8 / ERA 3.97</td><td>控 252 / 體 255 / 速 156</td><td>負運 / 威壓感 / 投球反應○ / 指叉球(7)</td></tr>
 <tr><td>RP</td><td>生活雷公</td><td class="player">王涵</td><td>a10801</td><td>K 100 / SV 2 / W 9 / ERA 4.39</td><td>控 239 / 體 242 / 速 156</td><td>對左打Ｘ / 威壓感 / 人氣者</td></tr>
 <tr><td>CP</td><td>生活雷公</td><td class="player">朵拉伍</td><td>朵拉</td><td>K 88 / SV 9 / W 10 / ERA 3.41</td><td>控 196 / 體 211 / 速 145</td><td>直球○ / 對左打○ / 重球 / 中繼能力○ / 威壓感 / 人氣者 / 氣魄</td></tr></tbody></table></section></section>
-<section class="section"><h2>SV 5 組版本</h2><p>第二推薦。核心選擇：投手；非核心位置只作為合法補位。</p><section class="variant"><div class="variant-head"><h3>SV V1</h3><div class="variant-meta"><span>預測救援 18</span><span>K 757</span><span>SV 18</span><span>RBI 521</span><span>ERA 3.50</span><span>合法</span></div></div><details class="copy"><summary>SV V1 複製用名單</summary><pre>C	誠泰Cobras	金色光芒	skill
+<section class="section"><h2>SV 5 組版本</h2><p>第二推薦。核心選擇：投手；非核心位置只作為合法補位。</p><section class="variant"><div class="variant-head"><h3>SV V1</h3><div class="variant-meta"><span>預測救援 18</span><span>K 757</span><span>SV 18</span><span>RBI 521</span><span>ERA 3.50</span><span>合法</span></div></div><div class="claim" data-claim-key="SV V1"><label for="claim-SV-1">SV V1 猜的人</label><input id="claim-SV-1" type="text" autocomplete="name" placeholder="輸入名字"><button type="button">儲存</button><span class="claim-status" aria-live="polite"></span></div><details class="copy"><summary>SV V1 複製用名單</summary><pre>C	誠泰Cobras	金色光芒	skill
 1B	年代勇士	雨後橫虹	JCChou
 2B	中信鯨隊	小茜	小茜
 3B	Lamigo桃猿	宮崎和香	wings
@@ -263,7 +253,7 @@ CP	生活雷公	朵拉伍	朵拉</pre></details><table><thead><tr><th>位置</th
 <tr><td>RP</td><td>統一獅隊</td><td class="player">蟲蟲十二世</td><td>love90019</td><td>K 69 / SV 3 / W 7 / ERA 4.7</td><td>控 242 / 體 224 / 速 155</td><td>對左打Ｘ / 威壓感 / 安定感</td></tr>
 <tr><td>RP</td><td>俊國熊隊</td><td class="player">銀河之晨曦</td><td>chinhsi</td><td>K 83 / SV 3 / W 10 / ERA 4.27</td><td>控 252 / 體 219 / 速 157</td><td>勝運 / 威壓感</td></tr>
 <tr><td>CP</td><td>生活雷公</td><td class="player">朵拉伍</td><td>朵拉</td><td>K 88 / SV 9 / W 10 / ERA 3.41</td><td>控 196 / 體 211 / 速 145</td><td>直球○ / 對左打○ / 重球 / 中繼能力○ / 威壓感 / 人氣者 / 氣魄</td></tr></tbody></table></section>
-<section class="variant"><div class="variant-head"><h3>SV V2</h3><div class="variant-meta"><span>預測救援 18</span><span>K 769</span><span>SV 18</span><span>RBI 514</span><span>ERA 3.51</span><span>合法</span></div></div><details class="copy"><summary>SV V2 複製用名單</summary><pre>C	味全龍隊	小鷗神	shawlai
+<section class="variant"><div class="variant-head"><h3>SV V2</h3><div class="variant-meta"><span>預測救援 18</span><span>K 769</span><span>SV 18</span><span>RBI 514</span><span>ERA 3.51</span><span>合法</span></div></div><div class="claim" data-claim-key="SV V2"><label for="claim-SV-2">SV V2 猜的人</label><input id="claim-SV-2" type="text" autocomplete="name" placeholder="輸入名字"><button type="button">儲存</button><span class="claim-status" aria-live="polite"></span></div><details class="copy"><summary>SV V2 複製用名單</summary><pre>C	味全龍隊	小鷗神	shawlai
 1B	年代勇士	雨後橫虹	JCChou
 2B	中信鯨隊	小茜	小茜
 3B	Lamigo桃猿	宮崎和香	wings
@@ -298,7 +288,7 @@ CP	生活雷公	朵拉伍	朵拉</pre></details><table><thead><tr><th>位置</th
 <tr><td>RP</td><td>統一獅隊</td><td class="player">蟲蟲十二世</td><td>love90019</td><td>K 69 / SV 3 / W 7 / ERA 4.7</td><td>控 242 / 體 224 / 速 155</td><td>對左打Ｘ / 威壓感 / 安定感</td></tr>
 <tr><td>RP</td><td>俊國熊隊</td><td class="player">銀河之晨曦</td><td>chinhsi</td><td>K 83 / SV 3 / W 10 / ERA 4.27</td><td>控 252 / 體 219 / 速 157</td><td>勝運 / 威壓感</td></tr>
 <tr><td>CP</td><td>生活雷公</td><td class="player">朵拉伍</td><td>朵拉</td><td>K 88 / SV 9 / W 10 / ERA 3.41</td><td>控 196 / 體 211 / 速 145</td><td>直球○ / 對左打○ / 重球 / 中繼能力○ / 威壓感 / 人氣者 / 氣魄</td></tr></tbody></table></section>
-<section class="variant"><div class="variant-head"><h3>SV V3</h3><div class="variant-meta"><span>預測救援 18</span><span>K 767</span><span>SV 18</span><span>RBI 508</span><span>ERA 3.53</span><span>合法</span></div></div><details class="copy"><summary>SV V3 複製用名單</summary><pre>C	味全龍隊	小鷗神	shawlai
+<section class="variant"><div class="variant-head"><h3>SV V3</h3><div class="variant-meta"><span>預測救援 18</span><span>K 767</span><span>SV 18</span><span>RBI 508</span><span>ERA 3.53</span><span>合法</span></div></div><div class="claim" data-claim-key="SV V3"><label for="claim-SV-3">SV V3 猜的人</label><input id="claim-SV-3" type="text" autocomplete="name" placeholder="輸入名字"><button type="button">儲存</button><span class="claim-status" aria-live="polite"></span></div><details class="copy"><summary>SV V3 複製用名單</summary><pre>C	味全龍隊	小鷗神	shawlai
 1B	年代勇士	雨後橫虹	JCChou
 2B	中信鯨隊	小茜	小茜
 3B	Lamigo桃猿	宮崎和香	wings
@@ -333,7 +323,7 @@ CP	生活雷公	朵拉伍	朵拉</pre></details><table><thead><tr><th>位置</th
 <tr><td>RP</td><td>統一獅隊</td><td class="player">蟲蟲十二世</td><td>love90019</td><td>K 69 / SV 3 / W 7 / ERA 4.7</td><td>控 242 / 體 224 / 速 155</td><td>對左打Ｘ / 威壓感 / 安定感</td></tr>
 <tr><td>RP</td><td>俊國熊隊</td><td class="player">銀河之晨曦</td><td>chinhsi</td><td>K 83 / SV 3 / W 10 / ERA 4.27</td><td>控 252 / 體 219 / 速 157</td><td>勝運 / 威壓感</td></tr>
 <tr><td>CP</td><td>生活雷公</td><td class="player">朵拉伍</td><td>朵拉</td><td>K 88 / SV 9 / W 10 / ERA 3.41</td><td>控 196 / 體 211 / 速 145</td><td>直球○ / 對左打○ / 重球 / 中繼能力○ / 威壓感 / 人氣者 / 氣魄</td></tr></tbody></table></section>
-<section class="variant"><div class="variant-head"><h3>SV V4</h3><div class="variant-meta"><span>預測救援 18</span><span>K 759</span><span>SV 18</span><span>RBI 520</span><span>ERA 3.39</span><span>合法</span></div></div><details class="copy"><summary>SV V4 複製用名單</summary><pre>C	味全龍隊	小鷗神	shawlai
+<section class="variant"><div class="variant-head"><h3>SV V4</h3><div class="variant-meta"><span>預測救援 18</span><span>K 759</span><span>SV 18</span><span>RBI 520</span><span>ERA 3.39</span><span>合法</span></div></div><div class="claim" data-claim-key="SV V4"><label for="claim-SV-4">SV V4 猜的人</label><input id="claim-SV-4" type="text" autocomplete="name" placeholder="輸入名字"><button type="button">儲存</button><span class="claim-status" aria-live="polite"></span></div><details class="copy"><summary>SV V4 複製用名單</summary><pre>C	味全龍隊	小鷗神	shawlai
 1B	年代勇士	雨後橫虹	JCChou
 2B	中信鯨隊	小茜	小茜
 3B	Lamigo桃猿	宮崎和香	wings
@@ -368,7 +358,7 @@ CP	生活雷公	朵拉伍	朵拉</pre></details><table><thead><tr><th>位置</th
 <tr><td>RP</td><td>統一獅隊</td><td class="player">蟲蟲十二世</td><td>love90019</td><td>K 69 / SV 3 / W 7 / ERA 4.7</td><td>控 242 / 體 224 / 速 155</td><td>對左打Ｘ / 威壓感 / 安定感</td></tr>
 <tr><td>RP</td><td>俊國熊隊</td><td class="player">銀河之晨曦</td><td>chinhsi</td><td>K 83 / SV 3 / W 10 / ERA 4.27</td><td>控 252 / 體 219 / 速 157</td><td>勝運 / 威壓感</td></tr>
 <tr><td>CP</td><td>生活雷公</td><td class="player">朵拉伍</td><td>朵拉</td><td>K 88 / SV 9 / W 10 / ERA 3.41</td><td>控 196 / 體 211 / 速 145</td><td>直球○ / 對左打○ / 重球 / 中繼能力○ / 威壓感 / 人氣者 / 氣魄</td></tr></tbody></table></section>
-<section class="variant"><div class="variant-head"><h3>SV V5</h3><div class="variant-meta"><span>預測救援 18</span><span>K 771</span><span>SV 18</span><span>RBI 521</span><span>ERA 3.40</span><span>合法</span></div></div><details class="copy"><summary>SV V5 複製用名單</summary><pre>C	誠泰Cobras	金色光芒	skill
+<section class="variant"><div class="variant-head"><h3>SV V5</h3><div class="variant-meta"><span>預測救援 18</span><span>K 771</span><span>SV 18</span><span>RBI 521</span><span>ERA 3.40</span><span>合法</span></div></div><div class="claim" data-claim-key="SV V5"><label for="claim-SV-5">SV V5 猜的人</label><input id="claim-SV-5" type="text" autocomplete="name" placeholder="輸入名字"><button type="button">儲存</button><span class="claim-status" aria-live="polite"></span></div><details class="copy"><summary>SV V5 複製用名單</summary><pre>C	誠泰Cobras	金色光芒	skill
 1B	年代勇士	雨後橫虹	JCChou
 2B	中信鯨隊	小茜	小茜
 3B	Lamigo桃猿	宮崎和香	wings
@@ -403,7 +393,7 @@ CP	生活雷公	朵拉伍	朵拉</pre></details><table><thead><tr><th>位置</th
 <tr><td>RP</td><td>統一獅隊</td><td class="player">蟲蟲十二世</td><td>love90019</td><td>K 69 / SV 3 / W 7 / ERA 4.7</td><td>控 242 / 體 224 / 速 155</td><td>對左打Ｘ / 威壓感 / 安定感</td></tr>
 <tr><td>RP</td><td>俊國熊隊</td><td class="player">銀河之晨曦</td><td>chinhsi</td><td>K 83 / SV 3 / W 10 / ERA 4.27</td><td>控 252 / 體 219 / 速 157</td><td>勝運 / 威壓感</td></tr>
 <tr><td>CP</td><td>生活雷公</td><td class="player">朵拉伍</td><td>朵拉</td><td>K 88 / SV 9 / W 10 / ERA 3.41</td><td>控 196 / 體 211 / 速 145</td><td>直球○ / 對左打○ / 重球 / 中繼能力○ / 威壓感 / 人氣者 / 氣魄</td></tr></tbody></table></section></section>
-<section class="section"><h2>RBI 5 組版本</h2><p>第三推薦。核心選擇：野手；非核心位置只作為合法補位。</p><section class="variant"><div class="variant-head"><h3>RBI V1</h3><div class="variant-meta"><span>預測打點 677</span><span>K 791</span><span>SV 30</span><span>RBI 677</span><span>ERA 3.11</span><span>合法</span></div></div><details class="copy"><summary>RBI V1 複製用名單</summary><pre>C	俊國熊隊	小郭四一代	kakuhao
+<section class="section"><h2>RBI 5 組版本</h2><p>第三推薦。核心選擇：野手；非核心位置只作為合法補位。</p><section class="variant"><div class="variant-head"><h3>RBI V1</h3><div class="variant-meta"><span>預測打點 677</span><span>K 791</span><span>SV 30</span><span>RBI 677</span><span>ERA 3.11</span><span>合法</span></div></div><div class="claim" data-claim-key="RBI V1"><label for="claim-RBI-1">RBI V1 猜的人</label><input id="claim-RBI-1" type="text" autocomplete="name" placeholder="輸入名字"><button type="button">儲存</button><span class="claim-status" aria-live="polite"></span></div><details class="copy"><summary>RBI V1 複製用名單</summary><pre>C	俊國熊隊	小郭四一代	kakuhao
 1B	年代勇士	雨後橫虹	JCChou
 2B	興農牛隊	十傑九	TenHero
 3B	俊國熊隊	獵魔女團	獵魔女團
@@ -438,7 +428,7 @@ CP	味全龍隊	酒祭彩葉	吉米</pre></details><table><thead><tr><th>位置<
 <tr><td>RP</td><td>中信鯨隊</td><td class="player">兩津二</td><td>oo446688</td><td>K 100 / SV 2 / W 9 / ERA 4.26</td><td>控 229 / 體 234 / 速 155</td><td>對左打Ｘ / 逃球 / 指叉球(7)</td></tr>
 <tr><td>RP</td><td>兄弟象隊</td><td class="player">小護士</td><td>stacy</td><td>K 61 / SV 2 / W 6 / ERA 5.92</td><td>控 206 / 體 196 / 速 153</td><td>一發病 / 投球反應○</td></tr>
 <tr><td>CP</td><td>味全龍隊</td><td class="player">酒祭彩葉</td><td>吉米</td><td>K 16 / SV 24 / W 1 / ERA 4.84</td><td>控 196 / 體 196 / 速 147</td><td>一發病 / 人氣者</td></tr></tbody></table></section>
-<section class="variant"><div class="variant-head"><h3>RBI V2</h3><div class="variant-meta"><span>預測打點 679</span><span>K 819</span><span>SV 30</span><span>RBI 679</span><span>ERA 3.02</span><span>合法</span></div></div><details class="copy"><summary>RBI V2 複製用名單</summary><pre>C	俊國熊隊	小郭四一代	kakuhao
+<section class="variant"><div class="variant-head"><h3>RBI V2</h3><div class="variant-meta"><span>預測打點 679</span><span>K 819</span><span>SV 30</span><span>RBI 679</span><span>ERA 3.02</span><span>合法</span></div></div><div class="claim" data-claim-key="RBI V2"><label for="claim-RBI-2">RBI V2 猜的人</label><input id="claim-RBI-2" type="text" autocomplete="name" placeholder="輸入名字"><button type="button">儲存</button><span class="claim-status" aria-live="polite"></span></div><details class="copy"><summary>RBI V2 複製用名單</summary><pre>C	俊國熊隊	小郭四一代	kakuhao
 1B	年代勇士	雨後橫虹	JCChou
 2B	興農牛隊	十傑九	TenHero
 3B	生活雷公	哇塞	Okay
@@ -473,7 +463,7 @@ CP	味全龍隊	酒祭彩葉	吉米</pre></details><table><thead><tr><th>位置<
 <tr><td>RP</td><td>中信鯨隊</td><td class="player">兩津二</td><td>oo446688</td><td>K 100 / SV 2 / W 9 / ERA 4.26</td><td>控 229 / 體 234 / 速 155</td><td>對左打Ｘ / 逃球 / 指叉球(7)</td></tr>
 <tr><td>RP</td><td>兄弟象隊</td><td class="player">小護士</td><td>stacy</td><td>K 61 / SV 2 / W 6 / ERA 5.92</td><td>控 206 / 體 196 / 速 153</td><td>一發病 / 投球反應○</td></tr>
 <tr><td>CP</td><td>味全龍隊</td><td class="player">酒祭彩葉</td><td>吉米</td><td>K 16 / SV 24 / W 1 / ERA 4.84</td><td>控 196 / 體 196 / 速 147</td><td>一發病 / 人氣者</td></tr></tbody></table></section>
-<section class="variant"><div class="variant-head"><h3>RBI V3</h3><div class="variant-meta"><span>預測打點 675</span><span>K 843</span><span>SV 30</span><span>RBI 675</span><span>ERA 3.11</span><span>合法</span></div></div><details class="copy"><summary>RBI V3 複製用名單</summary><pre>C	俊國熊隊	小郭四一代	kakuhao
+<section class="variant"><div class="variant-head"><h3>RBI V3</h3><div class="variant-meta"><span>預測打點 675</span><span>K 843</span><span>SV 30</span><span>RBI 675</span><span>ERA 3.11</span><span>合法</span></div></div><div class="claim" data-claim-key="RBI V3"><label for="claim-RBI-3">RBI V3 猜的人</label><input id="claim-RBI-3" type="text" autocomplete="name" placeholder="輸入名字"><button type="button">儲存</button><span class="claim-status" aria-live="polite"></span></div><details class="copy"><summary>RBI V3 複製用名單</summary><pre>C	俊國熊隊	小郭四一代	kakuhao
 1B	統一獅隊	拉芙三特利	杜瓦87了
 2B	興農牛隊	十傑九	TenHero
 3B	俊國熊隊	獵魔女團	獵魔女團
@@ -508,7 +498,7 @@ CP	味全龍隊	酒祭彩葉	吉米</pre></details><table><thead><tr><th>位置<
 <tr><td>RP</td><td>中信鯨隊</td><td class="player">兩津二</td><td>oo446688</td><td>K 100 / SV 2 / W 9 / ERA 4.26</td><td>控 229 / 體 234 / 速 155</td><td>對左打Ｘ / 逃球 / 指叉球(7)</td></tr>
 <tr><td>RP</td><td>兄弟象隊</td><td class="player">小護士</td><td>stacy</td><td>K 61 / SV 2 / W 6 / ERA 5.92</td><td>控 206 / 體 196 / 速 153</td><td>一發病 / 投球反應○</td></tr>
 <tr><td>CP</td><td>味全龍隊</td><td class="player">酒祭彩葉</td><td>吉米</td><td>K 16 / SV 24 / W 1 / ERA 4.84</td><td>控 196 / 體 196 / 速 147</td><td>一發病 / 人氣者</td></tr></tbody></table></section>
-<section class="variant"><div class="variant-head"><h3>RBI V4</h3><div class="variant-meta"><span>預測打點 661</span><span>K 821</span><span>SV 30</span><span>RBI 661</span><span>ERA 3.11</span><span>合法</span></div></div><details class="copy"><summary>RBI V4 複製用名單</summary><pre>C	俊國熊隊	小郭四一代	kakuhao
+<section class="variant"><div class="variant-head"><h3>RBI V4</h3><div class="variant-meta"><span>預測打點 661</span><span>K 821</span><span>SV 30</span><span>RBI 661</span><span>ERA 3.11</span><span>合法</span></div></div><div class="claim" data-claim-key="RBI V4"><label for="claim-RBI-4">RBI V4 猜的人</label><input id="claim-RBI-4" type="text" autocomplete="name" placeholder="輸入名字"><button type="button">儲存</button><span class="claim-status" aria-live="polite"></span></div><details class="copy"><summary>RBI V4 複製用名單</summary><pre>C	俊國熊隊	小郭四一代	kakuhao
 1B	統一獅隊	拉芙三特利	杜瓦87了
 2B	興農牛隊	十傑九	TenHero
 3B	俊國熊隊	獵魔女團	獵魔女團
@@ -543,7 +533,7 @@ CP	味全龍隊	酒祭彩葉	吉米</pre></details><table><thead><tr><th>位置<
 <tr><td>RP</td><td>中信鯨隊</td><td class="player">兩津二</td><td>oo446688</td><td>K 100 / SV 2 / W 9 / ERA 4.26</td><td>控 229 / 體 234 / 速 155</td><td>對左打Ｘ / 逃球 / 指叉球(7)</td></tr>
 <tr><td>RP</td><td>兄弟象隊</td><td class="player">小護士</td><td>stacy</td><td>K 61 / SV 2 / W 6 / ERA 5.92</td><td>控 206 / 體 196 / 速 153</td><td>一發病 / 投球反應○</td></tr>
 <tr><td>CP</td><td>味全龍隊</td><td class="player">酒祭彩葉</td><td>吉米</td><td>K 16 / SV 24 / W 1 / ERA 4.84</td><td>控 196 / 體 196 / 速 147</td><td>一發病 / 人氣者</td></tr></tbody></table></section>
-<section class="variant"><div class="variant-head"><h3>RBI V5</h3><div class="variant-meta"><span>預測打點 662</span><span>K 825</span><span>SV 30</span><span>RBI 662</span><span>ERA 3.10</span><span>合法</span></div></div><details class="copy"><summary>RBI V5 複製用名單</summary><pre>C	俊國熊隊	小郭四一代	kakuhao
+<section class="variant"><div class="variant-head"><h3>RBI V5</h3><div class="variant-meta"><span>預測打點 662</span><span>K 825</span><span>SV 30</span><span>RBI 662</span><span>ERA 3.10</span><span>合法</span></div></div><div class="claim" data-claim-key="RBI V5"><label for="claim-RBI-5">RBI V5 猜的人</label><input id="claim-RBI-5" type="text" autocomplete="name" placeholder="輸入名字"><button type="button">儲存</button><span class="claim-status" aria-live="polite"></span></div><details class="copy"><summary>RBI V5 複製用名單</summary><pre>C	俊國熊隊	小郭四一代	kakuhao
 1B	統一獅隊	拉芙三特利	杜瓦87了
 2B	興農牛隊	十傑九	TenHero
 3B	興農牛隊	三口刀十五	三口刀
@@ -579,5 +569,33 @@ CP	味全龍隊	酒祭彩葉	吉米</pre></details><table><thead><tr><th>位置<
 <tr><td>RP</td><td>兄弟象隊</td><td class="player">小護士</td><td>stacy</td><td>K 61 / SV 2 / W 6 / ERA 5.92</td><td>控 206 / 體 196 / 速 153</td><td>一發病 / 投球反應○</td></tr>
 <tr><td>CP</td><td>味全龍隊</td><td class="player">酒祭彩葉</td><td>吉米</td><td>K 16 / SV 24 / W 1 / ERA 4.84</td><td>控 196 / 體 196 / 速 147</td><td>一發病 / 人氣者</td></tr></tbody></table></section></section>
   </main>
+  <script>
+(() => {
+  const storagePrefix = "ore-sunday-preview:776:775:2026-06-21T20:18:36+08:00";
+  document.querySelectorAll('.claim').forEach(block => {
+    const claimKey = block.dataset.claimKey || '';
+    const storageKey = storagePrefix + ':' + claimKey;
+    const input = block.querySelector('input');
+    const button = block.querySelector('button');
+    const status = block.querySelector('.claim-status');
+    const renderStatus = name => {
+      status.textContent = name ? '已標記：' + name : '';
+    };
+    const saved = localStorage.getItem(storageKey) || '';
+    input.value = saved;
+    renderStatus(saved);
+    button.addEventListener('click', () => {
+      const name = input.value.trim();
+      if (name) {
+        localStorage.setItem(storageKey, name);
+        renderStatus(name);
+      } else {
+        localStorage.removeItem(storageKey);
+        status.textContent = '已清除';
+      }
+    });
+  });
+})();
+</script>
 </body>
 </html>
