@@ -18,58 +18,70 @@
 <body>
   <main class="wrap">
     <section class="hero">
-      <h1>ORE 785 Sunday Preview</h1>
-      <p>本週正式推薦品項：<strong>RBI / HR / SV</strong>。選擇依據是最新完整 Friday first-place review；只有第一名有獎，top10/top3 只作為診斷訊號。</p>
+      <h1>ORE 785 Sunday Preview — 球隊排名修正版</h1>
+      <p>本週正式推薦品項：<strong>RBI / HR / SV</strong>。選擇依據是最新可用的完整 first-place review 與後續 blocked action note；只有第一名有獎，top10/top3 只作為診斷訊號。</p>
       <p class="note">Only first place is prize-winning; top10/top3 are diagnostics only.</p>
-<p class="note">2026-08-21 Season 784 Friday outcome review 為 BLOCKED/PREFINAL，未產生 winner、prediction-user、trainer、selector 或安全 scoring patch。</p>
-<p class="note">Target 785 formal profile 凍結既有 composition weights，排除無效 target 781 與 blocked target 783、784 transitions，只以完成到 target 782 的 structural evidence 外推。</p>
-<p class="note">已驗證歷史 delivered first-place 紀錄仍為 0/6 item calls、0/30 variants；模型屬 experimental/unvalidated。</p>
-<p class="note">K 缺乏新修復後第一名證據，本週不選；SB 維持 strategy-risk / review-only。</p>
+<p class="note">最新 Season 784 Friday review 因 rollover finality 為 BLOCKED，沒有新 outcome-derived retraining。</p>
+<p class="note">正式 fantasy profile 與 15 組陣容維持原 PASS；球隊排名是研究修正版且 formal promotion 仍 BLOCKED。</p>
+<p class="note">已驗證交付的第一名紀錄仍為 0/6 items、0/30 variants，模型不可描述為已驗證。</p>
       <div class="summary">
         <div class="card"><div class="label">驗證狀態</div><div class="value">PASS</div></div>
         <div class="card"><div class="label">來源</div><div class="value">S784 D7</div></div>
         <div class="card"><div class="label">Variants</div><div class="value">15</div></div>
         <div class="card"><div class="label">Rows</div><div class="value">270</div></div>
       </div>
-      <p>來源時間：2026-08-23T20:18:49+08:00；freshness：fresh_web_scrape；formal profile SHA256：89F34412336614C8E4BE16CA24C9FE1469960BFCC35E346F91AB629DCE253BF1；report id：C2D885FEB5A1FC45。</p>
+      <p>Fantasy 來源時間：2026-08-23T20:18:49+08:00；freshness：fresh_web_scrape；formal profile SHA256：89F34412336614C8E4BE16CA24C9FE1469960BFCC35E346F91AB629DCE253BF1；report id：C2D885FEB5A1FC45。</p>
       <p class="note">正式優先順序：RBI → HR → SV。SB 保持 strategy-risk / review-only；未選項目不冒充本週正式推薦。</p>
     </section>
     <section class="section">
+    <h2>公開層級與雙來源</h2>
+    <div class="summary">
+      <div class="card"><div class="label">Fantasy 陣容</div><div class="value">正式／已驗證</div></div>
+      <div class="card"><div class="label">球隊排名</div><div class="value">研究修正版</div></div>
+      <div class="card"><div class="label">排名正式升版</div><div class="value">BLOCKED</div></div>
+      <div class="card"><div class="label">季前實績</div><div class="value">NO_SIGNAL</div></div>
+      <div class="card"><div class="label">排名信心</div><div class="value">MODEL_ONLY_UNCALIBRATED</div></div>
+    </div>
+    <p>正式 fantasy 來源：S784 D7／2026-08-23T20:18:49+08:00，validation PASS。球隊排名來源：S784 D7／2026-08-23T22:31:24+08:00，fresh_web_scrape。</p>
+    <p class="note">頁面來源、正式陣容合法性、研究標示與公開安全通過；不代表球隊排名模型已正式升版。排名模型維持「研究／未正式升版」，不得把頁面 PASS 解讀成歷史 promotion gate 已通過。</p>
+  </section>
+    <section class="section">
     <h2>品項優先序</h2>
     <p>本週只以第一名機率為正式目標；top10/top3 只用來診斷距離，不視為成功。</p>
-    <table><thead><tr><th>#</th><th>品項</th><th>目標</th><th>最佳預測值</th><th>版本數</th><th>驗證</th><th>依據</th></tr></thead><tbody><tr><td>1</td><td>RBI</td><td>預測打點</td><td>857</td><td>5</td><td>PASS</td><td>最新可用的 corrected prospective first-place priority 第一；事前交付可評估賽季最佳名次為 Season 776 第 3、Season 778 第 10，且 RBI objective 已修復為獨立於 HR。</td></tr>
-<tr><td>2</td><td>HR</td><td>預測全壘打</td><td>347</td><td>5</td><td>PASS</td><td>維持第二順位；Season 778 事前交付最佳第 6，但 prediction-user 高比例採用 HR core 仍未奪第一，屬 model-miss 證據。</td></tr>
-<tr><td>3</td><td>SV</td><td>預測救援</td><td>21</td><td>5</td><td>PASS</td><td>低信心第三順位；Season 778 的第一名只屬賽後 structural 開發訊號，沒有新的 prospective 修復結果，因此不升為主項。</td></tr></tbody></table>
+    <table><thead><tr><th>#</th><th>品項</th><th>目標</th><th>最佳預測值</th><th>版本數</th><th>驗證</th><th>依據</th></tr></thead><tbody><tr><td>1</td><td>RBI</td><td>預測打點</td><td>857</td><td>5</td><td>PASS</td><td>目前最強第一名導向候選；最新可用修正證據最接近第一。</td></tr>
+<tr><td>2</td><td>HR</td><td>預測全壘打</td><td>347</td><td>5</td><td>PASS</td><td>第一名證據優於失敗的 K／SV 舊結果，列第二順位。</td></tr>
+<tr><td>3</td><td>SV</td><td>預測救援</td><td>21</td><td>5</td><td>PASS</td><td>只保留第三順位且低信心；沒有新結果足以恢復第一順位。</td></tr></tbody></table>
   </section>
     <section class="section">
     <h2>第一名模型註記</h2>
-    <ul><li>Only first place is prize-winning; top10/top3 are diagnostics only.</li><li>2026-08-21 Season 784 Friday outcome review 為 BLOCKED/PREFINAL，未產生 winner、prediction-user、trainer、selector 或安全 scoring patch。</li><li>Target 785 formal profile 凍結既有 composition weights，排除無效 target 781 與 blocked target 783、784 transitions，只以完成到 target 782 的 structural evidence 外推。</li><li>已驗證歷史 delivered first-place 紀錄仍為 0/6 item calls、0/30 variants；模型屬 experimental/unvalidated。</li><li>K 缺乏新修復後第一名證據，本週不選；SB 維持 strategy-risk / review-only。</li></ul>
+    <ul><li>Only first place is prize-winning; top10/top3 are diagnostics only.</li><li>最新 Season 784 Friday review 因 rollover finality 為 BLOCKED，沒有新 outcome-derived retraining。</li><li>正式 fantasy profile 與 15 組陣容維持原 PASS；球隊排名是研究修正版且 formal promotion 仍 BLOCKED。</li><li>已驗證交付的第一名紀錄仍為 0/6 items、0/30 variants，模型不可描述為已驗證。</li></ul>
   </section>
     <section class="section">
-    <h2>聯盟排名與冠軍預測</h2>
-    <div class="summary">
-      <div class="card"><div class="label">預測冠軍</div><div class="value">興農牛隊</div></div>
-      <div class="card"><div class="label">目前領先</div><div class="value">興農牛隊</div></div>
-      <div class="card"><div class="label">Exact rank</div><div class="value">7/12</div></div>
-      <div class="card"><div class="label">Champion confidence</div><div class="value">high</div></div>
-    </div>
-    <p>League-rank audit 狀態：champion_pick_aligned_so_far；mean abs rank error 0.6666666666666666；max error 2。Confidence decision：submit_projected_card_with_swap_watch。</p>
-    <div class="grid-two"><div><h3>中華聯盟</h3><table><thead><tr><th>預測排名</th><th>球隊</th><th>總分</th><th>打擊</th><th>投手</th><th>同聯盟調整</th></tr></thead><tbody><tr><td>1</td><td class="player">興農牛隊</td><td>2151.13</td><td>1737.54</td><td>304.23</td><td>109.36</td></tr>
-<tr><td>2</td><td class="player">年代勇士</td><td>1767.62</td><td>1833.14</td><td>-106.76</td><td>41.24</td></tr>
-<tr><td>3</td><td class="player">三商虎隊</td><td>1715.67</td><td>1726.94</td><td>-43.28</td><td>32.01</td></tr>
-<tr><td>4</td><td class="player">誠泰Cobras</td><td>1430.20</td><td>1631.80</td><td>-182.90</td><td>-18.70</td></tr>
-<tr><td>5</td><td class="player">兄弟象隊</td><td>1206.73</td><td>1422.56</td><td>-157.44</td><td>-58.39</td></tr>
-<tr><td>6</td><td class="player">時報鷹隊</td><td>941.40</td><td>1409.08</td><td>-362.16</td><td>-105.52</td></tr></tbody></table></div>
-<div><h3>台灣聯盟</h3><table><thead><tr><th>預測排名</th><th>球隊</th><th>總分</th><th>打擊</th><th>投手</th><th>同聯盟調整</th></tr></thead><tbody><tr><td>1</td><td class="player">俊國熊隊</td><td>1680.57</td><td>1795.20</td><td>-164.52</td><td>49.89</td></tr>
-<tr><td>2</td><td class="player">味全龍隊</td><td>1494.71</td><td>1606.16</td><td>-128.32</td><td>16.87</td></tr>
-<tr><td>3</td><td class="player">中信鯨隊</td><td>1458.17</td><td>1608.14</td><td>-160.35</td><td>10.38</td></tr>
-<tr><td>4</td><td class="player">Lamigo桃猿</td><td>1345.41</td><td>1690.88</td><td>-335.82</td><td>-9.65</td></tr>
-<tr><td>5</td><td class="player">生活雷公</td><td>1220.92</td><td>1437.30</td><td>-184.62</td><td>-31.76</td></tr>
-<tr><td>6</td><td class="player">統一獅隊</td><td>1198.58</td><td>1550.72</td><td>-316.41</td><td>-35.73</td></tr></tbody></table></div></div>
-  </section>
+      <h2>聯盟排名預測（季前純模型）</h2>
+      <div class="summary">
+        <div class="card"><div class="label">模型總分領先</div><div class="value">興農牛隊</div></div>
+        <div class="card"><div class="label">季前實績訊號</div><div class="value">NO_SIGNAL</div></div>
+        <div class="card"><div class="label">已有比賽球隊</div><div class="value">0/12</div></div>
+        <div class="card"><div class="label">排名模型狀態</div><div class="value">研究／未升版</div></div>
+      </div>
+      <p class="note">12 隊目前皆為 0 場；不計算目前領先、精確名次命中、平均排名誤差或命中率。下列僅是 Season 785 季前預測，開打後必須重跑。球隊排名模型狀態為 RESEARCH_NOT_PROMOTED；跨聯盟總分尚未完成冠軍校準，因此「模型總分領先」不等同高信心總冠軍。</p>
+      <p><strong>統一獅修正：</strong>中心預測第 3、合理敏感度區間第 3-4、台灣聯盟投手分項第 2、staff ERA 3.311。舊版末名結論已撤回。</p>
+      <div class="grid-two"><div><h3>中華聯盟</h3><table><thead><tr><th>預測排名</th><th>球隊</th><th>總分</th><th>打擊</th><th>投手</th><th>投手排名</th><th>staff ERA</th></tr></thead><tbody><tr><td>1</td><td class="player">興農牛隊</td><td>1945.22</td><td>1864.90</td><td>80.32</td><td>1</td><td>3.178</td></tr>
+<tr><td>2</td><td class="player">年代勇士</td><td>1760.34</td><td>1909.28</td><td>-148.94</td><td>3</td><td>3.802</td></tr>
+<tr><td>3</td><td class="player">三商虎隊</td><td>1607.16</td><td>1797.96</td><td>-190.80</td><td>6</td><td>3.844</td></tr>
+<tr><td>4</td><td class="player">誠泰Cobras</td><td>1574.28</td><td>1745.30</td><td>-171.02</td><td>5</td><td>3.923</td></tr>
+<tr><td>5</td><td class="player">兄弟象隊</td><td>1387.12</td><td>1547.84</td><td>-160.72</td><td>4</td><td>3.811</td></tr>
+<tr><td>6</td><td class="player">時報鷹隊</td><td>1387.04</td><td>1507.04</td><td>-120.00</td><td>2</td><td>3.732</td></tr></tbody></table></div>
+<div><h3>台灣聯盟</h3><table><thead><tr><th>預測排名</th><th>球隊</th><th>總分</th><th>打擊</th><th>投手</th><th>投手排名</th><th>staff ERA</th></tr></thead><tbody><tr><td>1</td><td class="player">中信鯨隊</td><td>1739.95</td><td>1739.86</td><td>0.09</td><td>1</td><td>3.302</td></tr>
+<tr><td>2</td><td class="player">俊國熊隊</td><td>1729.34</td><td>1837.20</td><td>-107.86</td><td>4</td><td>3.540</td></tr>
+<tr><td>3</td><td class="player">統一獅隊</td><td>1637.58</td><td>1645.94</td><td>-8.36</td><td>2</td><td>3.311</td></tr>
+<tr><td>4</td><td class="player">味全龍隊</td><td>1622.35</td><td>1674.98</td><td>-52.63</td><td>3</td><td>3.339</td></tr>
+<tr><td>5</td><td class="player">Lamigo桃猿</td><td>1454.69</td><td>1748.38</td><td>-293.69</td><td>6</td><td>4.366</td></tr>
+<tr><td>6</td><td class="player">生活雷公</td><td>1244.56</td><td>1502.52</td><td>-257.96</td><td>5</td><td>3.935</td></tr></tbody></table></div></div>
+    </section>
     <section class="section">
     <h2>RBI 5 組版本</h2>
-    <p>最新可用的 corrected prospective first-place priority 第一；事前交付可評估賽季最佳名次為 Season 776 第 3、Season 778 第 10，且 RBI objective 已修復為獨立於 HR。 核心目標是 預測打點；非目標位置只做合法補位與隊伍限制。</p>
+    <p>目前最強第一名導向候選；最新可用修正證據最接近第一。 核心目標是 預測打點；非目標位置只做合法補位與隊伍限制。</p>
     <section class="variant">
     <div class="variant-head">
       <h3>RBI V1</h3>
@@ -353,7 +365,7 @@ CP	生活雷公	雷公轟	Thunderbo</pre></details>
   </section>
 <section class="section">
     <h2>HR 5 組版本</h2>
-    <p>維持第二順位；Season 778 事前交付最佳第 6，但 prediction-user 高比例採用 HR core 仍未奪第一，屬 model-miss 證據。 核心目標是 預測全壘打；非目標位置只做合法補位與隊伍限制。</p>
+    <p>第一名證據優於失敗的 K／SV 舊結果，列第二順位。 核心目標是 預測全壘打；非目標位置只做合法補位與隊伍限制。</p>
     <section class="variant">
     <div class="variant-head">
       <h3>HR V1</h3>
@@ -637,7 +649,7 @@ CP	生活雷公	雷公轟	Thunderbo</pre></details>
   </section>
 <section class="section">
     <h2>SV 5 組版本</h2>
-    <p>低信心第三順位；Season 778 的第一名只屬賽後 structural 開發訊號，沒有新的 prospective 修復結果，因此不升為主項。 核心目標是 預測救援；非目標位置只做合法補位與隊伍限制。</p>
+    <p>只保留第三順位且低信心；沒有新結果足以恢復第一順位。 核心目標是 預測救援；非目標位置只做合法補位與隊伍限制。</p>
     <section class="variant">
     <div class="variant-head">
       <h3>SV V1</h3>
