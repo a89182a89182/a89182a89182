@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="ORE 奪冠模型檢討：八項、兩個歷史球季、四種方法；研究結果，不是 S789 正式推薦。">
+<title>ORE 奪冠模型檢討｜2026-09-20｜研究報告</title>
+<style>
+:root{color-scheme:light;--ink:#182c3d;--muted:#4d6072;--line:#d5dfe6;--accent:#126c69}
+*{box-sizing:border-box}body{margin:0;background:#f2f5f7;color:var(--ink);font-family:system-ui,"Microsoft JhengHei",sans-serif;font-size:17px;line-height:1.8}
+main{max-width:1080px;margin:auto;background:white;padding:32px 40px 64px}nav{font-size:15px;margin-bottom:22px;display:flex;flex-wrap:wrap;gap:8px 24px}
+a{color:var(--accent);text-underline-offset:3px}a:focus-visible,.table-wrap:focus-visible{outline:3px solid #147d77;outline-offset:4px}
+.notice{border-left:5px solid #b56616;padding:15px 20px;background:#fff4e5;border-radius:4px;margin:0 0 26px}.notice strong{display:block;font-size:19px;color:#8a4407}
+h1{font-size:30px;line-height:1.4;letter-spacing:-.02em;margin:0 0 16px}h2{font-size:23px;line-height:1.5;margin:38px 0 15px;border-top:1px solid var(--line);padding-top:24px}
+p{margin:14px 0}li{padding-left:3px;margin-bottom:10px;overflow-wrap:anywhere}ul,ol{padding-left:25px}.table-wrap{overflow-x:auto;margin:24px 0}
+table{border-collapse:collapse;width:100%;min-width:720px;font-variant-numeric:tabular-nums;font-size:15px}th,td{border-bottom:1px solid var(--line);padding:10px 11px;text-align:right;white-space:nowrap}th{background:#edf3f5;font-weight:650}td:first-child,td:nth-child(2),th:first-child,th:nth-child(2){text-align:left}tbody tr:nth-child(even){background:#f8fafb}tbody tr:hover{background:#edf7f5}
+code{font-size:.9em;overflow-wrap:anywhere}footer{border-top:1px solid var(--line);margin-top:38px;padding-top:20px;color:var(--muted);font-size:14px;overflow-wrap:anywhere}
+@media(max-width:640px){body{font-size:16px}main{padding:22px 18px 42px}h1{font-size:25px}h2{font-size:21px}.notice{padding:13px 15px}}
+</style></head><body><main>
+<nav aria-label="報告導覽"><a href="../../">ORE 已發布球季</a><a href="evidence.json">公開比較資料 JSON</a></nav>
+<aside class="notice"><strong>研究報告｜不是 S789 正式推薦</strong>本頁公開模型檢討與修補結果，不是新的夢幻球隊名單。S789 仍缺完整前季資料，沒有正式草稿或送出按鈕；本頁不提交任何帳號。</aside>
+<h1>ORE 奪冠模型修補與重新比較 — 2026-09-20</h1>
+<p>模型成效：尚未證明改善第一名，正式新模型發布仍 BLOCKED。工程修補：PASS。固定 V1 的 64 組比較為 0 個確認第一、60 個非第一、4 個同分未解；不能把工程 PASS 當成中獎改善。</p>
+<h2>本次真正改了甚麼</h2>
+<ul>
+<li>重跑八項、兩個已看過的開發球季、四類預測：能力 v8、上季 100%（缺值按規則退回能力）、先前選定的總成績混合、效率乘機會。沒有用賽後結果重新挑比例。</li>
+<li>64 組均使用同一版精確合法最佳化；320 套陣容重新逐人驗證，16 個季別／項目比較組的候選池完全相同。主指標固定 V1；其餘版本只供診斷。</li>
+<li>球員封存改成每次唯一編號的 raw＋JSON＋SHA-256；同日後續抓取不會覆蓋這些副本。跨季／跨日混頁、錯誤人數或 SP/RP/CP 結構會被拒絕。</li>
+<li>Fantasy 封存每次也用唯一目錄，凍結其實際檢查的球員資料，並綁定七個證據檔案的 SHA-256。未確認參加人數 N、缺領先榜／排名、任何隊未滿 140 場均不能 FINAL。</li>
+<li>週五檢討改成優先使用同季、雜湊吻合的雙重 140 場 FINAL；第 4 日完整結果不會因 day&lt;5 而被重置資料取代。沒有封存時，重置後只回報 BLOCKED，不重新抓零成績當結果。</li>
+<li>新發布回執、驗證、HTML、公開讀回 SHA 全部吻合才辨認新版交付。實測現在正確選 S788，而非舊檔名的 S787，也不會選未發布的 S789。</li>
+<li>舊 promote-structural-formal-profile.js 的『五版最佳進前五』升級路徑已停用；既定正式權重沒有改寫。</li>
+<li>原有三個排程已更新並讀回核對。週五封存提前至 19:30；未完成時在 19:40／19:50 有限重試，19:55 後不開始重試。週五檢討及週日發布保留原時段、原執行緒與失敗才通知設定。</li>
+</ul>
+<h2>同條件、固定 V1 比較</h2>
+<p>以下是研究對照，不是已交付正式模型；兩個已看過的球季不是未碰過的 holdout，也不是 64 個獨立球季。AVG／ERA 以整隊分子除以分母評分；顯示值有捨入區間，同分不自動算第一。ERA 越低越好，其餘越高越好。</p>
+<div class="table-wrap" role="region" aria-label="八項歷史比較" tabindex="0"><table><thead><tr><th scope="col">季</th><th scope="col">項目</th><th scope="col">能力 v8</th><th scope="col">上季優先 100%</th><th scope="col">既定混合</th><th scope="col">效率×機會</th><th scope="col">當季冠軍</th></tr></thead><tbody>
+<tr><td>776</td><td>HR</td><td>356</td><td>375</td><td>375</td><td>375</td><td>375</td></tr>
+<tr><td>778</td><td>HR</td><td>423</td><td>417</td><td>439</td><td>439</td><td>455</td></tr>
+<tr><td>776</td><td>RBI</td><td>660</td><td>952</td><td>952</td><td>952</td><td>960</td></tr>
+<tr><td>778</td><td>RBI</td><td>795</td><td>1059</td><td>1059</td><td>1059</td><td>1083</td></tr>
+<tr><td>776</td><td>K</td><td>803</td><td>1081</td><td>1051</td><td>1005</td><td>1122</td></tr>
+<tr><td>778</td><td>K</td><td>771</td><td>1000</td><td>1000</td><td>988</td><td>1088</td></tr>
+<tr><td>776</td><td>SV</td><td>30</td><td>27</td><td>24</td><td>20</td><td>43</td></tr>
+<tr><td>778</td><td>SV</td><td>28</td><td>33</td><td>33</td><td>42</td><td>42</td></tr>
+<tr><td>776</td><td>W</td><td>95</td><td>99</td><td>92</td><td>92</td><td>116</td></tr>
+<tr><td>778</td><td>W</td><td>93</td><td>124</td><td>125</td><td>125</td><td>135</td></tr>
+<tr><td>776</td><td>AVG</td><td>0.282</td><td>0.28</td><td>0.283</td><td>0.28</td><td>0.293</td></tr>
+<tr><td>778</td><td>AVG</td><td>0.265</td><td>0.271</td><td>0.288</td><td>0.283</td><td>0.303</td></tr>
+<tr><td>776</td><td>ERA</td><td>2.72</td><td>2.2</td><td>2.05</td><td>2.05</td><td>1.87</td></tr>
+<tr><td>778</td><td>ERA</td><td>2.24</td><td>1.96</td><td>2.11</td><td>2.03</td><td>1.61</td></tr>
+<tr><td>776</td><td>SB</td><td>76</td><td>85</td><td>85</td><td>85</td><td>96</td></tr>
+<tr><td>778</td><td>SB</td><td>90</td><td>87</td><td>100</td><td>100</td><td>107</td></tr>
+</tbody></table></div>
+<h2>模型結論與正式部署邊界</h2>
+<ol>
+<li>你的『只看能力不夠』有具體支持：K、RBI 的上季優先基準大幅優於純能力研究基準。但仍落後冠軍，不能宣稱已找到奪冠權重。</li>
+<li>沒有支持所有項目採同一比例的證據。S778 HR 上季 100% 是 417，低於能力 423；混合為 439，仍低於冠軍 455。SV 也不是上一季權重愈高愈好。</li>
+<li>K70 不是已驗證的唯一最適比例：S776 上季優先 1081 高於本次既定混合 1051；S778 都是 1000。許多比例會產生同一合法核心，不能把比例掃描次數算作獨立成功證據。</li>
+<li>本次 prior-only 採既有研究的身分／世代／角色資料規則，和正式版逐人同隊、完整場次採用條件不同；不能把研究 profile 直接改成 formal。缺值退回能力，不是把缺值當零。CP 的救援機會不能當 SP 局數。</li>
+<li>本次四個對照不包含全部八項現行正式評分器的無洩漏重播；現行結構係數已看過較後球季，直接塞回舊季不構成公平前瞻對照。此限制本身就禁止從這份比較自動升級。</li>
+<li>下一次改動必須在新結果出來前凍結來源、候選係數、候選池、主版及選項規則，和上季優先／能力／當時正式版同場比較。只按賽季計算獨立樣本；best-of-five、MAE、前十及落後冠軍差距只作診斷。若要研究奪冠機率而非點估計，須先有更早球季的角色別誤差、隊友相關與對手分布，並獨立驗證校準；本次沒有捏造這些分布。</li>
+<li>週五排程已加入以上比較與升級限制。既有正式模型只能按既定安全規則換新來源，不得宣稱重新訓練或第一名優勢已成立；SB 仍只研究。</li>
+</ol>
+<h2>S789 正式推薦狀態（不是本研究頁）</h2>
+<ul>
+<li>Source：S788／D7／2026-09-20T20:21:34+08:00，12 隊／216 人；target S789。這是今天既有的新抓取，本次修補沒有重寫該來源。</li>
+<li>缺少 S788 重置前完整例行賽／Friday FINAL；現有投手當季 K、IP 已歸零，不能用生涯總計或更早一季冒充。select_final_archive.py 正確回報 BLOCKED。</li>
+<li>正式項目本週未重新選定。上一份完整評估保留 SV &gt; HR &gt; K，僅為既有依據，不是新的勝率結論。</li>
+<li>正式 profile：formal-latest.json；SHA-256 63e75c226b1736ad92d26f3c108e2c432be6ac4970664365d79b764eb77d1f02；diagnosticOnly=false，仍只綁定 S787→S788，沒有偽裝成 S789。</li>
+<li>S789 正式草稿／送出 map／15 按鈕：未生成，0/15；沒有提交任何帳號。S789 正式推薦的 GitHub upload blocked：沒有發布 S789 名單或產生其網址。既有 S788 頁面 https://a89182a89182.github.io/a89182a89182/season-788/ 不是本次發布。</li>
+<li>既有本週 league-rank audit：NO_SIGNAL／MODEL_ONLY_UNCALIBRATED，12 隊都是零場，不能稱為聯盟冠軍預測已驗證。</li>
+<li>原 Sunday BLOCKED 驗證：reports/ore_sunday_2026-09-20/validation.json，SHA-256 86a8f2434fc79dcf2141c1cba226b1e97d8b7a6b7bb1e5d825c8b7adeb04d5d3。</li>
+</ul>
+<h2>驗證與可重跑證據（以下檔名為本機留存索引）</h2>
+<ul>
+<li>工程測試：182 項 Node＋12 項 Python 測試 PASS；包含同日重跑保留前版、雜湊遭改、缺頁、混季、格式、重置資料、正式權重未變、排程讀回與重置後禁止刷新，以及即使所有舊 Top5 門檻皆通過仍拒絕升級的回歸測試。</li>
+<li>repair-validation.json：PASS_REPAIR_CHECKS，SHA-256 20429d6e168fe661f7b17d7540255bfb91269b6de0f3342838a9f7a7623b8a9e。</li>
+<li>benchmark-plan.json：來源與程式先凍結，SHA-256 e81ce6b80250b7dc0d52a7c14aedf370ef28818b9b64bfc5f6c402cbe687218a。</li>
+<li>benchmark-results.json：64 組／320 版，SHA-256 d2ecd827e24eb615d5402a05d315ed1ebe1c82ba62195315bad479c87c8b1a9b。</li>
+<li>benchmark-independent-audit.json：PASS，112 個綁定輸入、16 個同池群組，SHA-256 b6fe9fc0701bae9ed84dc539d55620efbe1e582f928ad09046933fdb782b4c66。</li>
+<li>每組草稿與逐版評分保存在本目錄 benchmark/。重跑命令：node skills/ore-fantasy-draft/research-first-place-baselines.js；原凍結輸入改變會拒絕重跑，不靜默覆蓋。</li>
+<li>工程驗證：python reports/ore_model_repair_2026-09-20/verify-model-repair.py；獨立比較稽核：python reports/ore_model_repair_2026-09-20/audit-benchmark.py。</li>
+<li>automation-change-plan.json 留存三個既有排程的修改前後欄位；排程仍依賴電腦與應用程式運作，改時間無法保證離線時抓得到資料。<a href="https://learn.chatgpt.com/docs/automations">官方說明</a>。</li>
+</ul>
+<p>本報告的 PASS 僅表示修補與比較可驗證；不能解讀為已解決低中獎率。只有第一名有獎，top10／top3 僅作診斷。</p>
+<footer>資料截止：2026-09-20。來源為已驗證的本機模型修補報告與獨立比較稽核；公開版僅移除本機路徑並澄清研究頁與正式推薦的區別。原報告 SHA-256：2de9c8c373549c4e9e2f976aaab377504b607c16a1929bebd00e6b142e8c05c2。</footer>
+</main></body></html>

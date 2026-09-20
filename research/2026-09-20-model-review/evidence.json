@@ -1,0 +1,572 @@
+{
+  "artifactType": "ORE_MODEL_RESEARCH_REVIEW",
+  "asOf": "2026-09-20",
+  "researchOnly": true,
+  "officialPromotionAllowed": false,
+  "officialTargetSeason789": "BLOCKED",
+  "primaryVariant": 1,
+  "independentSeasonCount": 2,
+  "untouchedHoldout": false,
+  "confirmedFirst": 0,
+  "confirmedNotFirst": 60,
+  "unresolved": 4,
+  "legalVariants": 320,
+  "samePoolGroups": 16,
+  "sourceSha256": {
+    "model-repair.md": "2de9c8c373549c4e9e2f976aaab377504b607c16a1929bebd00e6b142e8c05c2",
+    "benchmark-results.json": "d2ecd827e24eb615d5402a05d315ed1ebe1c82ba62195315bad479c87c8b1a9b",
+    "benchmark-independent-audit.json": "b6fe9fc0701bae9ed84dc539d55620efbe1e582f928ad09046933fdb782b4c66",
+    "repair-validation.json": "20429d6e168fe661f7b17d7540255bfb91269b6de0f3342838a9f7a7623b8a9e"
+  },
+  "families": [
+    {
+      "family": "prior-only",
+      "jobs": 16,
+      "confirmedFirst": 0,
+      "confirmedNotFirst": 15,
+      "unresolved": 1
+    },
+    {
+      "family": "rate-opportunity",
+      "jobs": 16,
+      "confirmedFirst": 0,
+      "confirmedNotFirst": 14,
+      "unresolved": 2
+    },
+    {
+      "family": "total-blend",
+      "jobs": 16,
+      "confirmedFirst": 0,
+      "confirmedNotFirst": 15,
+      "unresolved": 1
+    },
+    {
+      "family": "v8",
+      "jobs": 16,
+      "confirmedFirst": 0,
+      "confirmedNotFirst": 16,
+      "unresolved": 0
+    }
+  ],
+  "primaryOutcomes": [
+    {
+      "season": 776,
+      "item": "K",
+      "family": "prior-only",
+      "value": 1081,
+      "champion": 1122,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "K",
+      "family": "rate-opportunity",
+      "value": 1005,
+      "champion": 1122,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "K",
+      "family": "total-blend",
+      "value": 1051,
+      "champion": 1122,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "K",
+      "family": "v8",
+      "value": 803,
+      "champion": 1122,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "K",
+      "family": "prior-only",
+      "value": 1000,
+      "champion": 1088,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "K",
+      "family": "rate-opportunity",
+      "value": 988,
+      "champion": 1088,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "K",
+      "family": "total-blend",
+      "value": 1000,
+      "champion": 1088,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "K",
+      "family": "v8",
+      "value": 771,
+      "champion": 1088,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "HR",
+      "family": "prior-only",
+      "value": 375,
+      "champion": 375,
+      "first": null
+    },
+    {
+      "season": 776,
+      "item": "HR",
+      "family": "rate-opportunity",
+      "value": 375,
+      "champion": 375,
+      "first": null
+    },
+    {
+      "season": 776,
+      "item": "HR",
+      "family": "total-blend",
+      "value": 375,
+      "champion": 375,
+      "first": null
+    },
+    {
+      "season": 776,
+      "item": "HR",
+      "family": "v8",
+      "value": 356,
+      "champion": 375,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "HR",
+      "family": "prior-only",
+      "value": 417,
+      "champion": 455,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "HR",
+      "family": "rate-opportunity",
+      "value": 439,
+      "champion": 455,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "HR",
+      "family": "total-blend",
+      "value": 439,
+      "champion": 455,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "HR",
+      "family": "v8",
+      "value": 423,
+      "champion": 455,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "RBI",
+      "family": "prior-only",
+      "value": 952,
+      "champion": 960,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "RBI",
+      "family": "rate-opportunity",
+      "value": 952,
+      "champion": 960,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "RBI",
+      "family": "total-blend",
+      "value": 952,
+      "champion": 960,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "RBI",
+      "family": "v8",
+      "value": 660,
+      "champion": 960,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "RBI",
+      "family": "prior-only",
+      "value": 1059,
+      "champion": 1083,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "RBI",
+      "family": "rate-opportunity",
+      "value": 1059,
+      "champion": 1083,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "RBI",
+      "family": "total-blend",
+      "value": 1059,
+      "champion": 1083,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "RBI",
+      "family": "v8",
+      "value": 795,
+      "champion": 1083,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "SV",
+      "family": "prior-only",
+      "value": 27,
+      "champion": 43,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "SV",
+      "family": "rate-opportunity",
+      "value": 20,
+      "champion": 43,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "SV",
+      "family": "total-blend",
+      "value": 24,
+      "champion": 43,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "SV",
+      "family": "v8",
+      "value": 30,
+      "champion": 43,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "SV",
+      "family": "prior-only",
+      "value": 33,
+      "champion": 42,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "SV",
+      "family": "rate-opportunity",
+      "value": 42,
+      "champion": 42,
+      "first": null
+    },
+    {
+      "season": 778,
+      "item": "SV",
+      "family": "total-blend",
+      "value": 33,
+      "champion": 42,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "SV",
+      "family": "v8",
+      "value": 28,
+      "champion": 42,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "W",
+      "family": "prior-only",
+      "value": 99,
+      "champion": 116,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "W",
+      "family": "rate-opportunity",
+      "value": 92,
+      "champion": 116,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "W",
+      "family": "total-blend",
+      "value": 92,
+      "champion": 116,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "W",
+      "family": "v8",
+      "value": 95,
+      "champion": 116,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "W",
+      "family": "prior-only",
+      "value": 124,
+      "champion": 135,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "W",
+      "family": "rate-opportunity",
+      "value": 125,
+      "champion": 135,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "W",
+      "family": "total-blend",
+      "value": 125,
+      "champion": 135,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "W",
+      "family": "v8",
+      "value": 93,
+      "champion": 135,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "SB",
+      "family": "prior-only",
+      "value": 85,
+      "champion": 96,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "SB",
+      "family": "rate-opportunity",
+      "value": 85,
+      "champion": 96,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "SB",
+      "family": "total-blend",
+      "value": 85,
+      "champion": 96,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "SB",
+      "family": "v8",
+      "value": 76,
+      "champion": 96,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "SB",
+      "family": "prior-only",
+      "value": 87,
+      "champion": 107,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "SB",
+      "family": "rate-opportunity",
+      "value": 100,
+      "champion": 107,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "SB",
+      "family": "total-blend",
+      "value": 100,
+      "champion": 107,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "SB",
+      "family": "v8",
+      "value": 90,
+      "champion": 107,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "AVG",
+      "family": "prior-only",
+      "value": 0.28,
+      "champion": 0.293,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "AVG",
+      "family": "rate-opportunity",
+      "value": 0.28,
+      "champion": 0.293,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "AVG",
+      "family": "total-blend",
+      "value": 0.283,
+      "champion": 0.293,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "AVG",
+      "family": "v8",
+      "value": 0.282,
+      "champion": 0.293,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "AVG",
+      "family": "prior-only",
+      "value": 0.271,
+      "champion": 0.303,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "AVG",
+      "family": "rate-opportunity",
+      "value": 0.283,
+      "champion": 0.303,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "AVG",
+      "family": "total-blend",
+      "value": 0.288,
+      "champion": 0.303,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "AVG",
+      "family": "v8",
+      "value": 0.265,
+      "champion": 0.303,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "ERA",
+      "family": "prior-only",
+      "value": 2.2,
+      "champion": 1.87,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "ERA",
+      "family": "rate-opportunity",
+      "value": 2.05,
+      "champion": 1.87,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "ERA",
+      "family": "total-blend",
+      "value": 2.05,
+      "champion": 1.87,
+      "first": false
+    },
+    {
+      "season": 776,
+      "item": "ERA",
+      "family": "v8",
+      "value": 2.72,
+      "champion": 1.87,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "ERA",
+      "family": "prior-only",
+      "value": 1.96,
+      "champion": 1.61,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "ERA",
+      "family": "rate-opportunity",
+      "value": 2.03,
+      "champion": 1.61,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "ERA",
+      "family": "total-blend",
+      "value": 2.11,
+      "champion": 1.61,
+      "first": false
+    },
+    {
+      "season": 778,
+      "item": "ERA",
+      "family": "v8",
+      "value": 2.24,
+      "champion": 1.61,
+      "first": false
+    }
+  ],
+  "limitations": [
+    "Two already-seen development seasons; not 64 independent seasons.",
+    "Unresolved ties are not wins. Only first place wins a prize.",
+    "Research history policy differs from production eligibility rules.",
+    "No leakage-free replay of all current formal scorers; no promotion permitted.",
+    "SB is research-only. No account submissions or official draft links."
+  ]
+}
