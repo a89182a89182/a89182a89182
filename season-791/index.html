@@ -1,0 +1,1062 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ORE 791 Sunday Preview - K / W / RBI</title>
+  <style>
+    :root{color-scheme:light;--bg:#f5f7fa;--paper:#fff;--ink:#152033;--muted:#5b6575;--line:#d8e0ea;--accent:#146c5c;--warn:#9a4b00}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","Microsoft JhengHei",Arial,sans-serif;line-height:1.55}
+    .wrap{max-width:1240px;margin:0 auto;padding:24px 16px 56px}.hero,.section,.variant{background:var(--paper);border:1px solid var(--line);border-radius:8px;box-shadow:0 1px 2px rgba(20,30,45,.04)}
+    .hero{padding:22px;margin-bottom:14px}.section{padding:18px;margin-top:14px}.variant{padding:14px;margin-top:12px}h1{margin:0 0 8px;font-size:30px;letter-spacing:0}h2{margin:0 0 10px;font-size:22px}h3{margin:0;font-size:17px}
+    p{margin:7px 0;color:var(--muted)}.note{color:var(--warn)}.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-top:14px}.card{border:1px solid var(--line);border-radius:8px;padding:12px;background:#fbfcfd}.label{font-size:12px;color:var(--muted);text-transform:uppercase}.value{font-size:20px;font-weight:800;margin-top:2px}
+    table{width:100%;border-collapse:collapse;margin-top:10px;font-size:13px}th,td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}th{background:#eef3f6;font-weight:700}.player{font-weight:700}.variant-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap}.chips{display:flex;gap:7px;flex-wrap:wrap}.chips span{border:1px solid var(--line);border-radius:999px;padding:3px 8px;background:#f7fafb;color:#2d3845;font-size:12px}
+    .claim{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:10px;padding:10px;border:1px solid var(--line);border-radius:8px;background:#f7fafb}.claim label{font-weight:800;font-size:13px}.claim input{min-width:220px;max-width:320px;flex:1 1 220px;border:1px solid #b9c7d5;border-radius:6px;padding:7px 9px;font:inherit}.claim button{border:0;border-radius:6px;background:var(--accent);color:white;font-weight:800;padding:8px 12px;cursor:pointer}.claim-status{color:var(--accent);font-weight:800;font-size:13px}
+    details{margin-top:10px}summary{cursor:pointer;color:var(--accent);font-weight:700}pre{white-space:pre-wrap;background:#101820;color:#f5f7fa;border-radius:8px;padding:12px;overflow:auto;font-size:12px}.grid-two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+    .submit-action{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 14px;align-items:center;margin:14px 0;padding:14px;border:2px solid #e28a27;border-radius:10px;background:#fff8ed}.submit-action span{color:var(--muted)}.submit-link{display:inline-block;border-radius:8px;background:#c85f00;color:#fff;text-decoration:none;font-weight:900;padding:10px 16px;white-space:nowrap}.submit-warning{grid-column:1/-1;margin:0;color:#9a3d00;font-weight:800}.item-submit-warning{margin:12px 0;padding:11px 12px;border:1px solid #e28a27;border-radius:8px;background:#fff8ed}@media(max-width:620px){.submit-action{grid-template-columns:1fr}.submit-link{text-align:center}.submit-warning{grid-column:1}}
+    .item-nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.item-nav a{padding:9px 14px;border-radius:7px;background:var(--accent);color:#fff;font-weight:700;text-decoration:none}.source-details{overflow-wrap:anywhere}.section{scroll-margin-top:16px}
+    .table-scroll{max-width:100%;overflow-x:auto}.table-scroll table{min-width:640px}.lineup-table table{min-width:1000px}.grid-two>div{min-width:0}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>ORE 791 Sunday Preview</h1>
+      <p>本週正式推薦品項：<strong>K / W / RBI</strong>。只有第一名有獎，top10/top3 只作為診斷訊號；選品依據與模型限制詳列於下方。</p>
+      <div class="summary">
+        <div class="card"><div class="label">驗證狀態</div><div class="value">PASS</div></div>
+        <div class="card"><div class="label">來源</div><div class="value">S790 D7</div></div>
+        <div class="card"><div class="label">合法陣容</div><div class="value">15 套</div></div>
+        <div class="card"><div class="label">一鍵送出按鈕</div><div class="value">15 個</div></div>
+      </div>
+      <p>最新名單抓取：2026-10-04T20:18:20+08:00。每套 18 人；請先登入 ORE，並為每個帳號選定唯一版本。</p>
+      <p class="note">正式優先順序：K → W → RBI。SB 因策略風險只供研究，不列入正式推薦。</p>
+      <nav class="item-nav" aria-label="夢幻球隊快速跳轉"><a href="#fantasy-K">K 五版名單與送出</a><a href="#fantasy-W">W 五版名單與送出</a><a href="#fantasy-RBI">RBI 五版名單與送出</a></nav>
+      <details class="source-details"><summary>來源與驗證明細</summary><p>新鮮度：fresh_web_scrape；球員列數：270；正式權重 SHA256：e4d214e45ba5a7022b9d5c33d35684c63fe3ef0ccde602360a25e5d606abdeb7；報告識別碼：862A5609FA0BE0CD。</p></details>
+    </section>
+    
+    <p id="ore-submission-age-status" role="status">送出連結須通過資料時效檢查；超過抓取後 24 小時自動停用。這不是官方報名截止時間。</p>
+<noscript><p>JavaScript 未啟用，送出連結保持停用；請勿使用舊名單。</p></noscript>
+<script id="ore-submission-freshness-guard">(() => {
+  const capturedMs = 1791116300000;
+  const maxAge = 86400000;
+  function check() {
+    const now = Date.now();
+    const ready = capturedMs !== null && now >= capturedMs - 300000 && now < capturedMs + maxAge;
+    document.querySelectorAll('[data-ore-submit-url]').forEach(link => {
+      if (ready) link.setAttribute('href', link.getAttribute('data-ore-submit-url'));
+      else link.removeAttribute('href');
+      link.setAttribute('aria-disabled', ready ? 'false' : 'true');
+      link.style.opacity = ready ? '1' : '0.55';
+      link.title = ready ? '名單若有變動請重新抓取；此操作會提交本版' : '資料已過期或日期不明，請使用重新驗證的版本';
+    });
+    const status = document.getElementById('ore-submission-age-status');
+    if (status) status.textContent = ready
+      ? '資料時效檢查通過；抓取後 24 小時自動停用（非官方截止）。球員若有異動仍須重驗。'
+      : '送出已停用：資料超過 24 小時或日期不明。這是歷史名單，請勿用於目前報名。';
+    return ready;
+  }
+  ['click', 'auxclick'].forEach(eventName => document.addEventListener(eventName, event => {
+    const link = event.target.closest && event.target.closest('[data-ore-submit-url]');
+    if (link && !check()) { event.preventDefault(); event.stopImmediatePropagation(); }
+  }, true));
+  document.addEventListener('visibilitychange', check);
+  // The report places this guard above the lineup markup. Activate links as
+  // soon as parsing completes, not at the next 60-second timer tick.
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', check, { once: true });
+  check();
+  setInterval(check, 60000);
+})();</script>
+    <section class="section">
+    <h2>品項優先序</h2>
+    <p>本週只以第一名機率為正式目標；top10/top3 只用來診斷距離，不視為成功。</p>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="品項優先序，可橫向捲動"><table><thead><tr><th>#</th><th>品項</th><th>目標</th><th>最佳預測值</th><th>版本數</th><th>驗證</th><th>依據</th></tr></thead><tbody><tr><td>1</td><td>K</td><td>預測三振</td><td>1028</td><td>5</td><td>PASS</td><td>優先 1、研究信心有限：最新 S790 固定 V1 回跑是假設第一，但實際交付 K V1 第15、差78；本次保留既定 K70 規則，79名通過同人、同隊、世代及角色核驗後使用 S790 FINAL 的例行賽 K，18名未知或角色變動回退能力。這不是新模型升級或已校準勝率。</td></tr>
+<tr><td>2</td><td>W</td><td>預測勝投</td><td>75</td><td>5</td><td>PASS</td><td>優先 2、探索候選：最新含實際交付懲罰的 selector 將 W 列第二；S790 回跑最佳第7、差3勝，尚無第一名。以既定角色及球隊機會係數重新選角，SP、RP、CP分開；接近冠軍僅作相對選項診斷。</td></tr>
+<tr><td>3</td><td>RBI</td><td>預測打點</td><td>646</td><td>5</td><td>PASS</td><td>優先 3、探索候選：最新 selector 列第三；S790 回跑最佳第9、差53，未拿第一。沿用既定打者能力、技能及機會評分；不從已揭曉冠軍反推新權重。HR及SV本季實際交付亦失準，SV優先序降低。</td></tr></tbody></table></div>
+  </section>
+    <section class="section">
+    <h2>第一名模型註記</h2>
+    <ul><li>只有第一名有獎；top10/top3 僅供診斷，不能視為獲獎成果。</li><li>只有第一名有獎；top10／top3、冠軍差距、五版最佳只供診斷。每項事前指定 V1 為主版，V2～V5只是備選，不能賽後挑最佳版當成功。</li><li>本次項目比較順序 K &gt; W &gt; RBI 是低信心、第一名導向的相對探索順序，並非三項都已有奪冠證據或最大勝率已獲證明；W／RBI尚未第一，K交付與事後回跑不同。</li><li>S790完整賽果已經核驗：83名參加者、216球員、八項各十名、兩套12隊均140場，使用唯一雜湊封存。只更新正式來源與保留原係數，沒有重新訓練、比例搜尋或診斷版升級。</li><li>S790已發布的HR／SV／K各五版均未第一。a89182完全採用K V1卻第15；edahnd完全採用SV V1卻第69，屬模型選角缺口，不能歸因使用者偏離。</li><li>K歷史權重70%保留既定規則，79名可以用剛封存的例行賽K，18名因角色變動或身分缺漏回退本次能力模型；未知保持未知，不填0、不取生涯、不用同GM替代世代。70%不是已證實最適或中獎率。</li><li>9/20能力-only、上季-only、既定混合、效率乘機會比較未證明第一名改善；S776／S778及S790都已看過，不能稱未接觸留出集。同季多品項及五版彼此相關。正式模型優勢仍未證明。</li><li>SP、RP、CP分開；CP表示救援機會，不套SP工作量。43歲以上、電腦及虛擬替補新秀不進正式名單。SB僅戰術風險研究，八項仍可由使用者選擇。</li><li>目前12隊均零場，聯盟排名只屬未校準模型預測，沒有有效賽果可比較。15個直接送出按鈕逐一核對現役表單；本次沒有替任何帳號實際送出。</li></ul>
+  </section>
+    <section class="section" id="fantasy-K">
+    <h2>K 5 組版本</h2>
+    <p>優先 1、研究信心有限：最新 S790 固定 V1 回跑是假設第一，但實際交付 K V1 第15、差78；本次保留既定 K70 規則，79名通過同人、同隊、世代及角色核驗後使用 S790 FINAL 的例行賽 K，18名未知或角色變動回退能力。這不是新模型升級或已校準勝率。 核心目標是 預測三振；非目標位置只做合法補位與隊伍限制。</p>
+    <p class="submit-warning item-submit-warning">以下 5 個版本各有獨立送出按鈕。請先選定唯一版本；點下後會立即提交，不能把五版都投進同一帳號。</p>
+    <section class="variant">
+    <div class="variant-head">
+      <h3>K V1</h3>
+      <div class="chips">
+        <span>預測三振 1028</span>
+        <span>HR 180</span>
+        <span>RBI 527</span>
+        <span>W 87</span>
+        <span>K 1028</span>
+        <span>SV 35</span>
+        <span>ERA 未估局數</span>
+      </div>
+    </div>
+    <div class="claim" data-claim-key="K V1">
+      <label>K V1 認領</label>
+      <input type="text" autocomplete="name" placeholder="輸入名字">
+      <button type="button">儲存</button>
+      <span class="claim-status" aria-live="polite"></span>
+    </div>
+    <div class="submit-action fantasy-submit-action" data-ore-fantasy-submit="K V1">
+    <div><strong>K V1 夢幻球隊一鍵送出</strong><br><span>18 人名單與本版表格完全一致；請先在同一瀏覽器登入 ORE。</span></div>
+    <a class="submit-link" data-ore-submit-url="http://game.tinycafe.com/ore/ore.cgi?pickMyTeam=1&amp;pick1=%BB%EE%C0%F4%A4Q%A4%AD&amp;pick4=%A7%BA%AB%B0%BF%A4&amp;pick5=%BA%B5%AB%D3%A4T&amp;pick11=%A7%F8%A5%D0%A5%7C&amp;pick13=%A4%FD%AD%B7%A4T&amp;pick18=%AF%AB%AAi%A6h%A4%40%AA%E1&amp;pick19=%C2A%A5%A4%AFN%A5%AC%A4B&amp;pick22=%AE%DF%A4l%A4%40%A5%40&amp;pick27=%AFQ%C2%C4%A9_%A4T%B8%B9&amp;pick110=%B6%5D%AA%BA%BAC%A4T%A4E&amp;pick115=%A5%B2%B3%D3%A4Q%A4T%A5%40&amp;pick116=%B7~%BEl%B2y%B5%FB&amp;pick122=%A4p%E8%FB%A5%7C%A4Q&amp;pick152=%AE%E4%A5%CD%ABG%A4%D3&amp;pick177=%AB%D7%B0%DA%A4Q%A4%40&amp;pick184=%A4p%B7s%B7%C6%AD%CB&amp;pick185=%AD%F0%AA%F9%B9%C6%C5o%A5%7C&amp;pick216=%B9p%A4%BD%C5F&amp;tm1=2&amp;tm2=2&amp;tm3=1&amp;tm4=2&amp;tm5=2&amp;tm6=1&amp;tm7=2&amp;tm8=2&amp;tm9=1&amp;tm10=1&amp;tm11=1&amp;tm12=1&amp;tmBat=9&amp;tmSP=5&amp;tmRP=3&amp;tmCP=1&amp;tmAll=18&amp;submit1=%A5%5B%A4J%A7%DA%AA%BA%B9%DA%A4%DB%B2y%B6%A4" role="link" aria-disabled="true" tabindex="0" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">直接送出 K V1</a>
+    <p class="submit-warning">點下即提交本版 18 人，不是預覽；每個帳號每季只能參加一次。</p>
+  </div>
+    <details><summary>複製用 18 人名單</summary><pre>C	Lamigo桃猿	鮮奶烤布丁	eric0214
+1B	統一獅隊	栗子一世	maddux3939
+2B	誠泰Cobras	熊帥三	老子
+3B	興農牛隊	王風三	JPot8888
+SS	興農牛隊	魂環十五	mamageo
+LF	時報鷹隊	宋城縣	Protomodel
+CF	中信鯨隊	村田四	zxc526291
+RF	三商虎隊	神波多一花	神波多一花
+DH	兄弟象隊	烏薩奇三號	david32011
+SP	Lamigo桃猿	必勝十三世	必勝
+SP	俊國熊隊	業餘球評	80338
+SP	年代勇士	小叡四十	allan5250
+SP	年代勇士	跑的慢三九	porching
+SP	俊國熊隊	桐生亮太	sleabc
+RP	誠泰Cobras	唐門嘍囉四	algop528
+RP	時報鷹隊	小新滑倒	donikity
+RP	味全龍隊	度啊十一	willy
+CP	生活雷公	雷公轟	Thunderbo</pre></details>
+    <div class="table-scroll lineup-table" tabindex="0" role="region" aria-label="18 人名單，可橫向捲動"><table><thead><tr><th>位置</th><th>球隊</th><th>球員</th><th>GM</th><th>預測</th><th>能力</th><th>技能</th></tr></thead><tbody><tr><td>C</td><td>Lamigo桃猿</td><td class="player">鮮奶烤布丁</td><td>eric0214</td><td>HR 22 / RBI 66 / AVG 0.249 / SB 1</td><td>力 232 / 巧 6 / 走 5 / 守 11 / 肩 7</td><td>內野安打 / 奪力</td></tr>
+<tr><td>1B</td><td>統一獅隊</td><td class="player">栗子一世</td><td>maddux3939</td><td>HR 26 / RBI 56 / AVG 0.240 / SB 0</td><td>力 219 / 巧 5 / 走 3 / 守 9 / 肩 5</td><td>得點圈○ / 對左投Ｘ / 固定打者 / 傳球○ / 威壓感 / 豪力</td></tr>
+<tr><td>2B</td><td>誠泰Cobras</td><td class="player">熊帥三</td><td>老子</td><td>HR 28 / RBI 77 / AVG 0.263 / SB 1</td><td>力 216 / 巧 5 / 走 4 / 守 10 / 肩 5</td><td>守備能力○ / 強力打者 / 滿壘男 / 開路先鋒 / 威壓感 / 人氣者 / 奪力</td></tr>
+<tr><td>3B</td><td>興農牛隊</td><td class="player">王風三</td><td>JPot8888</td><td>HR 35 / RBI 70 / AVG 0.249 / SB 0</td><td>力 234 / 巧 6 / 走 4 / 守 11 / 肩 6</td><td>盜壘Ｘ / 強力打者 / 逆境○ / 威壓感 / 豪力</td></tr>
+<tr><td>SS</td><td>興農牛隊</td><td class="player">魂環十五</td><td>mamageo</td><td>HR 22 / RBI 62 / AVG 0.257 / SB 0</td><td>力 237 / 巧 7 / 走 6 / 守 12 / 肩 7</td><td>盜壘Ｘ / 逆境○ / 奪力</td></tr>
+<tr><td>LF</td><td>時報鷹隊</td><td class="player">宋城縣</td><td>Protomodel</td><td>HR 5 / RBI 46 / AVG 0.247 / SB 5</td><td>力 117 / 巧 5 / 走 10 / 守 8 / 肩 8</td><td>盜壘Ｘ / 內野安打 / 再見男 / 安定感 / 人氣者 / 奪力</td></tr>
+<tr><td>CF</td><td>中信鯨隊</td><td class="player">村田四</td><td>zxc526291</td><td>HR 1 / RBI 31 / AVG 0.271 / SB 27</td><td>力 114 / 巧 6 / 走 9 / 守 12 / 肩 4</td><td>觸擊○ / 威壓感 / 安定感 / 奪力</td></tr>
+<tr><td>RF</td><td>三商虎隊</td><td class="player">神波多一花</td><td>神波多一花</td><td>HR 23 / RBI 68 / AVG 0.250 / SB 3</td><td>力 234 / 巧 7 / 走 6 / 守 12 / 肩 6</td><td>再見男</td></tr>
+<tr><td>DH</td><td>兄弟象隊</td><td class="player">烏薩奇三號</td><td>david32011</td><td>HR 18 / RBI 51 / AVG 0.236 / SB 0</td><td>力 209 / 巧 6 / 走 4 / 守 10 / 肩 5</td><td>逆境○ / 威壓感 / 人氣者 / 鬥氣</td></tr>
+<tr><td>SP</td><td>Lamigo桃猿</td><td class="player">必勝十三世</td><td>必勝</td><td>W 11 / K 138 / SV 0 / ERA 2.06</td><td>控 204 / 體 224 / 速 148</td><td>直球○ / 逃球 / 重球 / 中繼能力○ / 威壓感 / 氣魄</td></tr>
+<tr><td>SP</td><td>俊國熊隊</td><td class="player">業餘球評</td><td>80338</td><td>W 12 / K 136 / SV 0 / ERA 2.08</td><td>控 209 / 體 221 / 速 148</td><td>直球○ / 被連打○ / 逃球 / 重球 / 中繼能力○ / 威壓感 / 安定感 / 氣魄 / 不安定感</td></tr>
+<tr><td>SP</td><td>年代勇士</td><td class="player">小叡四十</td><td>allan5250</td><td>W 12 / K 132 / SV 0 / ERA 2.23</td><td>控 224 / 體 232 / 速 152</td><td>直球○ / 勝運 / 被連打○ / 重球 / 威壓感 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>年代勇士</td><td class="player">跑的慢三九</td><td>porching</td><td>W 13 / K 128 / SV 0 / ERA 2.03</td><td>控 216 / 體 219 / 速 148</td><td>直球○ / 對左打○ / 逃球 / 重球 / 威壓感 / 安定感 / 人氣者 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>俊國熊隊</td><td class="player">桐生亮太</td><td>sleabc</td><td>W 13 / K 124 / SV 0 / ERA 2.21</td><td>控 232 / 體 234 / 速 152</td><td>逃球 / 威壓感 / 安定感 / 氣魄</td></tr>
+<tr><td>RP</td><td>誠泰Cobras</td><td class="player">唐門嘍囉四</td><td>algop528</td><td>W 10 / K 126 / SV 4 / ERA 3.69</td><td>控 249 / 體 255 / 速 156</td><td>牽制○ / 威壓感 / 掌心球(7)</td></tr>
+<tr><td>RP</td><td>時報鷹隊</td><td class="player">小新滑倒</td><td>donikity</td><td>W 7 / K 111 / SV 3 / ERA 4.71</td><td>控 224 / 體 234 / 速 145</td><td>牽制○ / 威壓感</td></tr>
+<tr><td>RP</td><td>味全龍隊</td><td class="player">度啊十一</td><td>willy</td><td>W 8 / K 110 / SV 3 / ERA 4.76</td><td>控 237 / 體 239 / 速 153</td><td>逃球 / 威壓感 / 指叉球(7)</td></tr>
+<tr><td>CP</td><td>生活雷公</td><td class="player">雷公轟</td><td>Thunderbo</td><td>W 1 / K 24 / SV 25 / ERA 3.57</td><td>控 252 / 體 232 / 速 156</td><td>威壓感 / 安定感 / 被連打Ｘ</td></tr></tbody></table></div>
+  </section>
+<section class="variant">
+    <div class="variant-head">
+      <h3>K V2</h3>
+      <div class="chips">
+        <span>預測三振 1027</span>
+        <span>HR 171</span>
+        <span>RBI 520</span>
+        <span>W 88</span>
+        <span>K 1027</span>
+        <span>SV 34</span>
+        <span>ERA 未估局數</span>
+      </div>
+    </div>
+    <div class="claim" data-claim-key="K V2">
+      <label>K V2 認領</label>
+      <input type="text" autocomplete="name" placeholder="輸入名字">
+      <button type="button">儲存</button>
+      <span class="claim-status" aria-live="polite"></span>
+    </div>
+    <div class="submit-action fantasy-submit-action" data-ore-fantasy-submit="K V2">
+    <div><strong>K V2 夢幻球隊一鍵送出</strong><br><span>18 人名單與本版表格完全一致；請先在同一瀏覽器登入 ORE。</span></div>
+    <a class="submit-link" data-ore-submit-url="http://game.tinycafe.com/ore/ore.cgi?pickMyTeam=1&amp;pick1=%BB%EE%C0%F4%A4Q%A4%AD&amp;pick4=%A7%BA%AB%B0%BF%A4&amp;pick5=%BA%B5%AB%D3%A4T&amp;pick9=%A4B%A4B%AFu%A8k%A4H&amp;pick11=%A7%F8%A5%D0%A5%7C&amp;pick13=%A4%FD%AD%B7%A4T&amp;pick18=%AF%AB%AAi%A6h%A4%40%AA%E1&amp;pick19=%C2A%A5%A4%AFN%A5%AC%A4B&amp;pick27=%AFQ%C2%C4%A9_%A4T%B8%B9&amp;pick110=%B6%5D%AA%BA%BAC%A4T%A4E&amp;pick115=%A5%B2%B3%D3%A4Q%A4T%A5%40&amp;pick116=%B7~%BEl%B2y%B5%FB&amp;pick122=%A4p%E8%FB%A5%7C%A4Q&amp;pick152=%AE%E4%A5%CD%ABG%A4%D3&amp;pick178=%B9%C7%B9%C7%B9%C7%B9%C7%B9%C7&amp;pick184=%A4p%B7s%B7%C6%AD%CB&amp;pick185=%AD%F0%AA%F9%B9%C6%C5o%A5%7C&amp;pick216=%B9p%A4%BD%C5F&amp;tm1=2&amp;tm2=2&amp;tm3=1&amp;tm4=2&amp;tm5=2&amp;tm6=1&amp;tm7=2&amp;tm8=2&amp;tm9=1&amp;tm10=1&amp;tm11=1&amp;tm12=1&amp;tmBat=9&amp;tmSP=5&amp;tmRP=3&amp;tmCP=1&amp;tmAll=18&amp;submit1=%A5%5B%A4J%A7%DA%AA%BA%B9%DA%A4%DB%B2y%B6%A4" role="link" aria-disabled="true" tabindex="0" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">直接送出 K V2</a>
+    <p class="submit-warning">點下即提交本版 18 人，不是預覽；每個帳號每季只能參加一次。</p>
+  </div>
+    <details><summary>複製用 18 人名單</summary><pre>C	Lamigo桃猿	鮮奶烤布丁	eric0214
+1B	味全龍隊	丁丁真男人	mingwu
+2B	誠泰Cobras	熊帥三	老子
+3B	興農牛隊	王風三	JPot8888
+SS	興農牛隊	魂環十五	mamageo
+LF	時報鷹隊	宋城縣	Protomodel
+CF	中信鯨隊	村田四	zxc526291
+RF	三商虎隊	神波多一花	神波多一花
+DH	兄弟象隊	烏薩奇三號	david32011
+SP	Lamigo桃猿	必勝十三世	必勝
+SP	俊國熊隊	業餘球評	80338
+SP	年代勇士	小叡四十	allan5250
+SP	年代勇士	跑的慢三九	porching
+SP	俊國熊隊	桐生亮太	sleabc
+RP	誠泰Cobras	唐門嘍囉四	algop528
+RP	時報鷹隊	小新滑倒	donikity
+RP	統一獅隊	嘎嘎嘎嘎嘎	hyg0514
+CP	生活雷公	雷公轟	Thunderbo</pre></details>
+    <div class="table-scroll lineup-table" tabindex="0" role="region" aria-label="18 人名單，可橫向捲動"><table><thead><tr><th>位置</th><th>球隊</th><th>球員</th><th>GM</th><th>預測</th><th>能力</th><th>技能</th></tr></thead><tbody><tr><td>C</td><td>Lamigo桃猿</td><td class="player">鮮奶烤布丁</td><td>eric0214</td><td>HR 22 / RBI 66 / AVG 0.249 / SB 1</td><td>力 232 / 巧 6 / 走 5 / 守 11 / 肩 7</td><td>內野安打 / 奪力</td></tr>
+<tr><td>1B</td><td>味全龍隊</td><td class="player">丁丁真男人</td><td>mingwu</td><td>HR 17 / RBI 49 / AVG 0.229 / SB 0</td><td>力 206 / 巧 6 / 走 4 / 守 10 / 肩 5</td><td>對左投○ / 再見男 / 威壓感 / 奪力</td></tr>
+<tr><td>2B</td><td>誠泰Cobras</td><td class="player">熊帥三</td><td>老子</td><td>HR 28 / RBI 77 / AVG 0.263 / SB 1</td><td>力 216 / 巧 5 / 走 4 / 守 10 / 肩 5</td><td>守備能力○ / 強力打者 / 滿壘男 / 開路先鋒 / 威壓感 / 人氣者 / 奪力</td></tr>
+<tr><td>3B</td><td>興農牛隊</td><td class="player">王風三</td><td>JPot8888</td><td>HR 35 / RBI 70 / AVG 0.249 / SB 0</td><td>力 234 / 巧 6 / 走 4 / 守 11 / 肩 6</td><td>盜壘Ｘ / 強力打者 / 逆境○ / 威壓感 / 豪力</td></tr>
+<tr><td>SS</td><td>興農牛隊</td><td class="player">魂環十五</td><td>mamageo</td><td>HR 22 / RBI 62 / AVG 0.257 / SB 0</td><td>力 237 / 巧 7 / 走 6 / 守 12 / 肩 7</td><td>盜壘Ｘ / 逆境○ / 奪力</td></tr>
+<tr><td>LF</td><td>時報鷹隊</td><td class="player">宋城縣</td><td>Protomodel</td><td>HR 5 / RBI 46 / AVG 0.247 / SB 5</td><td>力 117 / 巧 5 / 走 10 / 守 8 / 肩 8</td><td>盜壘Ｘ / 內野安打 / 再見男 / 安定感 / 人氣者 / 奪力</td></tr>
+<tr><td>CF</td><td>中信鯨隊</td><td class="player">村田四</td><td>zxc526291</td><td>HR 1 / RBI 31 / AVG 0.271 / SB 27</td><td>力 114 / 巧 6 / 走 9 / 守 12 / 肩 4</td><td>觸擊○ / 威壓感 / 安定感 / 奪力</td></tr>
+<tr><td>RF</td><td>三商虎隊</td><td class="player">神波多一花</td><td>神波多一花</td><td>HR 23 / RBI 68 / AVG 0.250 / SB 3</td><td>力 234 / 巧 7 / 走 6 / 守 12 / 肩 6</td><td>再見男</td></tr>
+<tr><td>DH</td><td>兄弟象隊</td><td class="player">烏薩奇三號</td><td>david32011</td><td>HR 18 / RBI 51 / AVG 0.236 / SB 0</td><td>力 209 / 巧 6 / 走 4 / 守 10 / 肩 5</td><td>逆境○ / 威壓感 / 人氣者 / 鬥氣</td></tr>
+<tr><td>SP</td><td>Lamigo桃猿</td><td class="player">必勝十三世</td><td>必勝</td><td>W 11 / K 138 / SV 0 / ERA 2.06</td><td>控 204 / 體 224 / 速 148</td><td>直球○ / 逃球 / 重球 / 中繼能力○ / 威壓感 / 氣魄</td></tr>
+<tr><td>SP</td><td>俊國熊隊</td><td class="player">業餘球評</td><td>80338</td><td>W 12 / K 136 / SV 0 / ERA 2.08</td><td>控 209 / 體 221 / 速 148</td><td>直球○ / 被連打○ / 逃球 / 重球 / 中繼能力○ / 威壓感 / 安定感 / 氣魄 / 不安定感</td></tr>
+<tr><td>SP</td><td>年代勇士</td><td class="player">小叡四十</td><td>allan5250</td><td>W 12 / K 132 / SV 0 / ERA 2.23</td><td>控 224 / 體 232 / 速 152</td><td>直球○ / 勝運 / 被連打○ / 重球 / 威壓感 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>年代勇士</td><td class="player">跑的慢三九</td><td>porching</td><td>W 13 / K 128 / SV 0 / ERA 2.03</td><td>控 216 / 體 219 / 速 148</td><td>直球○ / 對左打○ / 逃球 / 重球 / 威壓感 / 安定感 / 人氣者 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>俊國熊隊</td><td class="player">桐生亮太</td><td>sleabc</td><td>W 13 / K 124 / SV 0 / ERA 2.21</td><td>控 232 / 體 234 / 速 152</td><td>逃球 / 威壓感 / 安定感 / 氣魄</td></tr>
+<tr><td>RP</td><td>誠泰Cobras</td><td class="player">唐門嘍囉四</td><td>algop528</td><td>W 10 / K 126 / SV 4 / ERA 3.69</td><td>控 249 / 體 255 / 速 156</td><td>牽制○ / 威壓感 / 掌心球(7)</td></tr>
+<tr><td>RP</td><td>時報鷹隊</td><td class="player">小新滑倒</td><td>donikity</td><td>W 7 / K 111 / SV 3 / ERA 4.71</td><td>控 224 / 體 234 / 速 145</td><td>牽制○ / 威壓感</td></tr>
+<tr><td>RP</td><td>統一獅隊</td><td class="player">嘎嘎嘎嘎嘎</td><td>hyg0514</td><td>W 9 / K 109 / SV 2 / ERA 4.53</td><td>控 234 / 體 242 / 速 155</td><td>勝運 / 被連打○ / 人氣者 / 快速伸卡球(7)</td></tr>
+<tr><td>CP</td><td>生活雷公</td><td class="player">雷公轟</td><td>Thunderbo</td><td>W 1 / K 24 / SV 25 / ERA 3.57</td><td>控 252 / 體 232 / 速 156</td><td>威壓感 / 安定感 / 被連打Ｘ</td></tr></tbody></table></div>
+  </section>
+<section class="variant">
+    <div class="variant-head">
+      <h3>K V3</h3>
+      <div class="chips">
+        <span>預測三振 1027</span>
+        <span>HR 171</span>
+        <span>RBI 520</span>
+        <span>W 89</span>
+        <span>K 1027</span>
+        <span>SV 34</span>
+        <span>ERA 未估局數</span>
+      </div>
+    </div>
+    <div class="claim" data-claim-key="K V3">
+      <label>K V3 認領</label>
+      <input type="text" autocomplete="name" placeholder="輸入名字">
+      <button type="button">儲存</button>
+      <span class="claim-status" aria-live="polite"></span>
+    </div>
+    <div class="submit-action fantasy-submit-action" data-ore-fantasy-submit="K V3">
+    <div><strong>K V3 夢幻球隊一鍵送出</strong><br><span>18 人名單與本版表格完全一致；請先在同一瀏覽器登入 ORE。</span></div>
+    <a class="submit-link" data-ore-submit-url="http://game.tinycafe.com/ore/ore.cgi?pickMyTeam=1&amp;pick1=%BB%EE%C0%F4%A4Q%A4%AD&amp;pick4=%A7%BA%AB%B0%BF%A4&amp;pick5=%BA%B5%AB%D3%A4T&amp;pick9=%A4B%A4B%AFu%A8k%A4H&amp;pick11=%A7%F8%A5%D0%A5%7C&amp;pick13=%A4%FD%AD%B7%A4T&amp;pick18=%AF%AB%AAi%A6h%A4%40%AA%E1&amp;pick19=%C2A%A5%A4%AFN%A5%AC%A4B&amp;pick27=%AFQ%C2%C4%A9_%A4T%B8%B9&amp;pick110=%B6%5D%AA%BA%BAC%A4T%A4E&amp;pick115=%A5%B2%B3%D3%A4Q%A4T%A5%40&amp;pick116=%B7~%BEl%B2y%B5%FB&amp;pick122=%A4p%E8%FB%A5%7C%A4Q&amp;pick152=%AE%E4%A5%CD%ABG%A4%D3&amp;pick177=%AB%D7%B0%DA%A4Q%A4%40&amp;pick178=%B9%C7%B9%C7%B9%C7%B9%C7%B9%C7&amp;pick185=%AD%F0%AA%F9%B9%C6%C5o%A5%7C&amp;pick216=%B9p%A4%BD%C5F&amp;tm1=2&amp;tm2=2&amp;tm3=1&amp;tm4=1&amp;tm5=2&amp;tm6=1&amp;tm7=2&amp;tm8=2&amp;tm9=2&amp;tm10=1&amp;tm11=1&amp;tm12=1&amp;tmBat=9&amp;tmSP=5&amp;tmRP=3&amp;tmCP=1&amp;tmAll=18&amp;submit1=%A5%5B%A4J%A7%DA%AA%BA%B9%DA%A4%DB%B2y%B6%A4" role="link" aria-disabled="true" tabindex="0" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">直接送出 K V3</a>
+    <p class="submit-warning">點下即提交本版 18 人，不是預覽；每個帳號每季只能參加一次。</p>
+  </div>
+    <details><summary>複製用 18 人名單</summary><pre>C	Lamigo桃猿	鮮奶烤布丁	eric0214
+1B	味全龍隊	丁丁真男人	mingwu
+2B	誠泰Cobras	熊帥三	老子
+3B	興農牛隊	王風三	JPot8888
+SS	興農牛隊	魂環十五	mamageo
+LF	時報鷹隊	宋城縣	Protomodel
+CF	中信鯨隊	村田四	zxc526291
+RF	三商虎隊	神波多一花	神波多一花
+DH	兄弟象隊	烏薩奇三號	david32011
+SP	Lamigo桃猿	必勝十三世	必勝
+SP	俊國熊隊	業餘球評	80338
+SP	年代勇士	小叡四十	allan5250
+SP	年代勇士	跑的慢三九	porching
+SP	俊國熊隊	桐生亮太	sleabc
+RP	誠泰Cobras	唐門嘍囉四	algop528
+RP	味全龍隊	度啊十一	willy
+RP	統一獅隊	嘎嘎嘎嘎嘎	hyg0514
+CP	生活雷公	雷公轟	Thunderbo</pre></details>
+    <div class="table-scroll lineup-table" tabindex="0" role="region" aria-label="18 人名單，可橫向捲動"><table><thead><tr><th>位置</th><th>球隊</th><th>球員</th><th>GM</th><th>預測</th><th>能力</th><th>技能</th></tr></thead><tbody><tr><td>C</td><td>Lamigo桃猿</td><td class="player">鮮奶烤布丁</td><td>eric0214</td><td>HR 22 / RBI 66 / AVG 0.249 / SB 1</td><td>力 232 / 巧 6 / 走 5 / 守 11 / 肩 7</td><td>內野安打 / 奪力</td></tr>
+<tr><td>1B</td><td>味全龍隊</td><td class="player">丁丁真男人</td><td>mingwu</td><td>HR 17 / RBI 49 / AVG 0.229 / SB 0</td><td>力 206 / 巧 6 / 走 4 / 守 10 / 肩 5</td><td>對左投○ / 再見男 / 威壓感 / 奪力</td></tr>
+<tr><td>2B</td><td>誠泰Cobras</td><td class="player">熊帥三</td><td>老子</td><td>HR 28 / RBI 77 / AVG 0.263 / SB 1</td><td>力 216 / 巧 5 / 走 4 / 守 10 / 肩 5</td><td>守備能力○ / 強力打者 / 滿壘男 / 開路先鋒 / 威壓感 / 人氣者 / 奪力</td></tr>
+<tr><td>3B</td><td>興農牛隊</td><td class="player">王風三</td><td>JPot8888</td><td>HR 35 / RBI 70 / AVG 0.249 / SB 0</td><td>力 234 / 巧 6 / 走 4 / 守 11 / 肩 6</td><td>盜壘Ｘ / 強力打者 / 逆境○ / 威壓感 / 豪力</td></tr>
+<tr><td>SS</td><td>興農牛隊</td><td class="player">魂環十五</td><td>mamageo</td><td>HR 22 / RBI 62 / AVG 0.257 / SB 0</td><td>力 237 / 巧 7 / 走 6 / 守 12 / 肩 7</td><td>盜壘Ｘ / 逆境○ / 奪力</td></tr>
+<tr><td>LF</td><td>時報鷹隊</td><td class="player">宋城縣</td><td>Protomodel</td><td>HR 5 / RBI 46 / AVG 0.247 / SB 5</td><td>力 117 / 巧 5 / 走 10 / 守 8 / 肩 8</td><td>盜壘Ｘ / 內野安打 / 再見男 / 安定感 / 人氣者 / 奪力</td></tr>
+<tr><td>CF</td><td>中信鯨隊</td><td class="player">村田四</td><td>zxc526291</td><td>HR 1 / RBI 31 / AVG 0.271 / SB 27</td><td>力 114 / 巧 6 / 走 9 / 守 12 / 肩 4</td><td>觸擊○ / 威壓感 / 安定感 / 奪力</td></tr>
+<tr><td>RF</td><td>三商虎隊</td><td class="player">神波多一花</td><td>神波多一花</td><td>HR 23 / RBI 68 / AVG 0.250 / SB 3</td><td>力 234 / 巧 7 / 走 6 / 守 12 / 肩 6</td><td>再見男</td></tr>
+<tr><td>DH</td><td>兄弟象隊</td><td class="player">烏薩奇三號</td><td>david32011</td><td>HR 18 / RBI 51 / AVG 0.236 / SB 0</td><td>力 209 / 巧 6 / 走 4 / 守 10 / 肩 5</td><td>逆境○ / 威壓感 / 人氣者 / 鬥氣</td></tr>
+<tr><td>SP</td><td>Lamigo桃猿</td><td class="player">必勝十三世</td><td>必勝</td><td>W 11 / K 138 / SV 0 / ERA 2.06</td><td>控 204 / 體 224 / 速 148</td><td>直球○ / 逃球 / 重球 / 中繼能力○ / 威壓感 / 氣魄</td></tr>
+<tr><td>SP</td><td>俊國熊隊</td><td class="player">業餘球評</td><td>80338</td><td>W 12 / K 136 / SV 0 / ERA 2.08</td><td>控 209 / 體 221 / 速 148</td><td>直球○ / 被連打○ / 逃球 / 重球 / 中繼能力○ / 威壓感 / 安定感 / 氣魄 / 不安定感</td></tr>
+<tr><td>SP</td><td>年代勇士</td><td class="player">小叡四十</td><td>allan5250</td><td>W 12 / K 132 / SV 0 / ERA 2.23</td><td>控 224 / 體 232 / 速 152</td><td>直球○ / 勝運 / 被連打○ / 重球 / 威壓感 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>年代勇士</td><td class="player">跑的慢三九</td><td>porching</td><td>W 13 / K 128 / SV 0 / ERA 2.03</td><td>控 216 / 體 219 / 速 148</td><td>直球○ / 對左打○ / 逃球 / 重球 / 威壓感 / 安定感 / 人氣者 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>俊國熊隊</td><td class="player">桐生亮太</td><td>sleabc</td><td>W 13 / K 124 / SV 0 / ERA 2.21</td><td>控 232 / 體 234 / 速 152</td><td>逃球 / 威壓感 / 安定感 / 氣魄</td></tr>
+<tr><td>RP</td><td>誠泰Cobras</td><td class="player">唐門嘍囉四</td><td>algop528</td><td>W 10 / K 126 / SV 4 / ERA 3.69</td><td>控 249 / 體 255 / 速 156</td><td>牽制○ / 威壓感 / 掌心球(7)</td></tr>
+<tr><td>RP</td><td>味全龍隊</td><td class="player">度啊十一</td><td>willy</td><td>W 8 / K 110 / SV 3 / ERA 4.76</td><td>控 237 / 體 239 / 速 153</td><td>逃球 / 威壓感 / 指叉球(7)</td></tr>
+<tr><td>RP</td><td>統一獅隊</td><td class="player">嘎嘎嘎嘎嘎</td><td>hyg0514</td><td>W 9 / K 109 / SV 2 / ERA 4.53</td><td>控 234 / 體 242 / 速 155</td><td>勝運 / 被連打○ / 人氣者 / 快速伸卡球(7)</td></tr>
+<tr><td>CP</td><td>生活雷公</td><td class="player">雷公轟</td><td>Thunderbo</td><td>W 1 / K 24 / SV 25 / ERA 3.57</td><td>控 252 / 體 232 / 速 156</td><td>威壓感 / 安定感 / 被連打Ｘ</td></tr></tbody></table></div>
+  </section>
+<section class="variant">
+    <div class="variant-head">
+      <h3>K V4</h3>
+      <div class="chips">
+        <span>預測三振 1025</span>
+        <span>HR 164</span>
+        <span>RBI 519</span>
+        <span>W 87</span>
+        <span>K 1025</span>
+        <span>SV 36</span>
+        <span>ERA 未估局數</span>
+      </div>
+    </div>
+    <div class="claim" data-claim-key="K V4">
+      <label>K V4 認領</label>
+      <input type="text" autocomplete="name" placeholder="輸入名字">
+      <button type="button">儲存</button>
+      <span class="claim-status" aria-live="polite"></span>
+    </div>
+    <div class="submit-action fantasy-submit-action" data-ore-fantasy-submit="K V4">
+    <div><strong>K V4 夢幻球隊一鍵送出</strong><br><span>18 人名單與本版表格完全一致；請先在同一瀏覽器登入 ORE。</span></div>
+    <a class="submit-link" data-ore-submit-url="http://game.tinycafe.com/ore/ore.cgi?pickMyTeam=1&amp;pick4=%A7%BA%AB%B0%BF%A4&amp;pick5=%BA%B5%AB%D3%A4T&amp;pick11=%A7%F8%A5%D0%A5%7C&amp;pick12=%BFc%A5d%B4%B5&amp;pick13=%A4%FD%AD%B7%A4T&amp;pick18=%AF%AB%AAi%A6h%A4%40%AA%E1&amp;pick19=%C2A%A5%A4%AFN%A5%AC%A4B&amp;pick22=%AE%DF%A4l%A4%40%A5%40&amp;pick27=%AFQ%C2%C4%A9_%A4T%B8%B9&amp;pick110=%B6%5D%AA%BA%BAC%A4T%A4E&amp;pick115=%A5%B2%B3%D3%A4Q%A4T%A5%40&amp;pick116=%B7~%BEl%B2y%B5%FB&amp;pick122=%A4p%E8%FB%A5%7C%A4Q&amp;pick152=%AE%E4%A5%CD%ABG%A4%D3&amp;pick177=%AB%D7%B0%DA%A4Q%A4%40&amp;pick184=%A4p%B7s%B7%C6%AD%CB&amp;pick185=%AD%F0%AA%F9%B9%C6%C5o%A5%7C&amp;pick210=%B8%A8%A4%EB%BB%EF&amp;tm1=1&amp;tm2=2&amp;tm3=1&amp;tm4=2&amp;tm5=2&amp;tm6=2&amp;tm7=2&amp;tm8=2&amp;tm9=1&amp;tm10=1&amp;tm11=1&amp;tm12=1&amp;tmBat=9&amp;tmSP=5&amp;tmRP=3&amp;tmCP=1&amp;tmAll=18&amp;submit1=%A5%5B%A4J%A7%DA%AA%BA%B9%DA%A4%DB%B2y%B6%A4" role="link" aria-disabled="true" tabindex="0" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">直接送出 K V4</a>
+    <p class="submit-warning">點下即提交本版 18 人，不是預覽；每個帳號每季只能參加一次。</p>
+  </div>
+    <details><summary>複製用 18 人名單</summary><pre>C	Lamigo桃猿	鮮奶烤布丁	eric0214
+1B	統一獅隊	栗子一世	maddux3939
+2B	誠泰Cobras	熊帥三	老子
+3B	興農牛隊	王風三	JPot8888
+SS	生活雷公	盧卡斯	lucas
+LF	時報鷹隊	宋城縣	Protomodel
+CF	中信鯨隊	村田四	zxc526291
+RF	三商虎隊	神波多一花	神波多一花
+DH	兄弟象隊	烏薩奇三號	david32011
+SP	Lamigo桃猿	必勝十三世	必勝
+SP	俊國熊隊	業餘球評	80338
+SP	年代勇士	小叡四十	allan5250
+SP	年代勇士	跑的慢三九	porching
+SP	俊國熊隊	桐生亮太	sleabc
+RP	誠泰Cobras	唐門嘍囉四	algop528
+RP	時報鷹隊	小新滑倒	donikity
+RP	味全龍隊	度啊十一	willy
+CP	三商虎隊	落月鳴	adam3401</pre></details>
+    <div class="table-scroll lineup-table" tabindex="0" role="region" aria-label="18 人名單，可橫向捲動"><table><thead><tr><th>位置</th><th>球隊</th><th>球員</th><th>GM</th><th>預測</th><th>能力</th><th>技能</th></tr></thead><tbody><tr><td>C</td><td>Lamigo桃猿</td><td class="player">鮮奶烤布丁</td><td>eric0214</td><td>HR 22 / RBI 66 / AVG 0.249 / SB 1</td><td>力 232 / 巧 6 / 走 5 / 守 11 / 肩 7</td><td>內野安打 / 奪力</td></tr>
+<tr><td>1B</td><td>統一獅隊</td><td class="player">栗子一世</td><td>maddux3939</td><td>HR 26 / RBI 56 / AVG 0.240 / SB 0</td><td>力 219 / 巧 5 / 走 3 / 守 9 / 肩 5</td><td>得點圈○ / 對左投Ｘ / 固定打者 / 傳球○ / 威壓感 / 豪力</td></tr>
+<tr><td>2B</td><td>誠泰Cobras</td><td class="player">熊帥三</td><td>老子</td><td>HR 28 / RBI 77 / AVG 0.263 / SB 1</td><td>力 216 / 巧 5 / 走 4 / 守 10 / 肩 5</td><td>守備能力○ / 強力打者 / 滿壘男 / 開路先鋒 / 威壓感 / 人氣者 / 奪力</td></tr>
+<tr><td>3B</td><td>興農牛隊</td><td class="player">王風三</td><td>JPot8888</td><td>HR 35 / RBI 70 / AVG 0.249 / SB 0</td><td>力 234 / 巧 6 / 走 4 / 守 11 / 肩 6</td><td>盜壘Ｘ / 強力打者 / 逆境○ / 威壓感 / 豪力</td></tr>
+<tr><td>SS</td><td>生活雷公</td><td class="player">盧卡斯</td><td>lucas</td><td>HR 6 / RBI 54 / AVG 0.235 / SB 7</td><td>力 158 / 巧 7 / 走 13 / 守 9 / 肩 11</td><td>威壓感 / 人氣者</td></tr>
+<tr><td>LF</td><td>時報鷹隊</td><td class="player">宋城縣</td><td>Protomodel</td><td>HR 5 / RBI 46 / AVG 0.247 / SB 5</td><td>力 117 / 巧 5 / 走 10 / 守 8 / 肩 8</td><td>盜壘Ｘ / 內野安打 / 再見男 / 安定感 / 人氣者 / 奪力</td></tr>
+<tr><td>CF</td><td>中信鯨隊</td><td class="player">村田四</td><td>zxc526291</td><td>HR 1 / RBI 31 / AVG 0.271 / SB 27</td><td>力 114 / 巧 6 / 走 9 / 守 12 / 肩 4</td><td>觸擊○ / 威壓感 / 安定感 / 奪力</td></tr>
+<tr><td>RF</td><td>三商虎隊</td><td class="player">神波多一花</td><td>神波多一花</td><td>HR 23 / RBI 68 / AVG 0.250 / SB 3</td><td>力 234 / 巧 7 / 走 6 / 守 12 / 肩 6</td><td>再見男</td></tr>
+<tr><td>DH</td><td>兄弟象隊</td><td class="player">烏薩奇三號</td><td>david32011</td><td>HR 18 / RBI 51 / AVG 0.236 / SB 0</td><td>力 209 / 巧 6 / 走 4 / 守 10 / 肩 5</td><td>逆境○ / 威壓感 / 人氣者 / 鬥氣</td></tr>
+<tr><td>SP</td><td>Lamigo桃猿</td><td class="player">必勝十三世</td><td>必勝</td><td>W 11 / K 138 / SV 0 / ERA 2.06</td><td>控 204 / 體 224 / 速 148</td><td>直球○ / 逃球 / 重球 / 中繼能力○ / 威壓感 / 氣魄</td></tr>
+<tr><td>SP</td><td>俊國熊隊</td><td class="player">業餘球評</td><td>80338</td><td>W 12 / K 136 / SV 0 / ERA 2.08</td><td>控 209 / 體 221 / 速 148</td><td>直球○ / 被連打○ / 逃球 / 重球 / 中繼能力○ / 威壓感 / 安定感 / 氣魄 / 不安定感</td></tr>
+<tr><td>SP</td><td>年代勇士</td><td class="player">小叡四十</td><td>allan5250</td><td>W 12 / K 132 / SV 0 / ERA 2.23</td><td>控 224 / 體 232 / 速 152</td><td>直球○ / 勝運 / 被連打○ / 重球 / 威壓感 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>年代勇士</td><td class="player">跑的慢三九</td><td>porching</td><td>W 13 / K 128 / SV 0 / ERA 2.03</td><td>控 216 / 體 219 / 速 148</td><td>直球○ / 對左打○ / 逃球 / 重球 / 威壓感 / 安定感 / 人氣者 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>俊國熊隊</td><td class="player">桐生亮太</td><td>sleabc</td><td>W 13 / K 124 / SV 0 / ERA 2.21</td><td>控 232 / 體 234 / 速 152</td><td>逃球 / 威壓感 / 安定感 / 氣魄</td></tr>
+<tr><td>RP</td><td>誠泰Cobras</td><td class="player">唐門嘍囉四</td><td>algop528</td><td>W 10 / K 126 / SV 4 / ERA 3.69</td><td>控 249 / 體 255 / 速 156</td><td>牽制○ / 威壓感 / 掌心球(7)</td></tr>
+<tr><td>RP</td><td>時報鷹隊</td><td class="player">小新滑倒</td><td>donikity</td><td>W 7 / K 111 / SV 3 / ERA 4.71</td><td>控 224 / 體 234 / 速 145</td><td>牽制○ / 威壓感</td></tr>
+<tr><td>RP</td><td>味全龍隊</td><td class="player">度啊十一</td><td>willy</td><td>W 8 / K 110 / SV 3 / ERA 4.76</td><td>控 237 / 體 239 / 速 153</td><td>逃球 / 威壓感 / 指叉球(7)</td></tr>
+<tr><td>CP</td><td>三商虎隊</td><td class="player">落月鳴</td><td>adam3401</td><td>W 1 / K 21 / SV 26 / ERA 4.49</td><td>控 209 / 體 204 / 速 154</td><td>牽制Ｘ / 安定感</td></tr></tbody></table></div>
+  </section>
+<section class="variant">
+    <div class="variant-head">
+      <h3>K V5</h3>
+      <div class="chips">
+        <span>預測三振 1025</span>
+        <span>HR 191</span>
+        <span>RBI 541</span>
+        <span>W 84</span>
+        <span>K 1025</span>
+        <span>SV 35</span>
+        <span>ERA 未估局數</span>
+      </div>
+    </div>
+    <div class="claim" data-claim-key="K V5">
+      <label>K V5 認領</label>
+      <input type="text" autocomplete="name" placeholder="輸入名字">
+      <button type="button">儲存</button>
+      <span class="claim-status" aria-live="polite"></span>
+    </div>
+    <div class="submit-action fantasy-submit-action" data-ore-fantasy-submit="K V5">
+    <div><strong>K V5 夢幻球隊一鍵送出</strong><br><span>18 人名單與本版表格完全一致；請先在同一瀏覽器登入 ORE。</span></div>
+    <a class="submit-link" data-ore-submit-url="http://game.tinycafe.com/ore/ore.cgi?pickMyTeam=1&amp;pick1=%BB%EE%C0%F4%A4Q%A4%AD&amp;pick4=%A7%BA%AB%B0%BF%A4&amp;pick5=%BA%B5%AB%D3%A4T&amp;pick8=%AE%F6%A4l%A4Q%A4G&amp;pick11=%A7%F8%A5%D0%A5%7C&amp;pick18=%AF%AB%AAi%A6h%A4%40%AA%E1&amp;pick22=%AE%DF%A4l%A4%40%A5%40&amp;pick27=%AFQ%C2%C4%A9_%A4T%B8%B9&amp;pick30=%AE%DF%AD%EC%B3%AE%A5%DA&amp;pick110=%B6%5D%AA%BA%BAC%A4T%A4E&amp;pick115=%A5%B2%B3%D3%A4Q%A4T%A5%40&amp;pick116=%B7~%BEl%B2y%B5%FB&amp;pick122=%A4p%E8%FB%A5%7C%A4Q&amp;pick139=%C0H%AD%B7%A4%AD%A5%40&amp;pick177=%AB%D7%B0%DA%A4Q%A4%40&amp;pick184=%A4p%B7s%B7%C6%AD%CB&amp;pick185=%AD%F0%AA%F9%B9%C6%C5o%A5%7C&amp;pick216=%B9p%A4%BD%C5F&amp;tm1=1&amp;tm2=2&amp;tm3=1&amp;tm4=2&amp;tm5=2&amp;tm6=2&amp;tm7=2&amp;tm8=2&amp;tm9=1&amp;tm10=1&amp;tm11=1&amp;tm12=1&amp;tmBat=9&amp;tmSP=5&amp;tmRP=3&amp;tmCP=1&amp;tmAll=18&amp;submit1=%A5%5B%A4J%A7%DA%AA%BA%B9%DA%A4%DB%B2y%B6%A4" role="link" aria-disabled="true" tabindex="0" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">直接送出 K V5</a>
+    <p class="submit-warning">點下即提交本版 18 人，不是預覽；每個帳號每季只能參加一次。</p>
+  </div>
+    <details><summary>複製用 18 人名單</summary><pre>C	三商虎隊	栗原陵矢	0738
+1B	統一獅隊	栗子一世	maddux3939
+2B	誠泰Cobras	熊帥三	老子
+3B	俊國熊隊	浪子十二	kelven
+SS	興農牛隊	魂環十五	mamageo
+LF	時報鷹隊	宋城縣	Protomodel
+CF	中信鯨隊	村田四	zxc526291
+RF	三商虎隊	神波多一花	神波多一花
+DH	兄弟象隊	烏薩奇三號	david32011
+SP	Lamigo桃猿	必勝十三世	必勝
+SP	俊國熊隊	業餘球評	80338
+SP	年代勇士	小叡四十	allan5250
+SP	年代勇士	跑的慢三九	porching
+SP	Lamigo桃猿	隨風五世	JACK
+RP	誠泰Cobras	唐門嘍囉四	algop528
+RP	時報鷹隊	小新滑倒	donikity
+RP	味全龍隊	度啊十一	willy
+CP	生活雷公	雷公轟	Thunderbo</pre></details>
+    <div class="table-scroll lineup-table" tabindex="0" role="region" aria-label="18 人名單，可橫向捲動"><table><thead><tr><th>位置</th><th>球隊</th><th>球員</th><th>GM</th><th>預測</th><th>能力</th><th>技能</th></tr></thead><tbody><tr><td>C</td><td>三商虎隊</td><td class="player">栗原陵矢</td><td>0738</td><td>HR 39 / RBI 86 / AVG 0.262 / SB 0</td><td>力 224 / 巧 5 / 走 3 / 守 8 / 肩 4</td><td>得點圈◎ / 強力打者 / 滿壘男 / 固定打者 / 威壓感 / 安定感 / 豪力</td></tr>
+<tr><td>1B</td><td>統一獅隊</td><td class="player">栗子一世</td><td>maddux3939</td><td>HR 26 / RBI 56 / AVG 0.240 / SB 0</td><td>力 219 / 巧 5 / 走 3 / 守 9 / 肩 5</td><td>得點圈○ / 對左投Ｘ / 固定打者 / 傳球○ / 威壓感 / 豪力</td></tr>
+<tr><td>2B</td><td>誠泰Cobras</td><td class="player">熊帥三</td><td>老子</td><td>HR 28 / RBI 77 / AVG 0.263 / SB 1</td><td>力 216 / 巧 5 / 走 4 / 守 10 / 肩 5</td><td>守備能力○ / 強力打者 / 滿壘男 / 開路先鋒 / 威壓感 / 人氣者 / 奪力</td></tr>
+<tr><td>3B</td><td>俊國熊隊</td><td class="player">浪子十二</td><td>kelven</td><td>HR 29 / RBI 64 / AVG 0.249 / SB 1</td><td>力 247 / 巧 7 / 走 6 / 守 11 / 肩 6</td><td>觸擊○ / 對左投Ｘ / 豪力</td></tr>
+<tr><td>SS</td><td>興農牛隊</td><td class="player">魂環十五</td><td>mamageo</td><td>HR 22 / RBI 62 / AVG 0.257 / SB 0</td><td>力 237 / 巧 7 / 走 6 / 守 12 / 肩 7</td><td>盜壘Ｘ / 逆境○ / 奪力</td></tr>
+<tr><td>LF</td><td>時報鷹隊</td><td class="player">宋城縣</td><td>Protomodel</td><td>HR 5 / RBI 46 / AVG 0.247 / SB 5</td><td>力 117 / 巧 5 / 走 10 / 守 8 / 肩 8</td><td>盜壘Ｘ / 內野安打 / 再見男 / 安定感 / 人氣者 / 奪力</td></tr>
+<tr><td>CF</td><td>中信鯨隊</td><td class="player">村田四</td><td>zxc526291</td><td>HR 1 / RBI 31 / AVG 0.271 / SB 27</td><td>力 114 / 巧 6 / 走 9 / 守 12 / 肩 4</td><td>觸擊○ / 威壓感 / 安定感 / 奪力</td></tr>
+<tr><td>RF</td><td>三商虎隊</td><td class="player">神波多一花</td><td>神波多一花</td><td>HR 23 / RBI 68 / AVG 0.250 / SB 3</td><td>力 234 / 巧 7 / 走 6 / 守 12 / 肩 6</td><td>再見男</td></tr>
+<tr><td>DH</td><td>兄弟象隊</td><td class="player">烏薩奇三號</td><td>david32011</td><td>HR 18 / RBI 51 / AVG 0.236 / SB 0</td><td>力 209 / 巧 6 / 走 4 / 守 10 / 肩 5</td><td>逆境○ / 威壓感 / 人氣者 / 鬥氣</td></tr>
+<tr><td>SP</td><td>Lamigo桃猿</td><td class="player">必勝十三世</td><td>必勝</td><td>W 11 / K 138 / SV 0 / ERA 2.06</td><td>控 204 / 體 224 / 速 148</td><td>直球○ / 逃球 / 重球 / 中繼能力○ / 威壓感 / 氣魄</td></tr>
+<tr><td>SP</td><td>俊國熊隊</td><td class="player">業餘球評</td><td>80338</td><td>W 12 / K 136 / SV 0 / ERA 2.08</td><td>控 209 / 體 221 / 速 148</td><td>直球○ / 被連打○ / 逃球 / 重球 / 中繼能力○ / 威壓感 / 安定感 / 氣魄 / 不安定感</td></tr>
+<tr><td>SP</td><td>年代勇士</td><td class="player">小叡四十</td><td>allan5250</td><td>W 12 / K 132 / SV 0 / ERA 2.23</td><td>控 224 / 體 232 / 速 152</td><td>直球○ / 勝運 / 被連打○ / 重球 / 威壓感 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>年代勇士</td><td class="player">跑的慢三九</td><td>porching</td><td>W 13 / K 128 / SV 0 / ERA 2.03</td><td>控 216 / 體 219 / 速 148</td><td>直球○ / 對左打○ / 逃球 / 重球 / 威壓感 / 安定感 / 人氣者 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>Lamigo桃猿</td><td class="player">隨風五世</td><td>JACK</td><td>W 10 / K 122 / SV 0 / ERA 3.26</td><td>控 255 / 體 255 / 速 160</td><td>牽制Ｘ / 逃球 / 氣魄</td></tr>
+<tr><td>RP</td><td>誠泰Cobras</td><td class="player">唐門嘍囉四</td><td>algop528</td><td>W 10 / K 126 / SV 4 / ERA 3.69</td><td>控 249 / 體 255 / 速 156</td><td>牽制○ / 威壓感 / 掌心球(7)</td></tr>
+<tr><td>RP</td><td>時報鷹隊</td><td class="player">小新滑倒</td><td>donikity</td><td>W 7 / K 111 / SV 3 / ERA 4.71</td><td>控 224 / 體 234 / 速 145</td><td>牽制○ / 威壓感</td></tr>
+<tr><td>RP</td><td>味全龍隊</td><td class="player">度啊十一</td><td>willy</td><td>W 8 / K 110 / SV 3 / ERA 4.76</td><td>控 237 / 體 239 / 速 153</td><td>逃球 / 威壓感 / 指叉球(7)</td></tr>
+<tr><td>CP</td><td>生活雷公</td><td class="player">雷公轟</td><td>Thunderbo</td><td>W 1 / K 24 / SV 25 / ERA 3.57</td><td>控 252 / 體 232 / 速 156</td><td>威壓感 / 安定感 / 被連打Ｘ</td></tr></tbody></table></div>
+  </section>
+  </section>
+<section class="section" id="fantasy-W">
+    <h2>W 5 組版本</h2>
+    <p>優先 2、探索候選：最新含實際交付懲罰的 selector 將 W 列第二；S790 回跑最佳第7、差3勝，尚無第一名。以既定角色及球隊機會係數重新選角，SP、RP、CP分開；接近冠軍僅作相對選項診斷。 核心目標是 預測勝投；非目標位置只做合法補位與隊伍限制。</p>
+    <p class="submit-warning item-submit-warning">以下 5 個版本各有獨立送出按鈕。請先選定唯一版本；點下後會立即提交，不能把五版都投進同一帳號。</p>
+    <section class="variant">
+    <div class="variant-head">
+      <h3>W V1</h3>
+      <div class="chips">
+        <span>預測勝投 75</span>
+        <span>HR 166</span>
+        <span>RBI 502</span>
+        <span>W 75</span>
+        <span>K 854</span>
+        <span>SV 34</span>
+        <span>ERA 未估局數</span>
+      </div>
+    </div>
+    <div class="claim" data-claim-key="W V1">
+      <label>W V1 認領</label>
+      <input type="text" autocomplete="name" placeholder="輸入名字">
+      <button type="button">儲存</button>
+      <span class="claim-status" aria-live="polite"></span>
+    </div>
+    <div class="submit-action fantasy-submit-action" data-ore-fantasy-submit="W V1">
+    <div><strong>W V1 夢幻球隊一鍵送出</strong><br><span>18 人名單與本版表格完全一致；請先在同一瀏覽器登入 ORE。</span></div>
+    <a class="submit-link" data-ore-submit-url="http://game.tinycafe.com/ore/ore.cgi?pickMyTeam=1&amp;pick4=%A7%BA%AB%B0%BF%A4&amp;pick9=%A4B%A4B%AFu%A8k%A4H&amp;pick11=%A7%F8%A5%D0%A5%7C&amp;pick12=%BFc%A5d%B4%B5&amp;pick13=%A4%FD%AD%B7%A4T&amp;pick15=%BB%B6%B4%D4%BA%B5&amp;pick19=%C2A%A5%A4%AFN%A5%AC%A4B&amp;pick34=%C5F%B9p%A5%AB%A4Q%A4G&amp;pick44=%A4%C0%C2%F7%A8%C5%B2M&amp;pick109=%A4d%A5j%A4%40%AB%D2&amp;pick110=%B6%5D%AA%BA%BAC%A4T%A4E&amp;pick116=%B7~%BEl%B2y%B5%FB&amp;pick122=%A4p%E8%FB%A5%7C%A4Q&amp;pick138=%B8%AD%AD%D7&amp;pick173=%B1j%AB%C2&amp;pick174=%A9%AF%B9B%AF%F3%B2%F9&amp;pick185=%AD%F0%AA%F9%B9%C6%C5o%A5%7C&amp;pick207=%A4%EC%A4%EC&amp;tm1=2&amp;tm2=2&amp;tm3=2&amp;tm4=1&amp;tm5=2&amp;tm6=2&amp;tm7=1&amp;tm8=2&amp;tm9=1&amp;tm10=1&amp;tm11=1&amp;tm12=1&amp;tmBat=9&amp;tmSP=5&amp;tmRP=3&amp;tmCP=1&amp;tmAll=18&amp;submit1=%A5%5B%A4J%A7%DA%AA%BA%B9%DA%A4%DB%B2y%B6%A4" role="link" aria-disabled="true" tabindex="0" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">直接送出 W V1</a>
+    <p class="submit-warning">點下即提交本版 18 人，不是預覽；每個帳號每季只能參加一次。</p>
+  </div>
+    <details><summary>複製用 18 人名單</summary><pre>C	Lamigo桃猿	鮮奶烤布丁	eric0214
+1B	味全龍隊	丁丁真男人	mingwu
+2B	兄弟象隊	辣椒熊	37.2
+3B	興農牛隊	王風三	JPot8888
+SS	生活雷公	盧卡斯	lucas
+LF	時報鷹隊	宋城縣	Protomodel
+CF	中信鯨隊	村田四	zxc526291
+RF	俊國熊隊	分離乳清	分離乳清
+DH	統一獅隊	轟雷市十二	polntion
+SP	興農牛隊	千古一帝	SSRdevil
+SP	年代勇士	跑的慢三九	porching
+SP	年代勇士	小叡四十	allan5250
+SP	俊國熊隊	業餘球評	80338
+SP	三商虎隊	葉修	傑尼斯
+RP	三商虎隊	幸運草莓	undying
+RP	誠泰Cobras	唐門嘍囉四	algop528
+RP	誠泰Cobras	強威	jaclsa
+CP	兄弟象隊	木木	sbl200200</pre></details>
+    <div class="table-scroll lineup-table" tabindex="0" role="region" aria-label="18 人名單，可橫向捲動"><table><thead><tr><th>位置</th><th>球隊</th><th>球員</th><th>GM</th><th>預測</th><th>能力</th><th>技能</th></tr></thead><tbody><tr><td>C</td><td>Lamigo桃猿</td><td class="player">鮮奶烤布丁</td><td>eric0214</td><td>HR 22 / RBI 66 / AVG 0.249 / SB 1</td><td>力 232 / 巧 6 / 走 5 / 守 11 / 肩 7</td><td>內野安打 / 奪力</td></tr>
+<tr><td>1B</td><td>味全龍隊</td><td class="player">丁丁真男人</td><td>mingwu</td><td>HR 17 / RBI 49 / AVG 0.229 / SB 0</td><td>力 206 / 巧 6 / 走 4 / 守 10 / 肩 5</td><td>對左投○ / 再見男 / 威壓感 / 奪力</td></tr>
+<tr><td>2B</td><td>兄弟象隊</td><td class="player">辣椒熊</td><td>37.2</td><td>HR 27 / RBI 73 / AVG 0.254 / SB 0</td><td>力 209 / 巧 6 / 走 4 / 守 11 / 肩 6</td><td>觸擊○ / 威壓感 / 豪力</td></tr>
+<tr><td>3B</td><td>興農牛隊</td><td class="player">王風三</td><td>JPot8888</td><td>HR 35 / RBI 70 / AVG 0.249 / SB 0</td><td>力 234 / 巧 6 / 走 4 / 守 11 / 肩 6</td><td>盜壘Ｘ / 強力打者 / 逆境○ / 威壓感 / 豪力</td></tr>
+<tr><td>SS</td><td>生活雷公</td><td class="player">盧卡斯</td><td>lucas</td><td>HR 6 / RBI 54 / AVG 0.235 / SB 7</td><td>力 158 / 巧 7 / 走 13 / 守 9 / 肩 11</td><td>威壓感 / 人氣者</td></tr>
+<tr><td>LF</td><td>時報鷹隊</td><td class="player">宋城縣</td><td>Protomodel</td><td>HR 5 / RBI 46 / AVG 0.247 / SB 5</td><td>力 117 / 巧 5 / 走 10 / 守 8 / 肩 8</td><td>盜壘Ｘ / 內野安打 / 再見男 / 安定感 / 人氣者 / 奪力</td></tr>
+<tr><td>CF</td><td>中信鯨隊</td><td class="player">村田四</td><td>zxc526291</td><td>HR 1 / RBI 31 / AVG 0.271 / SB 27</td><td>力 114 / 巧 6 / 走 9 / 守 12 / 肩 4</td><td>觸擊○ / 威壓感 / 安定感 / 奪力</td></tr>
+<tr><td>RF</td><td>俊國熊隊</td><td class="player">分離乳清</td><td>分離乳清</td><td>HR 31 / RBI 69 / AVG 0.254 / SB 0</td><td>力 249 / 巧 6 / 走 6 / 守 12 / 肩 7</td><td>對左投Ｘ / 逆境○ / 豪力</td></tr>
+<tr><td>DH</td><td>統一獅隊</td><td class="player">轟雷市十二</td><td>polntion</td><td>HR 22 / RBI 44 / AVG 0.216 / SB 0</td><td>力 214 / 巧 4 / 走 3 / 守 8 / 肩 4</td><td>對左投Ｘ / 固定打者 / 人氣者 / 豪力</td></tr>
+<tr><td>SP</td><td>興農牛隊</td><td class="player">千古一帝</td><td>SSRdevil</td><td>W 10 / K 103 / SV 0 / ERA 2.73</td><td>控 206 / 體 206 / 速 148</td><td>直球○ / 危機○ / 對左打○ / 逃球 / 重球 / 中繼能力○ / 威壓感 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>年代勇士</td><td class="player">跑的慢三九</td><td>porching</td><td>W 10 / K 127 / SV 0 / ERA 2.03</td><td>控 216 / 體 219 / 速 148</td><td>直球○ / 對左打○ / 逃球 / 重球 / 威壓感 / 安定感 / 人氣者 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>年代勇士</td><td class="player">小叡四十</td><td>allan5250</td><td>W 10 / K 101 / SV 0 / ERA 2.23</td><td>控 224 / 體 232 / 速 152</td><td>直球○ / 勝運 / 被連打○ / 重球 / 威壓感 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>俊國熊隊</td><td class="player">業餘球評</td><td>80338</td><td>W 9 / K 123 / SV 0 / ERA 2.08</td><td>控 209 / 體 221 / 速 148</td><td>直球○ / 被連打○ / 逃球 / 重球 / 中繼能力○ / 威壓感 / 安定感 / 氣魄 / 不安定感</td></tr>
+<tr><td>SP</td><td>三商虎隊</td><td class="player">葉修</td><td>傑尼斯</td><td>W 9 / K 99 / SV 0 / ERA 2.12</td><td>控 224 / 體 224 / 速 151</td><td>逃球 / 重球 / 中繼能力○ / 威壓感 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>RP</td><td>三商虎隊</td><td class="player">幸運草莓</td><td>undying</td><td>W 8 / K 100 / SV 3 / ERA 4.32</td><td>控 249 / 體 247 / 速 152</td><td>對左打Ｘ / 逃球 / 威壓感 / 氣魄 / 伸卡球(7)</td></tr>
+<tr><td>RP</td><td>誠泰Cobras</td><td class="player">唐門嘍囉四</td><td>algop528</td><td>W 7 / K 99 / SV 4 / ERA 3.69</td><td>控 249 / 體 255 / 速 156</td><td>牽制○ / 威壓感 / 掌心球(7)</td></tr>
+<tr><td>RP</td><td>誠泰Cobras</td><td class="player">強威</td><td>jaclsa</td><td>W 7 / K 84 / SV 4 / ERA 4.41</td><td>控 255 / 體 239 / 速 150</td><td>勝運 / 威壓感 / 掌心球(7)</td></tr>
+<tr><td>CP</td><td>兄弟象隊</td><td class="player">木木</td><td>sbl200200</td><td>W 6 / K 18 / SV 23 / ERA 4.07</td><td>控 242 / 體 242 / 速 149</td><td>逃球 / 人氣者 / 掌心球(7)</td></tr></tbody></table></div>
+  </section>
+<section class="variant">
+    <div class="variant-head">
+      <h3>W V2</h3>
+      <div class="chips">
+        <span>預測勝投 75</span>
+        <span>HR 166</span>
+        <span>RBI 502</span>
+        <span>W 75</span>
+        <span>K 872</span>
+        <span>SV 33</span>
+        <span>ERA 未估局數</span>
+      </div>
+    </div>
+    <div class="claim" data-claim-key="W V2">
+      <label>W V2 認領</label>
+      <input type="text" autocomplete="name" placeholder="輸入名字">
+      <button type="button">儲存</button>
+      <span class="claim-status" aria-live="polite"></span>
+    </div>
+    <div class="submit-action fantasy-submit-action" data-ore-fantasy-submit="W V2">
+    <div><strong>W V2 夢幻球隊一鍵送出</strong><br><span>18 人名單與本版表格完全一致；請先在同一瀏覽器登入 ORE。</span></div>
+    <a class="submit-link" data-ore-submit-url="http://game.tinycafe.com/ore/ore.cgi?pickMyTeam=1&amp;pick4=%A7%BA%AB%B0%BF%A4&amp;pick9=%A4B%A4B%AFu%A8k%A4H&amp;pick11=%A7%F8%A5%D0%A5%7C&amp;pick12=%BFc%A5d%B4%B5&amp;pick13=%A4%FD%AD%B7%A4T&amp;pick15=%BB%B6%B4%D4%BA%B5&amp;pick19=%C2A%A5%A4%AFN%A5%AC%A4B&amp;pick34=%C5F%B9p%A5%AB%A4Q%A4G&amp;pick44=%A4%C0%C2%F7%A8%C5%B2M&amp;pick109=%A4d%A5j%A4%40%AB%D2&amp;pick110=%B6%5D%AA%BA%BAC%A4T%A4E&amp;pick116=%B7~%BEl%B2y%B5%FB&amp;pick122=%A4p%E8%FB%A5%7C%A4Q&amp;pick138=%B8%AD%AD%D7&amp;pick174=%A9%AF%B9B%AF%F3%B2%F9&amp;pick185=%AD%F0%AA%F9%B9%C6%C5o%A5%7C&amp;pick197=%BCx%AE%E3%B1%D2%A5%DC&amp;pick207=%A4%EC%A4%EC&amp;tm1=2&amp;tm2=2&amp;tm3=2&amp;tm4=1&amp;tm5=2&amp;tm6=2&amp;tm7=1&amp;tm8=2&amp;tm9=1&amp;tm10=1&amp;tm11=1&amp;tm12=1&amp;tmBat=9&amp;tmSP=5&amp;tmRP=3&amp;tmCP=1&amp;tmAll=18&amp;submit1=%A5%5B%A4J%A7%DA%AA%BA%B9%DA%A4%DB%B2y%B6%A4" role="link" aria-disabled="true" tabindex="0" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">直接送出 W V2</a>
+    <p class="submit-warning">點下即提交本版 18 人，不是預覽；每個帳號每季只能參加一次。</p>
+  </div>
+    <details><summary>複製用 18 人名單</summary><pre>C	Lamigo桃猿	鮮奶烤布丁	eric0214
+1B	味全龍隊	丁丁真男人	mingwu
+2B	兄弟象隊	辣椒熊	37.2
+3B	興農牛隊	王風三	JPot8888
+SS	生活雷公	盧卡斯	lucas
+LF	時報鷹隊	宋城縣	Protomodel
+CF	中信鯨隊	村田四	zxc526291
+RF	俊國熊隊	分離乳清	分離乳清
+DH	統一獅隊	轟雷市十二	polntion
+SP	興農牛隊	千古一帝	SSRdevil
+SP	年代勇士	跑的慢三九	porching
+SP	年代勇士	小叡四十	allan5250
+SP	俊國熊隊	業餘球評	80338
+SP	三商虎隊	葉修	傑尼斯
+RP	三商虎隊	幸運草莓	undying
+RP	誠泰Cobras	唐門嘍囉四	algop528
+RP	誠泰Cobras	徵柴啟示	yayahong
+CP	兄弟象隊	木木	sbl200200</pre></details>
+    <div class="table-scroll lineup-table" tabindex="0" role="region" aria-label="18 人名單，可橫向捲動"><table><thead><tr><th>位置</th><th>球隊</th><th>球員</th><th>GM</th><th>預測</th><th>能力</th><th>技能</th></tr></thead><tbody><tr><td>C</td><td>Lamigo桃猿</td><td class="player">鮮奶烤布丁</td><td>eric0214</td><td>HR 22 / RBI 66 / AVG 0.249 / SB 1</td><td>力 232 / 巧 6 / 走 5 / 守 11 / 肩 7</td><td>內野安打 / 奪力</td></tr>
+<tr><td>1B</td><td>味全龍隊</td><td class="player">丁丁真男人</td><td>mingwu</td><td>HR 17 / RBI 49 / AVG 0.229 / SB 0</td><td>力 206 / 巧 6 / 走 4 / 守 10 / 肩 5</td><td>對左投○ / 再見男 / 威壓感 / 奪力</td></tr>
+<tr><td>2B</td><td>兄弟象隊</td><td class="player">辣椒熊</td><td>37.2</td><td>HR 27 / RBI 73 / AVG 0.254 / SB 0</td><td>力 209 / 巧 6 / 走 4 / 守 11 / 肩 6</td><td>觸擊○ / 威壓感 / 豪力</td></tr>
+<tr><td>3B</td><td>興農牛隊</td><td class="player">王風三</td><td>JPot8888</td><td>HR 35 / RBI 70 / AVG 0.249 / SB 0</td><td>力 234 / 巧 6 / 走 4 / 守 11 / 肩 6</td><td>盜壘Ｘ / 強力打者 / 逆境○ / 威壓感 / 豪力</td></tr>
+<tr><td>SS</td><td>生活雷公</td><td class="player">盧卡斯</td><td>lucas</td><td>HR 6 / RBI 54 / AVG 0.235 / SB 7</td><td>力 158 / 巧 7 / 走 13 / 守 9 / 肩 11</td><td>威壓感 / 人氣者</td></tr>
+<tr><td>LF</td><td>時報鷹隊</td><td class="player">宋城縣</td><td>Protomodel</td><td>HR 5 / RBI 46 / AVG 0.247 / SB 5</td><td>力 117 / 巧 5 / 走 10 / 守 8 / 肩 8</td><td>盜壘Ｘ / 內野安打 / 再見男 / 安定感 / 人氣者 / 奪力</td></tr>
+<tr><td>CF</td><td>中信鯨隊</td><td class="player">村田四</td><td>zxc526291</td><td>HR 1 / RBI 31 / AVG 0.271 / SB 27</td><td>力 114 / 巧 6 / 走 9 / 守 12 / 肩 4</td><td>觸擊○ / 威壓感 / 安定感 / 奪力</td></tr>
+<tr><td>RF</td><td>俊國熊隊</td><td class="player">分離乳清</td><td>分離乳清</td><td>HR 31 / RBI 69 / AVG 0.254 / SB 0</td><td>力 249 / 巧 6 / 走 6 / 守 12 / 肩 7</td><td>對左投Ｘ / 逆境○ / 豪力</td></tr>
+<tr><td>DH</td><td>統一獅隊</td><td class="player">轟雷市十二</td><td>polntion</td><td>HR 22 / RBI 44 / AVG 0.216 / SB 0</td><td>力 214 / 巧 4 / 走 3 / 守 8 / 肩 4</td><td>對左投Ｘ / 固定打者 / 人氣者 / 豪力</td></tr>
+<tr><td>SP</td><td>興農牛隊</td><td class="player">千古一帝</td><td>SSRdevil</td><td>W 10 / K 103 / SV 0 / ERA 2.73</td><td>控 206 / 體 206 / 速 148</td><td>直球○ / 危機○ / 對左打○ / 逃球 / 重球 / 中繼能力○ / 威壓感 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>年代勇士</td><td class="player">跑的慢三九</td><td>porching</td><td>W 10 / K 127 / SV 0 / ERA 2.03</td><td>控 216 / 體 219 / 速 148</td><td>直球○ / 對左打○ / 逃球 / 重球 / 威壓感 / 安定感 / 人氣者 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>年代勇士</td><td class="player">小叡四十</td><td>allan5250</td><td>W 10 / K 101 / SV 0 / ERA 2.23</td><td>控 224 / 體 232 / 速 152</td><td>直球○ / 勝運 / 被連打○ / 重球 / 威壓感 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>俊國熊隊</td><td class="player">業餘球評</td><td>80338</td><td>W 9 / K 123 / SV 0 / ERA 2.08</td><td>控 209 / 體 221 / 速 148</td><td>直球○ / 被連打○ / 逃球 / 重球 / 中繼能力○ / 威壓感 / 安定感 / 氣魄 / 不安定感</td></tr>
+<tr><td>SP</td><td>三商虎隊</td><td class="player">葉修</td><td>傑尼斯</td><td>W 9 / K 99 / SV 0 / ERA 2.12</td><td>控 224 / 體 224 / 速 151</td><td>逃球 / 重球 / 中繼能力○ / 威壓感 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>RP</td><td>三商虎隊</td><td class="player">幸運草莓</td><td>undying</td><td>W 8 / K 100 / SV 3 / ERA 4.32</td><td>控 249 / 體 247 / 速 152</td><td>對左打Ｘ / 逃球 / 威壓感 / 氣魄 / 伸卡球(7)</td></tr>
+<tr><td>RP</td><td>誠泰Cobras</td><td class="player">唐門嘍囉四</td><td>algop528</td><td>W 7 / K 99 / SV 4 / ERA 3.69</td><td>控 249 / 體 255 / 速 156</td><td>牽制○ / 威壓感 / 掌心球(7)</td></tr>
+<tr><td>RP</td><td>誠泰Cobras</td><td class="player">徵柴啟示</td><td>yayahong</td><td>W 7 / K 102 / SV 3 / ERA 4.19</td><td>控 237 / 體 237 / 速 155</td><td>牽制Ｘ / 威壓感 / 安定感 / 掌心球(7)</td></tr>
+<tr><td>CP</td><td>兄弟象隊</td><td class="player">木木</td><td>sbl200200</td><td>W 6 / K 18 / SV 23 / ERA 4.07</td><td>控 242 / 體 242 / 速 149</td><td>逃球 / 人氣者 / 掌心球(7)</td></tr></tbody></table></div>
+  </section>
+<section class="variant">
+    <div class="variant-head">
+      <h3>W V3</h3>
+      <div class="chips">
+        <span>預測勝投 75</span>
+        <span>HR 152</span>
+        <span>RBI 495</span>
+        <span>W 75</span>
+        <span>K 860</span>
+        <span>SV 34</span>
+        <span>ERA 未估局數</span>
+      </div>
+    </div>
+    <div class="claim" data-claim-key="W V3">
+      <label>W V3 認領</label>
+      <input type="text" autocomplete="name" placeholder="輸入名字">
+      <button type="button">儲存</button>
+      <span class="claim-status" aria-live="polite"></span>
+    </div>
+    <div class="submit-action fantasy-submit-action" data-ore-fantasy-submit="W V3">
+    <div><strong>W V3 夢幻球隊一鍵送出</strong><br><span>18 人名單與本版表格完全一致；請先在同一瀏覽器登入 ORE。</span></div>
+    <a class="submit-link" data-ore-submit-url="http://game.tinycafe.com/ore/ore.cgi?pickMyTeam=1&amp;pick4=%A7%BA%AB%B0%BF%A4&amp;pick8=%AE%F6%A4l%A4Q%A4G&amp;pick9=%A4B%A4B%AFu%A8k%A4H&amp;pick11=%A7%F8%A5%D0%A5%7C&amp;pick12=%BFc%A5d%B4%B5&amp;pick15=%BB%B6%B4%D4%BA%B5&amp;pick18=%AF%AB%AAi%A6h%A4%40%AA%E1&amp;pick19=%C2A%A5%A4%AFN%A5%AC%A4B&amp;pick34=%C5F%B9p%A5%AB%A4Q%A4G&amp;pick109=%A4d%A5j%A4%40%AB%D2&amp;pick110=%B6%5D%AA%BA%BAC%A4T%A4E&amp;pick116=%B7~%BEl%B2y%B5%FB&amp;pick121=%B3%B6%B8t%A4Q%A4K&amp;pick122=%A4p%E8%FB%A5%7C%A4Q&amp;pick173=%B1j%AB%C2&amp;pick174=%A9%AF%B9B%AF%F3%B2%F9&amp;pick185=%AD%F0%AA%F9%B9%C6%C5o%A5%7C&amp;pick207=%A4%EC%A4%EC&amp;tm1=2&amp;tm2=2&amp;tm3=2&amp;tm4=1&amp;tm5=2&amp;tm6=2&amp;tm7=1&amp;tm8=2&amp;tm9=1&amp;tm10=1&amp;tm11=1&amp;tm12=1&amp;tmBat=9&amp;tmSP=5&amp;tmRP=3&amp;tmCP=1&amp;tmAll=18&amp;submit1=%A5%5B%A4J%A7%DA%AA%BA%B9%DA%A4%DB%B2y%B6%A4" role="link" aria-disabled="true" tabindex="0" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">直接送出 W V3</a>
+    <p class="submit-warning">點下即提交本版 18 人，不是預覽；每個帳號每季只能參加一次。</p>
+  </div>
+    <details><summary>複製用 18 人名單</summary><pre>C	Lamigo桃猿	鮮奶烤布丁	eric0214
+1B	味全龍隊	丁丁真男人	mingwu
+2B	兄弟象隊	辣椒熊	37.2
+3B	俊國熊隊	浪子十二	kelven
+SS	生活雷公	盧卡斯	lucas
+LF	時報鷹隊	宋城縣	Protomodel
+CF	中信鯨隊	村田四	zxc526291
+RF	三商虎隊	神波多一花	神波多一花
+DH	統一獅隊	轟雷市十二	polntion
+SP	興農牛隊	千古一帝	SSRdevil
+SP	年代勇士	跑的慢三九	porching
+SP	年代勇士	小叡四十	allan5250
+SP	俊國熊隊	業餘球評	80338
+SP	興農牛隊	雀聖十八	forbid
+RP	三商虎隊	幸運草莓	undying
+RP	誠泰Cobras	唐門嘍囉四	algop528
+RP	誠泰Cobras	強威	jaclsa
+CP	兄弟象隊	木木	sbl200200</pre></details>
+    <div class="table-scroll lineup-table" tabindex="0" role="region" aria-label="18 人名單，可橫向捲動"><table><thead><tr><th>位置</th><th>球隊</th><th>球員</th><th>GM</th><th>預測</th><th>能力</th><th>技能</th></tr></thead><tbody><tr><td>C</td><td>Lamigo桃猿</td><td class="player">鮮奶烤布丁</td><td>eric0214</td><td>HR 22 / RBI 66 / AVG 0.249 / SB 1</td><td>力 232 / 巧 6 / 走 5 / 守 11 / 肩 7</td><td>內野安打 / 奪力</td></tr>
+<tr><td>1B</td><td>味全龍隊</td><td class="player">丁丁真男人</td><td>mingwu</td><td>HR 17 / RBI 49 / AVG 0.229 / SB 0</td><td>力 206 / 巧 6 / 走 4 / 守 10 / 肩 5</td><td>對左投○ / 再見男 / 威壓感 / 奪力</td></tr>
+<tr><td>2B</td><td>兄弟象隊</td><td class="player">辣椒熊</td><td>37.2</td><td>HR 27 / RBI 73 / AVG 0.254 / SB 0</td><td>力 209 / 巧 6 / 走 4 / 守 11 / 肩 6</td><td>觸擊○ / 威壓感 / 豪力</td></tr>
+<tr><td>3B</td><td>俊國熊隊</td><td class="player">浪子十二</td><td>kelven</td><td>HR 29 / RBI 64 / AVG 0.249 / SB 1</td><td>力 247 / 巧 7 / 走 6 / 守 11 / 肩 6</td><td>觸擊○ / 對左投Ｘ / 豪力</td></tr>
+<tr><td>SS</td><td>生活雷公</td><td class="player">盧卡斯</td><td>lucas</td><td>HR 6 / RBI 54 / AVG 0.235 / SB 7</td><td>力 158 / 巧 7 / 走 13 / 守 9 / 肩 11</td><td>威壓感 / 人氣者</td></tr>
+<tr><td>LF</td><td>時報鷹隊</td><td class="player">宋城縣</td><td>Protomodel</td><td>HR 5 / RBI 46 / AVG 0.247 / SB 5</td><td>力 117 / 巧 5 / 走 10 / 守 8 / 肩 8</td><td>盜壘Ｘ / 內野安打 / 再見男 / 安定感 / 人氣者 / 奪力</td></tr>
+<tr><td>CF</td><td>中信鯨隊</td><td class="player">村田四</td><td>zxc526291</td><td>HR 1 / RBI 31 / AVG 0.271 / SB 27</td><td>力 114 / 巧 6 / 走 9 / 守 12 / 肩 4</td><td>觸擊○ / 威壓感 / 安定感 / 奪力</td></tr>
+<tr><td>RF</td><td>三商虎隊</td><td class="player">神波多一花</td><td>神波多一花</td><td>HR 23 / RBI 68 / AVG 0.250 / SB 3</td><td>力 234 / 巧 7 / 走 6 / 守 12 / 肩 6</td><td>再見男</td></tr>
+<tr><td>DH</td><td>統一獅隊</td><td class="player">轟雷市十二</td><td>polntion</td><td>HR 22 / RBI 44 / AVG 0.216 / SB 0</td><td>力 214 / 巧 4 / 走 3 / 守 8 / 肩 4</td><td>對左投Ｘ / 固定打者 / 人氣者 / 豪力</td></tr>
+<tr><td>SP</td><td>興農牛隊</td><td class="player">千古一帝</td><td>SSRdevil</td><td>W 10 / K 103 / SV 0 / ERA 2.73</td><td>控 206 / 體 206 / 速 148</td><td>直球○ / 危機○ / 對左打○ / 逃球 / 重球 / 中繼能力○ / 威壓感 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>年代勇士</td><td class="player">跑的慢三九</td><td>porching</td><td>W 10 / K 127 / SV 0 / ERA 2.03</td><td>控 216 / 體 219 / 速 148</td><td>直球○ / 對左打○ / 逃球 / 重球 / 威壓感 / 安定感 / 人氣者 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>年代勇士</td><td class="player">小叡四十</td><td>allan5250</td><td>W 10 / K 101 / SV 0 / ERA 2.23</td><td>控 224 / 體 232 / 速 152</td><td>直球○ / 勝運 / 被連打○ / 重球 / 威壓感 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>俊國熊隊</td><td class="player">業餘球評</td><td>80338</td><td>W 9 / K 123 / SV 0 / ERA 2.08</td><td>控 209 / 體 221 / 速 148</td><td>直球○ / 被連打○ / 逃球 / 重球 / 中繼能力○ / 威壓感 / 安定感 / 氣魄 / 不安定感</td></tr>
+<tr><td>SP</td><td>興農牛隊</td><td class="player">雀聖十八</td><td>forbid</td><td>W 9 / K 105 / SV 0 / ERA 2.62</td><td>控 232 / 體 216 / 速 153</td><td>逃球 / 重球 / 中繼能力○ / 威壓感 / 氣魄 / 掌心球(7)</td></tr>
+<tr><td>RP</td><td>三商虎隊</td><td class="player">幸運草莓</td><td>undying</td><td>W 8 / K 100 / SV 3 / ERA 4.32</td><td>控 249 / 體 247 / 速 152</td><td>對左打Ｘ / 逃球 / 威壓感 / 氣魄 / 伸卡球(7)</td></tr>
+<tr><td>RP</td><td>誠泰Cobras</td><td class="player">唐門嘍囉四</td><td>algop528</td><td>W 7 / K 99 / SV 4 / ERA 3.69</td><td>控 249 / 體 255 / 速 156</td><td>牽制○ / 威壓感 / 掌心球(7)</td></tr>
+<tr><td>RP</td><td>誠泰Cobras</td><td class="player">強威</td><td>jaclsa</td><td>W 7 / K 84 / SV 4 / ERA 4.41</td><td>控 255 / 體 239 / 速 150</td><td>勝運 / 威壓感 / 掌心球(7)</td></tr>
+<tr><td>CP</td><td>兄弟象隊</td><td class="player">木木</td><td>sbl200200</td><td>W 6 / K 18 / SV 23 / ERA 4.07</td><td>控 242 / 體 242 / 速 149</td><td>逃球 / 人氣者 / 掌心球(7)</td></tr></tbody></table></div>
+  </section>
+<section class="variant">
+    <div class="variant-head">
+      <h3>W V4</h3>
+      <div class="chips">
+        <span>預測勝投 75</span>
+        <span>HR 160</span>
+        <span>RBI 507</span>
+        <span>W 75</span>
+        <span>K 874</span>
+        <span>SV 33</span>
+        <span>ERA 未估局數</span>
+      </div>
+    </div>
+    <div class="claim" data-claim-key="W V4">
+      <label>W V4 認領</label>
+      <input type="text" autocomplete="name" placeholder="輸入名字">
+      <button type="button">儲存</button>
+      <span class="claim-status" aria-live="polite"></span>
+    </div>
+    <div class="submit-action fantasy-submit-action" data-ore-fantasy-submit="W V4">
+    <div><strong>W V4 夢幻球隊一鍵送出</strong><br><span>18 人名單與本版表格完全一致；請先在同一瀏覽器登入 ORE。</span></div>
+    <a class="submit-link" data-ore-submit-url="http://game.tinycafe.com/ore/ore.cgi?pickMyTeam=1&amp;pick4=%A7%BA%AB%B0%BF%A4&amp;pick5=%BA%B5%AB%D3%A4T&amp;pick7=%AE%AB%B1N%A4%AD%A5%40&amp;pick11=%A7%F8%A5%D0%A5%7C&amp;pick12=%BFc%A5d%B4%B5&amp;pick13=%A4%FD%AD%B7%A4T&amp;pick19=%C2A%A5%A4%AFN%A5%AC%A4B&amp;pick22=%AE%DF%A4l%A4%40%A5%40&amp;pick44=%A4%C0%C2%F7%A8%C5%B2M&amp;pick109=%A4d%A5j%A4%40%AB%D2&amp;pick110=%B6%5D%AA%BA%BAC%A4T%A4E&amp;pick116=%B7~%BEl%B2y%B5%FB&amp;pick122=%A4p%E8%FB%A5%7C%A4Q&amp;pick138=%B8%AD%AD%D7&amp;pick174=%A9%AF%B9B%AF%F3%B2%F9&amp;pick177=%AB%D7%B0%DA%A4Q%A4%40&amp;pick185=%AD%F0%AA%F9%B9%C6%C5o%A5%7C&amp;pick207=%A4%EC%A4%EC&amp;tm1=2&amp;tm2=2&amp;tm3=1&amp;tm4=1&amp;tm5=2&amp;tm6=2&amp;tm7=2&amp;tm8=2&amp;tm9=1&amp;tm10=1&amp;tm11=1&amp;tm12=1&amp;tmBat=9&amp;tmSP=5&amp;tmRP=3&amp;tmCP=1&amp;tmAll=18&amp;submit1=%A5%5B%A4J%A7%DA%AA%BA%B9%DA%A4%DB%B2y%B6%A4" role="link" aria-disabled="true" tabindex="0" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">直接送出 W V4</a>
+    <p class="submit-warning">點下即提交本版 18 人，不是預覽；每個帳號每季只能參加一次。</p>
+  </div>
+    <details><summary>複製用 18 人名單</summary><pre>C	Lamigo桃猿	鮮奶烤布丁	eric0214
+1B	統一獅隊	栗子一世	maddux3939
+2B	誠泰Cobras	熊帥三	老子
+3B	興農牛隊	王風三	JPot8888
+SS	生活雷公	盧卡斯	lucas
+LF	時報鷹隊	宋城縣	Protomodel
+CF	中信鯨隊	村田四	zxc526291
+RF	俊國熊隊	分離乳清	分離乳清
+DH	Lamigo桃猿	悍將五世	黃金小教頭
+SP	興農牛隊	千古一帝	SSRdevil
+SP	年代勇士	跑的慢三九	porching
+SP	年代勇士	小叡四十	allan5250
+SP	俊國熊隊	業餘球評	80338
+SP	三商虎隊	葉修	傑尼斯
+RP	三商虎隊	幸運草莓	undying
+RP	誠泰Cobras	唐門嘍囉四	algop528
+RP	味全龍隊	度啊十一	willy
+CP	兄弟象隊	木木	sbl200200</pre></details>
+    <div class="table-scroll lineup-table" tabindex="0" role="region" aria-label="18 人名單，可橫向捲動"><table><thead><tr><th>位置</th><th>球隊</th><th>球員</th><th>GM</th><th>預測</th><th>能力</th><th>技能</th></tr></thead><tbody><tr><td>C</td><td>Lamigo桃猿</td><td class="player">鮮奶烤布丁</td><td>eric0214</td><td>HR 22 / RBI 66 / AVG 0.249 / SB 1</td><td>力 232 / 巧 6 / 走 5 / 守 11 / 肩 7</td><td>內野安打 / 奪力</td></tr>
+<tr><td>1B</td><td>統一獅隊</td><td class="player">栗子一世</td><td>maddux3939</td><td>HR 26 / RBI 56 / AVG 0.240 / SB 0</td><td>力 219 / 巧 5 / 走 3 / 守 9 / 肩 5</td><td>得點圈○ / 對左投Ｘ / 固定打者 / 傳球○ / 威壓感 / 豪力</td></tr>
+<tr><td>2B</td><td>誠泰Cobras</td><td class="player">熊帥三</td><td>老子</td><td>HR 28 / RBI 77 / AVG 0.263 / SB 1</td><td>力 216 / 巧 5 / 走 4 / 守 10 / 肩 5</td><td>守備能力○ / 強力打者 / 滿壘男 / 開路先鋒 / 威壓感 / 人氣者 / 奪力</td></tr>
+<tr><td>3B</td><td>興農牛隊</td><td class="player">王風三</td><td>JPot8888</td><td>HR 35 / RBI 70 / AVG 0.249 / SB 0</td><td>力 234 / 巧 6 / 走 4 / 守 11 / 肩 6</td><td>盜壘Ｘ / 強力打者 / 逆境○ / 威壓感 / 豪力</td></tr>
+<tr><td>SS</td><td>生活雷公</td><td class="player">盧卡斯</td><td>lucas</td><td>HR 6 / RBI 54 / AVG 0.235 / SB 7</td><td>力 158 / 巧 7 / 走 13 / 守 9 / 肩 11</td><td>威壓感 / 人氣者</td></tr>
+<tr><td>LF</td><td>時報鷹隊</td><td class="player">宋城縣</td><td>Protomodel</td><td>HR 5 / RBI 46 / AVG 0.247 / SB 5</td><td>力 117 / 巧 5 / 走 10 / 守 8 / 肩 8</td><td>盜壘Ｘ / 內野安打 / 再見男 / 安定感 / 人氣者 / 奪力</td></tr>
+<tr><td>CF</td><td>中信鯨隊</td><td class="player">村田四</td><td>zxc526291</td><td>HR 1 / RBI 31 / AVG 0.271 / SB 27</td><td>力 114 / 巧 6 / 走 9 / 守 12 / 肩 4</td><td>觸擊○ / 威壓感 / 安定感 / 奪力</td></tr>
+<tr><td>RF</td><td>俊國熊隊</td><td class="player">分離乳清</td><td>分離乳清</td><td>HR 31 / RBI 69 / AVG 0.254 / SB 0</td><td>力 249 / 巧 6 / 走 6 / 守 12 / 肩 7</td><td>對左投Ｘ / 逆境○ / 豪力</td></tr>
+<tr><td>DH</td><td>Lamigo桃猿</td><td class="player">悍將五世</td><td>黃金小教頭</td><td>HR 6 / RBI 38 / AVG 0.233 / SB 14</td><td>力 135 / 巧 6 / 走 11 / 守 7 / 肩 6</td><td>得點圈Ｘ / 滿壘男 / 開路先鋒 / 奪力</td></tr>
+<tr><td>SP</td><td>興農牛隊</td><td class="player">千古一帝</td><td>SSRdevil</td><td>W 10 / K 103 / SV 0 / ERA 2.73</td><td>控 206 / 體 206 / 速 148</td><td>直球○ / 危機○ / 對左打○ / 逃球 / 重球 / 中繼能力○ / 威壓感 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>年代勇士</td><td class="player">跑的慢三九</td><td>porching</td><td>W 10 / K 127 / SV 0 / ERA 2.03</td><td>控 216 / 體 219 / 速 148</td><td>直球○ / 對左打○ / 逃球 / 重球 / 威壓感 / 安定感 / 人氣者 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>年代勇士</td><td class="player">小叡四十</td><td>allan5250</td><td>W 10 / K 101 / SV 0 / ERA 2.23</td><td>控 224 / 體 232 / 速 152</td><td>直球○ / 勝運 / 被連打○ / 重球 / 威壓感 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>俊國熊隊</td><td class="player">業餘球評</td><td>80338</td><td>W 9 / K 123 / SV 0 / ERA 2.08</td><td>控 209 / 體 221 / 速 148</td><td>直球○ / 被連打○ / 逃球 / 重球 / 中繼能力○ / 威壓感 / 安定感 / 氣魄 / 不安定感</td></tr>
+<tr><td>SP</td><td>三商虎隊</td><td class="player">葉修</td><td>傑尼斯</td><td>W 9 / K 99 / SV 0 / ERA 2.12</td><td>控 224 / 體 224 / 速 151</td><td>逃球 / 重球 / 中繼能力○ / 威壓感 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>RP</td><td>三商虎隊</td><td class="player">幸運草莓</td><td>undying</td><td>W 8 / K 100 / SV 3 / ERA 4.32</td><td>控 249 / 體 247 / 速 152</td><td>對左打Ｘ / 逃球 / 威壓感 / 氣魄 / 伸卡球(7)</td></tr>
+<tr><td>RP</td><td>誠泰Cobras</td><td class="player">唐門嘍囉四</td><td>algop528</td><td>W 7 / K 99 / SV 4 / ERA 3.69</td><td>控 249 / 體 255 / 速 156</td><td>牽制○ / 威壓感 / 掌心球(7)</td></tr>
+<tr><td>RP</td><td>味全龍隊</td><td class="player">度啊十一</td><td>willy</td><td>W 7 / K 104 / SV 3 / ERA 4.76</td><td>控 237 / 體 239 / 速 153</td><td>逃球 / 威壓感 / 指叉球(7)</td></tr>
+<tr><td>CP</td><td>兄弟象隊</td><td class="player">木木</td><td>sbl200200</td><td>W 6 / K 18 / SV 23 / ERA 4.07</td><td>控 242 / 體 242 / 速 149</td><td>逃球 / 人氣者 / 掌心球(7)</td></tr></tbody></table></div>
+  </section>
+<section class="variant">
+    <div class="variant-head">
+      <h3>W V5</h3>
+      <div class="chips">
+        <span>預測勝投 74</span>
+        <span>HR 152</span>
+        <span>RBI 495</span>
+        <span>W 74</span>
+        <span>K 878</span>
+        <span>SV 33</span>
+        <span>ERA 未估局數</span>
+      </div>
+    </div>
+    <div class="claim" data-claim-key="W V5">
+      <label>W V5 認領</label>
+      <input type="text" autocomplete="name" placeholder="輸入名字">
+      <button type="button">儲存</button>
+      <span class="claim-status" aria-live="polite"></span>
+    </div>
+    <div class="submit-action fantasy-submit-action" data-ore-fantasy-submit="W V5">
+    <div><strong>W V5 夢幻球隊一鍵送出</strong><br><span>18 人名單與本版表格完全一致；請先在同一瀏覽器登入 ORE。</span></div>
+    <a class="submit-link" data-ore-submit-url="http://game.tinycafe.com/ore/ore.cgi?pickMyTeam=1&amp;pick4=%A7%BA%AB%B0%BF%A4&amp;pick8=%AE%F6%A4l%A4Q%A4G&amp;pick9=%A4B%A4B%AFu%A8k%A4H&amp;pick11=%A7%F8%A5%D0%A5%7C&amp;pick12=%BFc%A5d%B4%B5&amp;pick15=%BB%B6%B4%D4%BA%B5&amp;pick18=%AF%AB%AAi%A6h%A4%40%AA%E1&amp;pick19=%C2A%A5%A4%AFN%A5%AC%A4B&amp;pick34=%C5F%B9p%A5%AB%A4Q%A4G&amp;pick109=%A4d%A5j%A4%40%AB%D2&amp;pick110=%B6%5D%AA%BA%BAC%A4T%A4E&amp;pick116=%B7~%BEl%B2y%B5%FB&amp;pick121=%B3%B6%B8t%A4Q%A4K&amp;pick122=%A4p%E8%FB%A5%7C%A4Q&amp;pick174=%A9%AF%B9B%AF%F3%B2%F9&amp;pick185=%AD%F0%AA%F9%B9%C6%C5o%A5%7C&amp;pick197=%BCx%AE%E3%B1%D2%A5%DC&amp;pick207=%A4%EC%A4%EC&amp;tm1=2&amp;tm2=2&amp;tm3=2&amp;tm4=1&amp;tm5=2&amp;tm6=2&amp;tm7=1&amp;tm8=2&amp;tm9=1&amp;tm10=1&amp;tm11=1&amp;tm12=1&amp;tmBat=9&amp;tmSP=5&amp;tmRP=3&amp;tmCP=1&amp;tmAll=18&amp;submit1=%A5%5B%A4J%A7%DA%AA%BA%B9%DA%A4%DB%B2y%B6%A4" role="link" aria-disabled="true" tabindex="0" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">直接送出 W V5</a>
+    <p class="submit-warning">點下即提交本版 18 人，不是預覽；每個帳號每季只能參加一次。</p>
+  </div>
+    <details><summary>複製用 18 人名單</summary><pre>C	Lamigo桃猿	鮮奶烤布丁	eric0214
+1B	味全龍隊	丁丁真男人	mingwu
+2B	兄弟象隊	辣椒熊	37.2
+3B	俊國熊隊	浪子十二	kelven
+SS	生活雷公	盧卡斯	lucas
+LF	時報鷹隊	宋城縣	Protomodel
+CF	中信鯨隊	村田四	zxc526291
+RF	三商虎隊	神波多一花	神波多一花
+DH	統一獅隊	轟雷市十二	polntion
+SP	興農牛隊	千古一帝	SSRdevil
+SP	年代勇士	跑的慢三九	porching
+SP	年代勇士	小叡四十	allan5250
+SP	俊國熊隊	業餘球評	80338
+SP	興農牛隊	雀聖十八	forbid
+RP	三商虎隊	幸運草莓	undying
+RP	誠泰Cobras	唐門嘍囉四	algop528
+RP	誠泰Cobras	徵柴啟示	yayahong
+CP	兄弟象隊	木木	sbl200200</pre></details>
+    <div class="table-scroll lineup-table" tabindex="0" role="region" aria-label="18 人名單，可橫向捲動"><table><thead><tr><th>位置</th><th>球隊</th><th>球員</th><th>GM</th><th>預測</th><th>能力</th><th>技能</th></tr></thead><tbody><tr><td>C</td><td>Lamigo桃猿</td><td class="player">鮮奶烤布丁</td><td>eric0214</td><td>HR 22 / RBI 66 / AVG 0.249 / SB 1</td><td>力 232 / 巧 6 / 走 5 / 守 11 / 肩 7</td><td>內野安打 / 奪力</td></tr>
+<tr><td>1B</td><td>味全龍隊</td><td class="player">丁丁真男人</td><td>mingwu</td><td>HR 17 / RBI 49 / AVG 0.229 / SB 0</td><td>力 206 / 巧 6 / 走 4 / 守 10 / 肩 5</td><td>對左投○ / 再見男 / 威壓感 / 奪力</td></tr>
+<tr><td>2B</td><td>兄弟象隊</td><td class="player">辣椒熊</td><td>37.2</td><td>HR 27 / RBI 73 / AVG 0.254 / SB 0</td><td>力 209 / 巧 6 / 走 4 / 守 11 / 肩 6</td><td>觸擊○ / 威壓感 / 豪力</td></tr>
+<tr><td>3B</td><td>俊國熊隊</td><td class="player">浪子十二</td><td>kelven</td><td>HR 29 / RBI 64 / AVG 0.249 / SB 1</td><td>力 247 / 巧 7 / 走 6 / 守 11 / 肩 6</td><td>觸擊○ / 對左投Ｘ / 豪力</td></tr>
+<tr><td>SS</td><td>生活雷公</td><td class="player">盧卡斯</td><td>lucas</td><td>HR 6 / RBI 54 / AVG 0.235 / SB 7</td><td>力 158 / 巧 7 / 走 13 / 守 9 / 肩 11</td><td>威壓感 / 人氣者</td></tr>
+<tr><td>LF</td><td>時報鷹隊</td><td class="player">宋城縣</td><td>Protomodel</td><td>HR 5 / RBI 46 / AVG 0.247 / SB 5</td><td>力 117 / 巧 5 / 走 10 / 守 8 / 肩 8</td><td>盜壘Ｘ / 內野安打 / 再見男 / 安定感 / 人氣者 / 奪力</td></tr>
+<tr><td>CF</td><td>中信鯨隊</td><td class="player">村田四</td><td>zxc526291</td><td>HR 1 / RBI 31 / AVG 0.271 / SB 27</td><td>力 114 / 巧 6 / 走 9 / 守 12 / 肩 4</td><td>觸擊○ / 威壓感 / 安定感 / 奪力</td></tr>
+<tr><td>RF</td><td>三商虎隊</td><td class="player">神波多一花</td><td>神波多一花</td><td>HR 23 / RBI 68 / AVG 0.250 / SB 3</td><td>力 234 / 巧 7 / 走 6 / 守 12 / 肩 6</td><td>再見男</td></tr>
+<tr><td>DH</td><td>統一獅隊</td><td class="player">轟雷市十二</td><td>polntion</td><td>HR 22 / RBI 44 / AVG 0.216 / SB 0</td><td>力 214 / 巧 4 / 走 3 / 守 8 / 肩 4</td><td>對左投Ｘ / 固定打者 / 人氣者 / 豪力</td></tr>
+<tr><td>SP</td><td>興農牛隊</td><td class="player">千古一帝</td><td>SSRdevil</td><td>W 10 / K 103 / SV 0 / ERA 2.73</td><td>控 206 / 體 206 / 速 148</td><td>直球○ / 危機○ / 對左打○ / 逃球 / 重球 / 中繼能力○ / 威壓感 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>年代勇士</td><td class="player">跑的慢三九</td><td>porching</td><td>W 10 / K 127 / SV 0 / ERA 2.03</td><td>控 216 / 體 219 / 速 148</td><td>直球○ / 對左打○ / 逃球 / 重球 / 威壓感 / 安定感 / 人氣者 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>年代勇士</td><td class="player">小叡四十</td><td>allan5250</td><td>W 10 / K 101 / SV 0 / ERA 2.23</td><td>控 224 / 體 232 / 速 152</td><td>直球○ / 勝運 / 被連打○ / 重球 / 威壓感 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>俊國熊隊</td><td class="player">業餘球評</td><td>80338</td><td>W 9 / K 123 / SV 0 / ERA 2.08</td><td>控 209 / 體 221 / 速 148</td><td>直球○ / 被連打○ / 逃球 / 重球 / 中繼能力○ / 威壓感 / 安定感 / 氣魄 / 不安定感</td></tr>
+<tr><td>SP</td><td>興農牛隊</td><td class="player">雀聖十八</td><td>forbid</td><td>W 9 / K 105 / SV 0 / ERA 2.62</td><td>控 232 / 體 216 / 速 153</td><td>逃球 / 重球 / 中繼能力○ / 威壓感 / 氣魄 / 掌心球(7)</td></tr>
+<tr><td>RP</td><td>三商虎隊</td><td class="player">幸運草莓</td><td>undying</td><td>W 8 / K 100 / SV 3 / ERA 4.32</td><td>控 249 / 體 247 / 速 152</td><td>對左打Ｘ / 逃球 / 威壓感 / 氣魄 / 伸卡球(7)</td></tr>
+<tr><td>RP</td><td>誠泰Cobras</td><td class="player">唐門嘍囉四</td><td>algop528</td><td>W 7 / K 99 / SV 4 / ERA 3.69</td><td>控 249 / 體 255 / 速 156</td><td>牽制○ / 威壓感 / 掌心球(7)</td></tr>
+<tr><td>RP</td><td>誠泰Cobras</td><td class="player">徵柴啟示</td><td>yayahong</td><td>W 7 / K 102 / SV 3 / ERA 4.19</td><td>控 237 / 體 237 / 速 155</td><td>牽制Ｘ / 威壓感 / 安定感 / 掌心球(7)</td></tr>
+<tr><td>CP</td><td>兄弟象隊</td><td class="player">木木</td><td>sbl200200</td><td>W 6 / K 18 / SV 23 / ERA 4.07</td><td>控 242 / 體 242 / 速 149</td><td>逃球 / 人氣者 / 掌心球(7)</td></tr></tbody></table></div>
+  </section>
+  </section>
+<section class="section" id="fantasy-RBI">
+    <h2>RBI 5 組版本</h2>
+    <p>優先 3、探索候選：最新 selector 列第三；S790 回跑最佳第9、差53，未拿第一。沿用既定打者能力、技能及機會評分；不從已揭曉冠軍反推新權重。HR及SV本季實際交付亦失準，SV優先序降低。 核心目標是 預測打點；非目標位置只做合法補位與隊伍限制。</p>
+    <p class="submit-warning item-submit-warning">以下 5 個版本各有獨立送出按鈕。請先選定唯一版本；點下後會立即提交，不能把五版都投進同一帳號。</p>
+    <section class="variant">
+    <div class="variant-head">
+      <h3>RBI V1</h3>
+      <div class="chips">
+        <span>預測打點 633</span>
+        <span>HR 297</span>
+        <span>RBI 633</span>
+        <span>W 76</span>
+        <span>K 801</span>
+        <span>SV 34</span>
+        <span>ERA 未估局數</span>
+      </div>
+    </div>
+    <div class="claim" data-claim-key="RBI V1">
+      <label>RBI V1 認領</label>
+      <input type="text" autocomplete="name" placeholder="輸入名字">
+      <button type="button">儲存</button>
+      <span class="claim-status" aria-live="polite"></span>
+    </div>
+    <div class="submit-action fantasy-submit-action" data-ore-fantasy-submit="RBI V1">
+    <div><strong>RBI V1 夢幻球隊一鍵送出</strong><br><span>18 人名單與本版表格完全一致；請先在同一瀏覽器登入 ORE。</span></div>
+    <a class="submit-link" data-ore-submit-url="http://game.tinycafe.com/ore/ore.cgi?pickMyTeam=1&amp;pick25=%ABB%A8k%A4Q%A4K&amp;pick30=%AE%DF%AD%EC%B3%AE%A5%DA&amp;pick31=%AA%F7%BFW%A4l&amp;pick32=%AAZ%A6w%ABJ&amp;pick38=%AA%FC%ABi&amp;pick42=%AAw%AAw%B0%F3%BF%7D&amp;pick45=%A4p%AA%AB%B7s%A4H&amp;pick49=%A7%F8%B0%D2%A4%DA&amp;pick55=%B6L%B6L%B7%C8%B7%C8&amp;pick110=%B6%5D%AA%BA%BAC%A4T%A4E&amp;pick113=%A5v%B5%DC%A9i%B5%DC&amp;pick118=%A4%C8%AB%E1%AE%B3%C5K%A4%BB&amp;pick119=%A8%E2%ACz%A4G&amp;pick136=%A6h%AA%DC&amp;pick171=%A4p%C5%40%A4h&amp;pick173=%B1j%AB%C2&amp;pick183=%AB%A2%A4h%A9_&amp;pick216=%B9p%A4%BD%C5F&amp;tm1=2&amp;tm2=2&amp;tm3=2&amp;tm4=1&amp;tm5=2&amp;tm6=2&amp;tm7=2&amp;tm8=1&amp;tm9=1&amp;tm10=1&amp;tm11=1&amp;tm12=1&amp;tmBat=9&amp;tmSP=5&amp;tmRP=3&amp;tmCP=1&amp;tmAll=18&amp;submit1=%A5%5B%A4J%A7%DA%AA%BA%B9%DA%A4%DB%B2y%B6%A4" role="link" aria-disabled="true" tabindex="0" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">直接送出 RBI V1</a>
+    <p class="submit-warning">點下即提交本版 18 人，不是預覽；每個帳號每季只能參加一次。</p>
+  </div>
+    <details><summary>複製用 18 人名單</summary><pre>C	三商虎隊	栗原陵矢	0738
+1B	興農牛隊	雨男十八	rainwey
+2B	俊國熊隊	武安侯	shin55
+3B	三商虎隊	泡泡堂糖	a29329156
+SS	Lamigo桃猿	貳貳溜溜	boy11344
+LF	Lamigo桃猿	金獨子	wings
+CF	年代勇士	阿勇	jac1009
+RF	興農牛隊	村曼巴	新星
+DH	味全龍隊	小物新人	immcat
+SP	年代勇士	跑的慢三九	porching
+SP	時報鷹隊	多芙	樂芙栗
+SP	誠泰Cobras	史萊姆萊	Kenta
+SP	中信鯨隊	兩津二	oo446688
+SP	統一獅隊	午後拿鐵六	black9
+RP	兄弟象隊	哈士奇	zxc10141
+RP	誠泰Cobras	強威	jaclsa
+RP	兄弟象隊	小護士	stacy
+CP	生活雷公	雷公轟	Thunderbo</pre></details>
+    <div class="table-scroll lineup-table" tabindex="0" role="region" aria-label="18 人名單，可橫向捲動"><table><thead><tr><th>位置</th><th>球隊</th><th>球員</th><th>GM</th><th>預測</th><th>能力</th><th>技能</th></tr></thead><tbody><tr><td>C</td><td>三商虎隊</td><td class="player">栗原陵矢</td><td>0738</td><td>HR 39 / RBI 86 / AVG 0.262 / SB 0</td><td>力 224 / 巧 5 / 走 3 / 守 8 / 肩 4</td><td>得點圈◎ / 強力打者 / 滿壘男 / 固定打者 / 威壓感 / 安定感 / 豪力</td></tr>
+<tr><td>1B</td><td>興農牛隊</td><td class="player">雨男十八</td><td>rainwey</td><td>HR 33 / RBI 57 / AVG 0.243 / SB 0</td><td>力 229 / 巧 6 / 走 3 / 守 10 / 肩 5</td><td>得點圈◎ / 盜壘Ｘ / 強力打者 / 威壓感 / 安定感 / 豪力</td></tr>
+<tr><td>2B</td><td>俊國熊隊</td><td class="player">武安侯</td><td>shin55</td><td>HR 40 / RBI 102 / AVG 0.290 / SB 0</td><td>力 224 / 巧 5 / 走 3 / 守 10 / 肩 5</td><td>得點圈◎ / 對左投◎ / 守備能力○ / 強力打者 / 內野安打 / 威壓感 / 豪力</td></tr>
+<tr><td>3B</td><td>三商虎隊</td><td class="player">泡泡堂糖</td><td>a29329156</td><td>HR 33 / RBI 79 / AVG 0.250 / SB 0</td><td>力 204 / 巧 5 / 走 3 / 守 10 / 肩 6</td><td>盜壘Ｘ / 強力打者 / 逆境○ / 威壓感 / 豪力</td></tr>
+<tr><td>SS</td><td>Lamigo桃猿</td><td class="player">貳貳溜溜</td><td>boy11344</td><td>HR 29 / RBI 57 / AVG 0.237 / SB 0</td><td>力 239 / 巧 6 / 走 5 / 守 12 / 肩 6</td><td>得點圈Ｘ / 守備能力○ / 豪力</td></tr>
+<tr><td>LF</td><td>Lamigo桃猿</td><td class="player">金獨子</td><td>wings</td><td>HR 35 / RBI 69 / AVG 0.254 / SB 0</td><td>力 232 / 巧 6 / 走 4 / 守 11 / 肩 6</td><td>得點圈◎ / 盜壘Ｘ / 強力打者 / 滿壘男 / 固定打者 / 威壓感 / 安定感 / 豪力</td></tr>
+<tr><td>CF</td><td>年代勇士</td><td class="player">阿勇</td><td>jac1009</td><td>HR 29 / RBI 66 / AVG 0.254 / SB 0</td><td>力 232 / 巧 6 / 走 5 / 守 10 / 肩 6</td><td>得點圈Ｘ / 威壓感 / 人氣者 / 豪力</td></tr>
+<tr><td>RF</td><td>興農牛隊</td><td class="player">村曼巴</td><td>新星</td><td>HR 37 / RBI 70 / AVG 0.256 / SB 0</td><td>力 249 / 巧 6 / 走 5 / 守 11 / 肩 7</td><td>得點圈Ｘ / 強力打者 / 滿壘男 / 固定打者 / 豪力</td></tr>
+<tr><td>DH</td><td>味全龍隊</td><td class="player">小物新人</td><td>immcat</td><td>HR 22 / RBI 47 / AVG 0.223 / SB 0</td><td>力 206 / 巧 6 / 走 4 / 守 10 / 肩 4</td><td>觸擊○ / 盜壘Ｘ / 威壓感 / 人氣者 / 豪力</td></tr>
+<tr><td>SP</td><td>年代勇士</td><td class="player">跑的慢三九</td><td>porching</td><td>W 13 / K 127 / SV 0 / ERA 2.03</td><td>控 216 / 體 219 / 速 148</td><td>直球○ / 對左打○ / 逃球 / 重球 / 威壓感 / 安定感 / 人氣者 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>時報鷹隊</td><td class="player">多芙</td><td>樂芙栗</td><td>W 10 / K 110 / SV 0 / ERA 2.25</td><td>控 214 / 體 224 / 速 147</td><td>負運 / 逃球 / 中繼能力○ / 威壓感 / 氣魄</td></tr>
+<tr><td>SP</td><td>誠泰Cobras</td><td class="player">史萊姆萊</td><td>Kenta</td><td>W 9 / K 96 / SV 0 / ERA 2.53</td><td>控 214 / 體 229 / 速 143</td><td>勝運 / 威壓感 / 氣魄 / 掌心球(7)</td></tr>
+<tr><td>SP</td><td>中信鯨隊</td><td class="player">兩津二</td><td>oo446688</td><td>W 10 / K 89 / SV 0 / ERA 2.80</td><td>控 201 / 體 201 / 速 146</td><td>對左打Ｘ / 逃球 / 重球 / 威壓感 / 氣魄 / 指叉球(7)</td></tr>
+<tr><td>SP</td><td>統一獅隊</td><td class="player">午後拿鐵六</td><td>black9</td><td>W 8 / K 97 / SV 0 / ERA 3.30</td><td>控 204 / 體 214 / 速 146</td><td>被連打○ / 中繼能力○ / 威壓感 / 氣魄</td></tr>
+<tr><td>RP</td><td>兄弟象隊</td><td class="player">哈士奇</td><td>zxc10141</td><td>W 10 / K 100 / SV 3 / ERA 4.10</td><td>控 239 / 體 247 / 速 155</td><td>威壓感 / 人氣者 / 掌心球(7)</td></tr>
+<tr><td>RP</td><td>誠泰Cobras</td><td class="player">強威</td><td>jaclsa</td><td>W 9 / K 84 / SV 4 / ERA 4.41</td><td>控 255 / 體 239 / 速 150</td><td>勝運 / 威壓感 / 掌心球(7)</td></tr>
+<tr><td>RP</td><td>兄弟象隊</td><td class="player">小護士</td><td>stacy</td><td>W 6 / K 78 / SV 2 / ERA 6.04</td><td>控 216 / 體 216 / 速 150</td><td>威壓感 / 投球反應○ / 氣魄 / 切球(7)</td></tr>
+<tr><td>CP</td><td>生活雷公</td><td class="player">雷公轟</td><td>Thunderbo</td><td>W 1 / K 20 / SV 25 / ERA 3.57</td><td>控 252 / 體 232 / 速 156</td><td>威壓感 / 安定感 / 被連打Ｘ</td></tr></tbody></table></div>
+  </section>
+<section class="variant">
+    <div class="variant-head">
+      <h3>RBI V2</h3>
+      <div class="chips">
+        <span>預測打點 642</span>
+        <span>HR 296</span>
+        <span>RBI 642</span>
+        <span>W 78</span>
+        <span>K 807</span>
+        <span>SV 34</span>
+        <span>ERA 未估局數</span>
+      </div>
+    </div>
+    <div class="claim" data-claim-key="RBI V2">
+      <label>RBI V2 認領</label>
+      <input type="text" autocomplete="name" placeholder="輸入名字">
+      <button type="button">儲存</button>
+      <span class="claim-status" aria-live="polite"></span>
+    </div>
+    <div class="submit-action fantasy-submit-action" data-ore-fantasy-submit="RBI V2">
+    <div><strong>RBI V2 夢幻球隊一鍵送出</strong><br><span>18 人名單與本版表格完全一致；請先在同一瀏覽器登入 ORE。</span></div>
+    <a class="submit-link" data-ore-submit-url="http://game.tinycafe.com/ore/ore.cgi?pickMyTeam=1&amp;pick25=%ABB%A8k%A4Q%A4K&amp;pick29=%ADD%B2y%A4%F2%AB%7D&amp;pick30=%AE%DF%AD%EC%B3%AE%A5%DA&amp;pick31=%AA%F7%BFW%A4l&amp;pick32=%AAZ%A6w%ABJ&amp;pick38=%AA%FC%ABi&amp;pick42=%AAw%AAw%B0%F3%BF%7D&amp;pick45=%A4p%AA%AB%B7s%A4H&amp;pick49=%A7%F8%B0%D2%A4%DA&amp;pick110=%B6%5D%AA%BA%BAC%A4T%A4E&amp;pick118=%A4%C8%AB%E1%AE%B3%C5K%A4%BB&amp;pick119=%A8%E2%ACz%A4G&amp;pick136=%A6h%AA%DC&amp;pick148=%B7s%A4%E201&amp;pick171=%A4p%C5%40%A4h&amp;pick173=%B1j%AB%C2&amp;pick183=%AB%A2%A4h%A9_&amp;pick216=%B9p%A4%BD%C5F&amp;tm1=2&amp;tm2=2&amp;tm3=2&amp;tm4=2&amp;tm5=2&amp;tm6=2&amp;tm7=1&amp;tm8=1&amp;tm9=1&amp;tm10=1&amp;tm11=1&amp;tm12=1&amp;tmBat=9&amp;tmSP=5&amp;tmRP=3&amp;tmCP=1&amp;tmAll=18&amp;submit1=%A5%5B%A4J%A7%DA%AA%BA%B9%DA%A4%DB%B2y%B6%A4" role="link" aria-disabled="true" tabindex="0" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">直接送出 RBI V2</a>
+    <p class="submit-warning">點下即提交本版 18 人，不是預覽；每個帳號每季只能參加一次。</p>
+  </div>
+    <details><summary>複製用 18 人名單</summary><pre>C	三商虎隊	栗原陵矢	0738
+1B	興農牛隊	雨男十八	rainwey
+2B	俊國熊隊	武安侯	shin55
+3B	三商虎隊	泡泡堂糖	a29329156
+SS	誠泰Cobras	胖球毛咪	DriverQQ
+LF	Lamigo桃猿	金獨子	wings
+CF	年代勇士	阿勇	jac1009
+RF	興農牛隊	村曼巴	新星
+DH	味全龍隊	小物新人	immcat
+SP	年代勇士	跑的慢三九	porching
+SP	時報鷹隊	多芙	樂芙栗
+SP	時報鷹隊	新手01	K20260610
+SP	中信鯨隊	兩津二	oo446688
+SP	統一獅隊	午後拿鐵六	black9
+RP	兄弟象隊	哈士奇	zxc10141
+RP	誠泰Cobras	強威	jaclsa
+RP	兄弟象隊	小護士	stacy
+CP	生活雷公	雷公轟	Thunderbo</pre></details>
+    <div class="table-scroll lineup-table" tabindex="0" role="region" aria-label="18 人名單，可橫向捲動"><table><thead><tr><th>位置</th><th>球隊</th><th>球員</th><th>GM</th><th>預測</th><th>能力</th><th>技能</th></tr></thead><tbody><tr><td>C</td><td>三商虎隊</td><td class="player">栗原陵矢</td><td>0738</td><td>HR 39 / RBI 86 / AVG 0.262 / SB 0</td><td>力 224 / 巧 5 / 走 3 / 守 8 / 肩 4</td><td>得點圈◎ / 強力打者 / 滿壘男 / 固定打者 / 威壓感 / 安定感 / 豪力</td></tr>
+<tr><td>1B</td><td>興農牛隊</td><td class="player">雨男十八</td><td>rainwey</td><td>HR 33 / RBI 57 / AVG 0.243 / SB 0</td><td>力 229 / 巧 6 / 走 3 / 守 10 / 肩 5</td><td>得點圈◎ / 盜壘Ｘ / 強力打者 / 威壓感 / 安定感 / 豪力</td></tr>
+<tr><td>2B</td><td>俊國熊隊</td><td class="player">武安侯</td><td>shin55</td><td>HR 40 / RBI 102 / AVG 0.290 / SB 0</td><td>力 224 / 巧 5 / 走 3 / 守 10 / 肩 5</td><td>得點圈◎ / 對左投◎ / 守備能力○ / 強力打者 / 內野安打 / 威壓感 / 豪力</td></tr>
+<tr><td>3B</td><td>三商虎隊</td><td class="player">泡泡堂糖</td><td>a29329156</td><td>HR 33 / RBI 79 / AVG 0.250 / SB 0</td><td>力 204 / 巧 5 / 走 3 / 守 10 / 肩 6</td><td>盜壘Ｘ / 強力打者 / 逆境○ / 威壓感 / 豪力</td></tr>
+<tr><td>SS</td><td>誠泰Cobras</td><td class="player">胖球毛咪</td><td>DriverQQ</td><td>HR 28 / RBI 66 / AVG 0.240 / SB 0</td><td>力 221 / 巧 5 / 走 3 / 守 12 / 肩 6</td><td>守備能力○ / 內野安打 / 威壓感 / 豪力</td></tr>
+<tr><td>LF</td><td>Lamigo桃猿</td><td class="player">金獨子</td><td>wings</td><td>HR 35 / RBI 69 / AVG 0.254 / SB 0</td><td>力 232 / 巧 6 / 走 4 / 守 11 / 肩 6</td><td>得點圈◎ / 盜壘Ｘ / 強力打者 / 滿壘男 / 固定打者 / 威壓感 / 安定感 / 豪力</td></tr>
+<tr><td>CF</td><td>年代勇士</td><td class="player">阿勇</td><td>jac1009</td><td>HR 29 / RBI 66 / AVG 0.254 / SB 0</td><td>力 232 / 巧 6 / 走 5 / 守 10 / 肩 6</td><td>得點圈Ｘ / 威壓感 / 人氣者 / 豪力</td></tr>
+<tr><td>RF</td><td>興農牛隊</td><td class="player">村曼巴</td><td>新星</td><td>HR 37 / RBI 70 / AVG 0.256 / SB 0</td><td>力 249 / 巧 6 / 走 5 / 守 11 / 肩 7</td><td>得點圈Ｘ / 強力打者 / 滿壘男 / 固定打者 / 豪力</td></tr>
+<tr><td>DH</td><td>味全龍隊</td><td class="player">小物新人</td><td>immcat</td><td>HR 22 / RBI 47 / AVG 0.223 / SB 0</td><td>力 206 / 巧 6 / 走 4 / 守 10 / 肩 4</td><td>觸擊○ / 盜壘Ｘ / 威壓感 / 人氣者 / 豪力</td></tr>
+<tr><td>SP</td><td>年代勇士</td><td class="player">跑的慢三九</td><td>porching</td><td>W 13 / K 127 / SV 0 / ERA 2.03</td><td>控 216 / 體 219 / 速 148</td><td>直球○ / 對左打○ / 逃球 / 重球 / 威壓感 / 安定感 / 人氣者 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>時報鷹隊</td><td class="player">多芙</td><td>樂芙栗</td><td>W 10 / K 110 / SV 0 / ERA 2.25</td><td>控 214 / 體 224 / 速 147</td><td>負運 / 逃球 / 中繼能力○ / 威壓感 / 氣魄</td></tr>
+<tr><td>SP</td><td>時報鷹隊</td><td class="player">新手01</td><td>K20260610</td><td>W 11 / K 102 / SV 0 / ERA 2.67</td><td>控 237 / 體 229 / 速 140</td><td>逃球 / 投球反應○ / 氣魄</td></tr>
+<tr><td>SP</td><td>中信鯨隊</td><td class="player">兩津二</td><td>oo446688</td><td>W 10 / K 89 / SV 0 / ERA 2.80</td><td>控 201 / 體 201 / 速 146</td><td>對左打Ｘ / 逃球 / 重球 / 威壓感 / 氣魄 / 指叉球(7)</td></tr>
+<tr><td>SP</td><td>統一獅隊</td><td class="player">午後拿鐵六</td><td>black9</td><td>W 8 / K 97 / SV 0 / ERA 3.30</td><td>控 204 / 體 214 / 速 146</td><td>被連打○ / 中繼能力○ / 威壓感 / 氣魄</td></tr>
+<tr><td>RP</td><td>兄弟象隊</td><td class="player">哈士奇</td><td>zxc10141</td><td>W 10 / K 100 / SV 3 / ERA 4.10</td><td>控 239 / 體 247 / 速 155</td><td>威壓感 / 人氣者 / 掌心球(7)</td></tr>
+<tr><td>RP</td><td>誠泰Cobras</td><td class="player">強威</td><td>jaclsa</td><td>W 9 / K 84 / SV 4 / ERA 4.41</td><td>控 255 / 體 239 / 速 150</td><td>勝運 / 威壓感 / 掌心球(7)</td></tr>
+<tr><td>RP</td><td>兄弟象隊</td><td class="player">小護士</td><td>stacy</td><td>W 6 / K 78 / SV 2 / ERA 6.04</td><td>控 216 / 體 216 / 速 150</td><td>威壓感 / 投球反應○ / 氣魄 / 切球(7)</td></tr>
+<tr><td>CP</td><td>生活雷公</td><td class="player">雷公轟</td><td>Thunderbo</td><td>W 1 / K 20 / SV 25 / ERA 3.57</td><td>控 252 / 體 232 / 速 156</td><td>威壓感 / 安定感 / 被連打Ｘ</td></tr></tbody></table></div>
+  </section>
+<section class="variant">
+    <div class="variant-head">
+      <h3>RBI V3</h3>
+      <div class="chips">
+        <span>預測打點 637</span>
+        <span>HR 298</span>
+        <span>RBI 637</span>
+        <span>W 72</span>
+        <span>K 765</span>
+        <span>SV 34</span>
+        <span>ERA 未估局數</span>
+      </div>
+    </div>
+    <div class="claim" data-claim-key="RBI V3">
+      <label>RBI V3 認領</label>
+      <input type="text" autocomplete="name" placeholder="輸入名字">
+      <button type="button">儲存</button>
+      <span class="claim-status" aria-live="polite"></span>
+    </div>
+    <div class="submit-action fantasy-submit-action" data-ore-fantasy-submit="RBI V3">
+    <div><strong>RBI V3 夢幻球隊一鍵送出</strong><br><span>18 人名單與本版表格完全一致；請先在同一瀏覽器登入 ORE。</span></div>
+    <a class="submit-link" data-ore-submit-url="http://game.tinycafe.com/ore/ore.cgi?pickMyTeam=1&amp;pick25=%ABB%A8k%A4Q%A4K&amp;pick30=%AE%DF%AD%EC%B3%AE%A5%DA&amp;pick31=%AA%F7%BFW%A4l&amp;pick32=%AAZ%A6w%ABJ&amp;pick38=%AA%FC%ABi&amp;pick42=%AAw%AAw%B0%F3%BF%7D&amp;pick44=%A4%C0%C2%F7%A8%C5%B2M&amp;pick55=%B6L%B6L%B7%C8%B7%C8&amp;pick85=%A4T%A4f%A4M%A4Q%A4%BB&amp;pick113=%A5v%B5%DC%A9i%B5%DC&amp;pick117=%ABn%A6%DC%ADb&amp;pick118=%A4%C8%AB%E1%AE%B3%C5K%A4%BB&amp;pick119=%A8%E2%ACz%A4G&amp;pick136=%A6h%AA%DC&amp;pick171=%A4p%C5%40%A4h&amp;pick173=%B1j%AB%C2&amp;pick183=%AB%A2%A4h%A9_&amp;pick216=%B9p%A4%BD%C5F&amp;tm1=2&amp;tm2=1&amp;tm3=2&amp;tm4=1&amp;tm5=2&amp;tm6=2&amp;tm7=2&amp;tm8=2&amp;tm9=1&amp;tm10=1&amp;tm11=1&amp;tm12=1&amp;tmBat=9&amp;tmSP=5&amp;tmRP=3&amp;tmCP=1&amp;tmAll=18&amp;submit1=%A5%5B%A4J%A7%DA%AA%BA%B9%DA%A4%DB%B2y%B6%A4" role="link" aria-disabled="true" tabindex="0" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">直接送出 RBI V3</a>
+    <p class="submit-warning">點下即提交本版 18 人，不是預覽；每個帳號每季只能參加一次。</p>
+  </div>
+    <details><summary>複製用 18 人名單</summary><pre>C	三商虎隊	栗原陵矢	0738
+1B	興農牛隊	雨男十八	rainwey
+2B	俊國熊隊	武安侯	shin55
+3B	三商虎隊	泡泡堂糖	a29329156
+SS	Lamigo桃猿	貳貳溜溜	boy11344
+LF	Lamigo桃猿	金獨子	wings
+CF	年代勇士	阿勇	jac1009
+RF	俊國熊隊	分離乳清	分離乳清
+DH	興農牛隊	三口刀十六	三口刀
+SP	時報鷹隊	多芙	樂芙栗
+SP	誠泰Cobras	史萊姆萊	Kenta
+SP	中信鯨隊	兩津二	oo446688
+SP	味全龍隊	南至苑	Kobegod
+SP	統一獅隊	午後拿鐵六	black9
+RP	兄弟象隊	哈士奇	zxc10141
+RP	誠泰Cobras	強威	jaclsa
+RP	兄弟象隊	小護士	stacy
+CP	生活雷公	雷公轟	Thunderbo</pre></details>
+    <div class="table-scroll lineup-table" tabindex="0" role="region" aria-label="18 人名單，可橫向捲動"><table><thead><tr><th>位置</th><th>球隊</th><th>球員</th><th>GM</th><th>預測</th><th>能力</th><th>技能</th></tr></thead><tbody><tr><td>C</td><td>三商虎隊</td><td class="player">栗原陵矢</td><td>0738</td><td>HR 39 / RBI 86 / AVG 0.262 / SB 0</td><td>力 224 / 巧 5 / 走 3 / 守 8 / 肩 4</td><td>得點圈◎ / 強力打者 / 滿壘男 / 固定打者 / 威壓感 / 安定感 / 豪力</td></tr>
+<tr><td>1B</td><td>興農牛隊</td><td class="player">雨男十八</td><td>rainwey</td><td>HR 33 / RBI 57 / AVG 0.243 / SB 0</td><td>力 229 / 巧 6 / 走 3 / 守 10 / 肩 5</td><td>得點圈◎ / 盜壘Ｘ / 強力打者 / 威壓感 / 安定感 / 豪力</td></tr>
+<tr><td>2B</td><td>俊國熊隊</td><td class="player">武安侯</td><td>shin55</td><td>HR 40 / RBI 102 / AVG 0.290 / SB 0</td><td>力 224 / 巧 5 / 走 3 / 守 10 / 肩 5</td><td>得點圈◎ / 對左投◎ / 守備能力○ / 強力打者 / 內野安打 / 威壓感 / 豪力</td></tr>
+<tr><td>3B</td><td>三商虎隊</td><td class="player">泡泡堂糖</td><td>a29329156</td><td>HR 33 / RBI 79 / AVG 0.250 / SB 0</td><td>力 204 / 巧 5 / 走 3 / 守 10 / 肩 6</td><td>盜壘Ｘ / 強力打者 / 逆境○ / 威壓感 / 豪力</td></tr>
+<tr><td>SS</td><td>Lamigo桃猿</td><td class="player">貳貳溜溜</td><td>boy11344</td><td>HR 29 / RBI 57 / AVG 0.237 / SB 0</td><td>力 239 / 巧 6 / 走 5 / 守 12 / 肩 6</td><td>得點圈Ｘ / 守備能力○ / 豪力</td></tr>
+<tr><td>LF</td><td>Lamigo桃猿</td><td class="player">金獨子</td><td>wings</td><td>HR 35 / RBI 69 / AVG 0.254 / SB 0</td><td>力 232 / 巧 6 / 走 4 / 守 11 / 肩 6</td><td>得點圈◎ / 盜壘Ｘ / 強力打者 / 滿壘男 / 固定打者 / 威壓感 / 安定感 / 豪力</td></tr>
+<tr><td>CF</td><td>年代勇士</td><td class="player">阿勇</td><td>jac1009</td><td>HR 29 / RBI 66 / AVG 0.254 / SB 0</td><td>力 232 / 巧 6 / 走 5 / 守 10 / 肩 6</td><td>得點圈Ｘ / 威壓感 / 人氣者 / 豪力</td></tr>
+<tr><td>RF</td><td>俊國熊隊</td><td class="player">分離乳清</td><td>分離乳清</td><td>HR 31 / RBI 69 / AVG 0.254 / SB 0</td><td>力 249 / 巧 6 / 走 6 / 守 12 / 肩 7</td><td>對左投Ｘ / 逆境○ / 豪力</td></tr>
+<tr><td>DH</td><td>興農牛隊</td><td class="player">三口刀十六</td><td>三口刀</td><td>HR 29 / RBI 52 / AVG 0.247 / SB 3</td><td>力 252 / 巧 7 / 走 6 / 守 11 / 肩 7</td><td>守備能力Ｘ / 再見男 / 豪力</td></tr>
+<tr><td>SP</td><td>時報鷹隊</td><td class="player">多芙</td><td>樂芙栗</td><td>W 10 / K 110 / SV 0 / ERA 2.25</td><td>控 214 / 體 224 / 速 147</td><td>負運 / 逃球 / 中繼能力○ / 威壓感 / 氣魄</td></tr>
+<tr><td>SP</td><td>誠泰Cobras</td><td class="player">史萊姆萊</td><td>Kenta</td><td>W 9 / K 96 / SV 0 / ERA 2.53</td><td>控 214 / 體 229 / 速 143</td><td>勝運 / 威壓感 / 氣魄 / 掌心球(7)</td></tr>
+<tr><td>SP</td><td>中信鯨隊</td><td class="player">兩津二</td><td>oo446688</td><td>W 10 / K 89 / SV 0 / ERA 2.80</td><td>控 201 / 體 201 / 速 146</td><td>對左打Ｘ / 逃球 / 重球 / 威壓感 / 氣魄 / 指叉球(7)</td></tr>
+<tr><td>SP</td><td>味全龍隊</td><td class="player">南至苑</td><td>Kobegod</td><td>W 9 / K 91 / SV 0 / ERA 3.09</td><td>控 198 / 體 191 / 速 144</td><td>重球 / 中繼能力○ / 威壓感 / 安定感 / 氣魄</td></tr>
+<tr><td>SP</td><td>統一獅隊</td><td class="player">午後拿鐵六</td><td>black9</td><td>W 8 / K 97 / SV 0 / ERA 3.30</td><td>控 204 / 體 214 / 速 146</td><td>被連打○ / 中繼能力○ / 威壓感 / 氣魄</td></tr>
+<tr><td>RP</td><td>兄弟象隊</td><td class="player">哈士奇</td><td>zxc10141</td><td>W 10 / K 100 / SV 3 / ERA 4.10</td><td>控 239 / 體 247 / 速 155</td><td>威壓感 / 人氣者 / 掌心球(7)</td></tr>
+<tr><td>RP</td><td>誠泰Cobras</td><td class="player">強威</td><td>jaclsa</td><td>W 9 / K 84 / SV 4 / ERA 4.41</td><td>控 255 / 體 239 / 速 150</td><td>勝運 / 威壓感 / 掌心球(7)</td></tr>
+<tr><td>RP</td><td>兄弟象隊</td><td class="player">小護士</td><td>stacy</td><td>W 6 / K 78 / SV 2 / ERA 6.04</td><td>控 216 / 體 216 / 速 150</td><td>威壓感 / 投球反應○ / 氣魄 / 切球(7)</td></tr>
+<tr><td>CP</td><td>生活雷公</td><td class="player">雷公轟</td><td>Thunderbo</td><td>W 1 / K 20 / SV 25 / ERA 3.57</td><td>控 252 / 體 232 / 速 156</td><td>威壓感 / 安定感 / 被連打Ｘ</td></tr></tbody></table></div>
+  </section>
+<section class="variant">
+    <div class="variant-head">
+      <h3>RBI V4</h3>
+      <div class="chips">
+        <span>預測打點 646</span>
+        <span>HR 297</span>
+        <span>RBI 646</span>
+        <span>W 76</span>
+        <span>K 796</span>
+        <span>SV 34</span>
+        <span>ERA 未估局數</span>
+      </div>
+    </div>
+    <div class="claim" data-claim-key="RBI V4">
+      <label>RBI V4 認領</label>
+      <input type="text" autocomplete="name" placeholder="輸入名字">
+      <button type="button">儲存</button>
+      <span class="claim-status" aria-live="polite"></span>
+    </div>
+    <div class="submit-action fantasy-submit-action" data-ore-fantasy-submit="RBI V4">
+    <div><strong>RBI V4 夢幻球隊一鍵送出</strong><br><span>18 人名單與本版表格完全一致；請先在同一瀏覽器登入 ORE。</span></div>
+    <a class="submit-link" data-ore-submit-url="http://game.tinycafe.com/ore/ore.cgi?pickMyTeam=1&amp;pick25=%ABB%A8k%A4Q%A4K&amp;pick29=%ADD%B2y%A4%F2%AB%7D&amp;pick30=%AE%DF%AD%EC%B3%AE%A5%DA&amp;pick31=%AA%F7%BFW%A4l&amp;pick32=%AAZ%A6w%ABJ&amp;pick38=%AA%FC%ABi&amp;pick42=%AAw%AAw%B0%F3%BF%7D&amp;pick44=%A4%C0%C2%F7%A8%C5%B2M&amp;pick85=%A4T%A4f%A4M%A4Q%A4%BB&amp;pick110=%B6%5D%AA%BA%BAC%A4T%A4E&amp;pick117=%ABn%A6%DC%ADb&amp;pick118=%A4%C8%AB%E1%AE%B3%C5K%A4%BB&amp;pick119=%A8%E2%ACz%A4G&amp;pick136=%A6h%AA%DC&amp;pick171=%A4p%C5%40%A4h&amp;pick173=%B1j%AB%C2&amp;pick183=%AB%A2%A4h%A9_&amp;pick216=%B9p%A4%BD%C5F&amp;tm1=2&amp;tm2=2&amp;tm3=2&amp;tm4=1&amp;tm5=2&amp;tm6=2&amp;tm7=1&amp;tm8=2&amp;tm9=1&amp;tm10=1&amp;tm11=1&amp;tm12=1&amp;tmBat=9&amp;tmSP=5&amp;tmRP=3&amp;tmCP=1&amp;tmAll=18&amp;submit1=%A5%5B%A4J%A7%DA%AA%BA%B9%DA%A4%DB%B2y%B6%A4" role="link" aria-disabled="true" tabindex="0" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">直接送出 RBI V4</a>
+    <p class="submit-warning">點下即提交本版 18 人，不是預覽；每個帳號每季只能參加一次。</p>
+  </div>
+    <details><summary>複製用 18 人名單</summary><pre>C	三商虎隊	栗原陵矢	0738
+1B	興農牛隊	雨男十八	rainwey
+2B	俊國熊隊	武安侯	shin55
+3B	三商虎隊	泡泡堂糖	a29329156
+SS	誠泰Cobras	胖球毛咪	DriverQQ
+LF	Lamigo桃猿	金獨子	wings
+CF	年代勇士	阿勇	jac1009
+RF	俊國熊隊	分離乳清	分離乳清
+DH	興農牛隊	三口刀十六	三口刀
+SP	年代勇士	跑的慢三九	porching
+SP	時報鷹隊	多芙	樂芙栗
+SP	中信鯨隊	兩津二	oo446688
+SP	味全龍隊	南至苑	Kobegod
+SP	統一獅隊	午後拿鐵六	black9
+RP	兄弟象隊	哈士奇	zxc10141
+RP	誠泰Cobras	強威	jaclsa
+RP	兄弟象隊	小護士	stacy
+CP	生活雷公	雷公轟	Thunderbo</pre></details>
+    <div class="table-scroll lineup-table" tabindex="0" role="region" aria-label="18 人名單，可橫向捲動"><table><thead><tr><th>位置</th><th>球隊</th><th>球員</th><th>GM</th><th>預測</th><th>能力</th><th>技能</th></tr></thead><tbody><tr><td>C</td><td>三商虎隊</td><td class="player">栗原陵矢</td><td>0738</td><td>HR 39 / RBI 86 / AVG 0.262 / SB 0</td><td>力 224 / 巧 5 / 走 3 / 守 8 / 肩 4</td><td>得點圈◎ / 強力打者 / 滿壘男 / 固定打者 / 威壓感 / 安定感 / 豪力</td></tr>
+<tr><td>1B</td><td>興農牛隊</td><td class="player">雨男十八</td><td>rainwey</td><td>HR 33 / RBI 57 / AVG 0.243 / SB 0</td><td>力 229 / 巧 6 / 走 3 / 守 10 / 肩 5</td><td>得點圈◎ / 盜壘Ｘ / 強力打者 / 威壓感 / 安定感 / 豪力</td></tr>
+<tr><td>2B</td><td>俊國熊隊</td><td class="player">武安侯</td><td>shin55</td><td>HR 40 / RBI 102 / AVG 0.290 / SB 0</td><td>力 224 / 巧 5 / 走 3 / 守 10 / 肩 5</td><td>得點圈◎ / 對左投◎ / 守備能力○ / 強力打者 / 內野安打 / 威壓感 / 豪力</td></tr>
+<tr><td>3B</td><td>三商虎隊</td><td class="player">泡泡堂糖</td><td>a29329156</td><td>HR 33 / RBI 79 / AVG 0.250 / SB 0</td><td>力 204 / 巧 5 / 走 3 / 守 10 / 肩 6</td><td>盜壘Ｘ / 強力打者 / 逆境○ / 威壓感 / 豪力</td></tr>
+<tr><td>SS</td><td>誠泰Cobras</td><td class="player">胖球毛咪</td><td>DriverQQ</td><td>HR 28 / RBI 66 / AVG 0.240 / SB 0</td><td>力 221 / 巧 5 / 走 3 / 守 12 / 肩 6</td><td>守備能力○ / 內野安打 / 威壓感 / 豪力</td></tr>
+<tr><td>LF</td><td>Lamigo桃猿</td><td class="player">金獨子</td><td>wings</td><td>HR 35 / RBI 69 / AVG 0.254 / SB 0</td><td>力 232 / 巧 6 / 走 4 / 守 11 / 肩 6</td><td>得點圈◎ / 盜壘Ｘ / 強力打者 / 滿壘男 / 固定打者 / 威壓感 / 安定感 / 豪力</td></tr>
+<tr><td>CF</td><td>年代勇士</td><td class="player">阿勇</td><td>jac1009</td><td>HR 29 / RBI 66 / AVG 0.254 / SB 0</td><td>力 232 / 巧 6 / 走 5 / 守 10 / 肩 6</td><td>得點圈Ｘ / 威壓感 / 人氣者 / 豪力</td></tr>
+<tr><td>RF</td><td>俊國熊隊</td><td class="player">分離乳清</td><td>分離乳清</td><td>HR 31 / RBI 69 / AVG 0.254 / SB 0</td><td>力 249 / 巧 6 / 走 6 / 守 12 / 肩 7</td><td>對左投Ｘ / 逆境○ / 豪力</td></tr>
+<tr><td>DH</td><td>興農牛隊</td><td class="player">三口刀十六</td><td>三口刀</td><td>HR 29 / RBI 52 / AVG 0.247 / SB 3</td><td>力 252 / 巧 7 / 走 6 / 守 11 / 肩 7</td><td>守備能力Ｘ / 再見男 / 豪力</td></tr>
+<tr><td>SP</td><td>年代勇士</td><td class="player">跑的慢三九</td><td>porching</td><td>W 13 / K 127 / SV 0 / ERA 2.03</td><td>控 216 / 體 219 / 速 148</td><td>直球○ / 對左打○ / 逃球 / 重球 / 威壓感 / 安定感 / 人氣者 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>時報鷹隊</td><td class="player">多芙</td><td>樂芙栗</td><td>W 10 / K 110 / SV 0 / ERA 2.25</td><td>控 214 / 體 224 / 速 147</td><td>負運 / 逃球 / 中繼能力○ / 威壓感 / 氣魄</td></tr>
+<tr><td>SP</td><td>中信鯨隊</td><td class="player">兩津二</td><td>oo446688</td><td>W 10 / K 89 / SV 0 / ERA 2.80</td><td>控 201 / 體 201 / 速 146</td><td>對左打Ｘ / 逃球 / 重球 / 威壓感 / 氣魄 / 指叉球(7)</td></tr>
+<tr><td>SP</td><td>味全龍隊</td><td class="player">南至苑</td><td>Kobegod</td><td>W 9 / K 91 / SV 0 / ERA 3.09</td><td>控 198 / 體 191 / 速 144</td><td>重球 / 中繼能力○ / 威壓感 / 安定感 / 氣魄</td></tr>
+<tr><td>SP</td><td>統一獅隊</td><td class="player">午後拿鐵六</td><td>black9</td><td>W 8 / K 97 / SV 0 / ERA 3.30</td><td>控 204 / 體 214 / 速 146</td><td>被連打○ / 中繼能力○ / 威壓感 / 氣魄</td></tr>
+<tr><td>RP</td><td>兄弟象隊</td><td class="player">哈士奇</td><td>zxc10141</td><td>W 10 / K 100 / SV 3 / ERA 4.10</td><td>控 239 / 體 247 / 速 155</td><td>威壓感 / 人氣者 / 掌心球(7)</td></tr>
+<tr><td>RP</td><td>誠泰Cobras</td><td class="player">強威</td><td>jaclsa</td><td>W 9 / K 84 / SV 4 / ERA 4.41</td><td>控 255 / 體 239 / 速 150</td><td>勝運 / 威壓感 / 掌心球(7)</td></tr>
+<tr><td>RP</td><td>兄弟象隊</td><td class="player">小護士</td><td>stacy</td><td>W 6 / K 78 / SV 2 / ERA 6.04</td><td>控 216 / 體 216 / 速 150</td><td>威壓感 / 投球反應○ / 氣魄 / 切球(7)</td></tr>
+<tr><td>CP</td><td>生活雷公</td><td class="player">雷公轟</td><td>Thunderbo</td><td>W 1 / K 20 / SV 25 / ERA 3.57</td><td>控 252 / 體 232 / 速 156</td><td>威壓感 / 安定感 / 被連打Ｘ</td></tr></tbody></table></div>
+  </section>
+<section class="variant">
+    <div class="variant-head">
+      <h3>RBI V5</h3>
+      <div class="chips">
+        <span>預測打點 634</span>
+        <span>HR 291</span>
+        <span>RBI 634</span>
+        <span>W 78</span>
+        <span>K 806</span>
+        <span>SV 35</span>
+        <span>ERA 未估局數</span>
+      </div>
+    </div>
+    <div class="claim" data-claim-key="RBI V5">
+      <label>RBI V5 認領</label>
+      <input type="text" autocomplete="name" placeholder="輸入名字">
+      <button type="button">儲存</button>
+      <span class="claim-status" aria-live="polite"></span>
+    </div>
+    <div class="submit-action fantasy-submit-action" data-ore-fantasy-submit="RBI V5">
+    <div><strong>RBI V5 夢幻球隊一鍵送出</strong><br><span>18 人名單與本版表格完全一致；請先在同一瀏覽器登入 ORE。</span></div>
+    <a class="submit-link" data-ore-submit-url="http://game.tinycafe.com/ore/ore.cgi?pickMyTeam=1&amp;pick3=%AA%F8%C0V%B3%C0&amp;pick25=%ABB%A8k%A4Q%A4K&amp;pick30=%AE%DF%AD%EC%B3%AE%A5%DA&amp;pick31=%AA%F7%BFW%A4l&amp;pick32=%AAZ%A6w%ABJ&amp;pick38=%AA%FC%ABi&amp;pick42=%AAw%AAw%B0%F3%BF%7D&amp;pick45=%A4p%AA%AB%B7s%A4H&amp;pick49=%A7%F8%B0%D2%A4%DA&amp;pick110=%B6%5D%AA%BA%BAC%A4T%A4E&amp;pick118=%A4%C8%AB%E1%AE%B3%C5K%A4%BB&amp;pick119=%A8%E2%ACz%A4G&amp;pick136=%A6h%AA%DC&amp;pick148=%B7s%A4%E201&amp;pick171=%A4p%C5%40%A4h&amp;pick173=%B1j%AB%C2&amp;pick185=%AD%F0%AA%F9%B9%C6%C5o%A5%7C&amp;pick216=%B9p%A4%BD%C5F&amp;tm1=2&amp;tm2=2&amp;tm3=2&amp;tm4=2&amp;tm5=2&amp;tm6=2&amp;tm7=1&amp;tm8=1&amp;tm9=1&amp;tm10=1&amp;tm11=1&amp;tm12=1&amp;tmBat=9&amp;tmSP=5&amp;tmRP=3&amp;tmCP=1&amp;tmAll=18&amp;submit1=%A5%5B%A4J%A7%DA%AA%BA%B9%DA%A4%DB%B2y%B6%A4" role="link" aria-disabled="true" tabindex="0" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">直接送出 RBI V5</a>
+    <p class="submit-warning">點下即提交本版 18 人，不是預覽；每個帳號每季只能參加一次。</p>
+  </div>
+    <details><summary>複製用 18 人名單</summary><pre>C	三商虎隊	栗原陵矢	0738
+1B	興農牛隊	雨男十八	rainwey
+2B	俊國熊隊	武安侯	shin55
+3B	三商虎隊	泡泡堂糖	a29329156
+SS	兄弟象隊	長頸鹿	ian990624
+LF	Lamigo桃猿	金獨子	wings
+CF	年代勇士	阿勇	jac1009
+RF	興農牛隊	村曼巴	新星
+DH	味全龍隊	小物新人	immcat
+SP	年代勇士	跑的慢三九	porching
+SP	時報鷹隊	多芙	樂芙栗
+SP	時報鷹隊	新手01	K20260610
+SP	中信鯨隊	兩津二	oo446688
+SP	統一獅隊	午後拿鐵六	black9
+RP	誠泰Cobras	唐門嘍囉四	algop528
+RP	誠泰Cobras	強威	jaclsa
+RP	兄弟象隊	小護士	stacy
+CP	生活雷公	雷公轟	Thunderbo</pre></details>
+    <div class="table-scroll lineup-table" tabindex="0" role="region" aria-label="18 人名單，可橫向捲動"><table><thead><tr><th>位置</th><th>球隊</th><th>球員</th><th>GM</th><th>預測</th><th>能力</th><th>技能</th></tr></thead><tbody><tr><td>C</td><td>三商虎隊</td><td class="player">栗原陵矢</td><td>0738</td><td>HR 39 / RBI 86 / AVG 0.262 / SB 0</td><td>力 224 / 巧 5 / 走 3 / 守 8 / 肩 4</td><td>得點圈◎ / 強力打者 / 滿壘男 / 固定打者 / 威壓感 / 安定感 / 豪力</td></tr>
+<tr><td>1B</td><td>興農牛隊</td><td class="player">雨男十八</td><td>rainwey</td><td>HR 33 / RBI 57 / AVG 0.243 / SB 0</td><td>力 229 / 巧 6 / 走 3 / 守 10 / 肩 5</td><td>得點圈◎ / 盜壘Ｘ / 強力打者 / 威壓感 / 安定感 / 豪力</td></tr>
+<tr><td>2B</td><td>俊國熊隊</td><td class="player">武安侯</td><td>shin55</td><td>HR 40 / RBI 102 / AVG 0.290 / SB 0</td><td>力 224 / 巧 5 / 走 3 / 守 10 / 肩 5</td><td>得點圈◎ / 對左投◎ / 守備能力○ / 強力打者 / 內野安打 / 威壓感 / 豪力</td></tr>
+<tr><td>3B</td><td>三商虎隊</td><td class="player">泡泡堂糖</td><td>a29329156</td><td>HR 33 / RBI 79 / AVG 0.250 / SB 0</td><td>力 204 / 巧 5 / 走 3 / 守 10 / 肩 6</td><td>盜壘Ｘ / 強力打者 / 逆境○ / 威壓感 / 豪力</td></tr>
+<tr><td>SS</td><td>兄弟象隊</td><td class="player">長頸鹿</td><td>ian990624</td><td>HR 23 / RBI 58 / AVG 0.253 / SB 2</td><td>力 242 / 巧 8 / 走 7 / 守 13 / 肩 7</td><td>得點圈Ｘ / 威壓感 / 人氣者</td></tr>
+<tr><td>LF</td><td>Lamigo桃猿</td><td class="player">金獨子</td><td>wings</td><td>HR 35 / RBI 69 / AVG 0.254 / SB 0</td><td>力 232 / 巧 6 / 走 4 / 守 11 / 肩 6</td><td>得點圈◎ / 盜壘Ｘ / 強力打者 / 滿壘男 / 固定打者 / 威壓感 / 安定感 / 豪力</td></tr>
+<tr><td>CF</td><td>年代勇士</td><td class="player">阿勇</td><td>jac1009</td><td>HR 29 / RBI 66 / AVG 0.254 / SB 0</td><td>力 232 / 巧 6 / 走 5 / 守 10 / 肩 6</td><td>得點圈Ｘ / 威壓感 / 人氣者 / 豪力</td></tr>
+<tr><td>RF</td><td>興農牛隊</td><td class="player">村曼巴</td><td>新星</td><td>HR 37 / RBI 70 / AVG 0.256 / SB 0</td><td>力 249 / 巧 6 / 走 5 / 守 11 / 肩 7</td><td>得點圈Ｘ / 強力打者 / 滿壘男 / 固定打者 / 豪力</td></tr>
+<tr><td>DH</td><td>味全龍隊</td><td class="player">小物新人</td><td>immcat</td><td>HR 22 / RBI 47 / AVG 0.223 / SB 0</td><td>力 206 / 巧 6 / 走 4 / 守 10 / 肩 4</td><td>觸擊○ / 盜壘Ｘ / 威壓感 / 人氣者 / 豪力</td></tr>
+<tr><td>SP</td><td>年代勇士</td><td class="player">跑的慢三九</td><td>porching</td><td>W 13 / K 127 / SV 0 / ERA 2.03</td><td>控 216 / 體 219 / 速 148</td><td>直球○ / 對左打○ / 逃球 / 重球 / 威壓感 / 安定感 / 人氣者 / 氣魄 / 快速伸卡球(7)</td></tr>
+<tr><td>SP</td><td>時報鷹隊</td><td class="player">多芙</td><td>樂芙栗</td><td>W 10 / K 110 / SV 0 / ERA 2.25</td><td>控 214 / 體 224 / 速 147</td><td>負運 / 逃球 / 中繼能力○ / 威壓感 / 氣魄</td></tr>
+<tr><td>SP</td><td>時報鷹隊</td><td class="player">新手01</td><td>K20260610</td><td>W 11 / K 102 / SV 0 / ERA 2.67</td><td>控 237 / 體 229 / 速 140</td><td>逃球 / 投球反應○ / 氣魄</td></tr>
+<tr><td>SP</td><td>中信鯨隊</td><td class="player">兩津二</td><td>oo446688</td><td>W 10 / K 89 / SV 0 / ERA 2.80</td><td>控 201 / 體 201 / 速 146</td><td>對左打Ｘ / 逃球 / 重球 / 威壓感 / 氣魄 / 指叉球(7)</td></tr>
+<tr><td>SP</td><td>統一獅隊</td><td class="player">午後拿鐵六</td><td>black9</td><td>W 8 / K 97 / SV 0 / ERA 3.30</td><td>控 204 / 體 214 / 速 146</td><td>被連打○ / 中繼能力○ / 威壓感 / 氣魄</td></tr>
+<tr><td>RP</td><td>誠泰Cobras</td><td class="player">唐門嘍囉四</td><td>algop528</td><td>W 10 / K 99 / SV 4 / ERA 3.69</td><td>控 249 / 體 255 / 速 156</td><td>牽制○ / 威壓感 / 掌心球(7)</td></tr>
+<tr><td>RP</td><td>誠泰Cobras</td><td class="player">強威</td><td>jaclsa</td><td>W 9 / K 84 / SV 4 / ERA 4.41</td><td>控 255 / 體 239 / 速 150</td><td>勝運 / 威壓感 / 掌心球(7)</td></tr>
+<tr><td>RP</td><td>兄弟象隊</td><td class="player">小護士</td><td>stacy</td><td>W 6 / K 78 / SV 2 / ERA 6.04</td><td>控 216 / 體 216 / 速 150</td><td>威壓感 / 投球反應○ / 氣魄 / 切球(7)</td></tr>
+<tr><td>CP</td><td>生活雷公</td><td class="player">雷公轟</td><td>Thunderbo</td><td>W 1 / K 20 / SV 25 / ERA 3.57</td><td>控 252 / 體 232 / 速 156</td><td>威壓感 / 安定感 / 被連打Ｘ</td></tr></tbody></table></div>
+  </section>
+  </section>
+    <section class="section">
+      <h2>聯盟排名預測（季前純模型）</h2>
+      <div class="summary">
+        <div class="card"><div class="label">模型總分領先</div><div class="value">興農牛隊</div></div>
+        <div class="card"><div class="label">季前實績訊號</div><div class="value">NO_SIGNAL</div></div>
+        <div class="card"><div class="label">已有比賽球隊</div><div class="value">0/12</div></div>
+        <div class="card"><div class="label">排名模型狀態</div><div class="value">研究／未升版</div></div>
+      </div>
+      <p class="note">12 隊目前皆為 0 場；不計算目前領先、精確名次命中、平均排名誤差或命中率。下列僅是 Season 791 季前預測，開打後必須重跑。球隊排名模型狀態為 RESEARCH_NOT_PROMOTED；跨聯盟總分尚未完成冠軍校準，因此「模型總分領先」不等同高信心總冠軍。</p>
+      
+      <div class="submit-action" data-ore-lotto-submit="ready">
+    <div><strong>樂透 661 一鍵送出</strong><br><span>冠軍：興農牛隊。請先在同一瀏覽器登入 ORE；每人最多 1 注。</span></div>
+    <a class="submit-link" data-ore-submit-url="http://game.tinycafe.com/ore/ore.cgi?lotto=1&amp;A1=%BF%B3%B9A&amp;A2=%A4T%B0%D3&amp;A3=%B8%DB%AE%F5&amp;A4=%A6%7E%A5N&amp;A5=%AE%C9%B3%F8&amp;A6=%A5S%A7%CC&amp;B1=%ABT%B0%EA&amp;B2=%AE%E7%B7%E1&amp;B3=%B2%CE%A4%40&amp;B4=%A4%A4%ABH&amp;B5=%A8%FD%A5%FE&amp;B6=%A5%CD%AC%A1&amp;CP=%BF%B3%B9A&amp;betnew13=%26%23160%3B+%A9%E3%A1I+%26%23160%3B" role="link" aria-disabled="true" tabindex="0" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">依上表排名直接投票</a>
+    <p class="submit-warning">點下按鈕會立即送出，不是預覽；未登入或已投過時，ORE 會顯示錯誤訊息。</p>
+  </div>
+      <div class="grid-two"><div><h3>中華聯盟</h3><div class="table-scroll" tabindex="0" role="region" aria-label="中華聯盟預測，可橫向捲動"><table><thead><tr><th>預測排名</th><th>球隊</th><th>總分</th><th>打擊</th><th>投手</th><th>投手排名</th><th>預測防禦率</th></tr></thead><tbody><tr><td>1</td><td class="player">興農牛隊</td><td>2047.97</td><td>2128.86</td><td>-80.89</td><td>2</td><td>3.550</td></tr>
+<tr><td>2</td><td class="player">三商虎隊</td><td>1716.87</td><td>1842.82</td><td>-125.95</td><td>3</td><td>3.727</td></tr>
+<tr><td>3</td><td class="player">誠泰Cobras</td><td>1540.61</td><td>1618.64</td><td>-78.03</td><td>1</td><td>3.374</td></tr>
+<tr><td>4</td><td class="player">年代勇士</td><td>1528.44</td><td>1739.84</td><td>-211.40</td><td>5</td><td>3.963</td></tr>
+<tr><td>5</td><td class="player">時報鷹隊</td><td>1434.89</td><td>1614.16</td><td>-179.27</td><td>4</td><td>3.741</td></tr>
+<tr><td>6</td><td class="player">兄弟象隊</td><td>1364.65</td><td>1588.46</td><td>-223.81</td><td>6</td><td>3.917</td></tr></tbody></table></div></div>
+<div><h3>台灣聯盟</h3><div class="table-scroll" tabindex="0" role="region" aria-label="台灣聯盟預測，可橫向捲動"><table><thead><tr><th>預測排名</th><th>球隊</th><th>總分</th><th>打擊</th><th>投手</th><th>投手排名</th><th>預測防禦率</th></tr></thead><tbody><tr><td>1</td><td class="player">俊國熊隊</td><td>1845.41</td><td>1836.24</td><td>9.17</td><td>1</td><td>3.347</td></tr>
+<tr><td>2</td><td class="player">Lamigo桃猿</td><td>1803.97</td><td>1864.88</td><td>-60.91</td><td>2</td><td>3.464</td></tr>
+<tr><td>3</td><td class="player">統一獅隊</td><td>1500.26</td><td>1729.10</td><td>-228.84</td><td>4</td><td>3.963</td></tr>
+<tr><td>4</td><td class="player">中信鯨隊</td><td>1481.84</td><td>1665.92</td><td>-184.08</td><td>3</td><td>3.700</td></tr>
+<tr><td>5</td><td class="player">味全龍隊</td><td>1293.56</td><td>1541.02</td><td>-247.46</td><td>6</td><td>3.889</td></tr>
+<tr><td>6</td><td class="player">生活雷公</td><td>1254.71</td><td>1490.42</td><td>-235.71</td><td>5</td><td>3.889</td></tr></tbody></table></div></div></div>
+    </section>
+  </main>
+  <script>
+(() => {
+  const prefix = "ore-sunday-first-place:791:790:2026-10-04T20:18:20+08:00";
+  document.querySelectorAll('.claim').forEach(block => {
+    const key = prefix + ':' + (block.dataset.claimKey || '');
+    const input = block.querySelector('input');
+    const button = block.querySelector('button');
+    const status = block.querySelector('.claim-status');
+    const render = value => { status.textContent = value ? '已記錄：' + value : ''; };
+    const saved = localStorage.getItem(key) || '';
+    input.value = saved;
+    render(saved);
+    button.addEventListener('click', () => {
+      const value = input.value.trim();
+      if (value) localStorage.setItem(key, value);
+      else localStorage.removeItem(key);
+      render(value);
+    });
+  });
+})();
+</script>
+</body>
+</html>
